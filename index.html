@@ -12,9 +12,48 @@
 </head>
 
 <body>
+    <header class="p-3 mb-3 border-bottom">
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">Huy Nguyen</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="#">#About Me</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="#">#Experience</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="#">#Featured Projects</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="#">#Other Noteworthy Projects</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">#Education</a>
+                        </li>
+                    </ul>
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Github</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Linkedin</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
     <div class="container py-5 my-5">
         <div class="row align-items-center g-5 vh-100">
-            <div class="col-lg-6">
+            <div class="col-lg-6 my-lg-auto">
                 <h1 class="display-5 mb-3">Hello, I'm <span class="fw-bold">Huy Nguyen.</span></h1>
                 <p class="lead mb-5">I'm a passionate individual and a avid learner with professional developer
                     experience that always thrives on tackling interesting and difficult challenges.</p>
@@ -23,7 +62,7 @@
         </div>
         <div class="row align-items-center g-5  pb-5 mb-5">
             <div class="col-lg-6">
-                <h1 class="display-6 mb-3">About Me</h1>
+                <h1 class="display-6 mb-3">#About Me</h1>
                 <p class="fw-light">I'm a Melbourne-based software developer who has experience in process automation
                     and full-stack development.</p>
                 <p class="fw-light">Currently, I'm an IT specialist at Energy Locals, focused on developing
@@ -37,7 +76,7 @@
         </div>
         <div class="row align-items-center g-5  pb-5 mb-5">
             <div class="col-lg">
-                <h1 class="display-6 mb-3">Experience</h1>
+                <h1 class="display-6 mb-3">#Experience</h1>
                 <ul
                     class="timeline border-primary border-start border-2 my-0 mx-auto position-relative list-unstyled text-start w-auto">
                     <li class="event mb-4 pb-4 position-relative" data-date="Sep 2020 – Present">
@@ -67,9 +106,9 @@
                 </ul>
             </div>
         </div>
-        <div class="row align-items-center g-5  pb-5 mb-5">
+        <div class="row align-items-center g-5 pb-5 mb-5">
             <div class="col-lg">
-                <h1 class="display-6 mb-3">Featured Project</h1>
+                <h1 class="display-6 mb-3">#Featured Projects</h1>
                 <div class="row">
                     <div class="col-md-7 order-md-2 my-auto">
                         <h4 class="fw-light">Energy Locals Signup Form</h4>
@@ -103,12 +142,13 @@
                 </div>
             </div>
         </div>
-        <div class="row align-items-center g-5  pb-5 mb-5">
+        <div class="row align-items-center g-5 pb-5 mb-5">
             <div class="col-lg">
-                <h1 class="display-6 mb-3">Other Noteworthy Projects</h1>
+                <h1 class="display-6 mb-3">#Other Noteworthy Projects</h1>
                 <div class="row g-4 pb-5 row-cols-1 row-cols-lg-3">
-                    <div class="col p-3">
+                    <div class="col py-3">
                         <h4 class="fw-light">Azure AEMO Settlements Storage</h4>
+                        <h6 class="fw-light">Apr 2021 – May 2021</h6>
                         <p class="fw-light">Developed and deployed Azure services that download and store AEMO
                             settlement
                             files in Azure Blob Storage.</p>
@@ -116,14 +156,16 @@
                             provides
                             automated backup and scaling.</p>
                     </div>
-                    <div class="col p-3">
+                    <div class="col py-3">
                         <h4 class="fw-light">AEMO Settlements Mapper</h4>
+                        <h6 class="fw-light">Aug 2020 – Apr 2021</h6>
                         <p class="fw-light">A proof of concept program that automates the mapping of confidential
                             settlements to settlement reports and organises them in a way that allows pricing analysts
                             to access them easily.</p>
                     </div>
-                    <div class="col p-3">
+                    <div class="col py-3">
                         <h4 class="fw-light">Azure AEMO Settlements Downloader</h4>
+                        <h6 class="fw-light">Apr 2021</h6>
                         <p class="fw-light">A Python program that downloads AEMO settlement files according to the AEMO
                             NEM
                             market calendars weekly.</p>
@@ -135,48 +177,75 @@
                             to manually download theses files by hand.</p>
                     </div>
                 </div>
-                <div class="row g-4 pb-5 row-cols-1 row-cols-lg-3">
-                    <div class="col px-3">
+                <div class="row g-4 py-3 row-cols-1 row-cols-lg-3">
+                    <div class="col py-3">
                         <h4 class="fw-light">Personal Blog</h4>
+                        <h6 class="fw-light">Apr 2021</h6>
                         <p class="fw-light">A hacked together minimal static website generated from JSON files for
                             things
                             that interest me.</p>
                     </div>
-                    <div class="col px-3">
+                    <div class="col py-3">
                         <h4 class="fw-light">Todge Electrical</h4>
+                        <h6 class="fw-light">Feb 2021 – Apr 2021</h6>
                         <p class="fw-light">A simple website for a sparky.</p>
                     </div>
-                    <div class="col px-3">
+                    <div class="col py-3">
                         <h4 class="fw-light">Road Quality Analyser</h4>
+                        <h6 class="fw-light">May 2020 – Jun 2020</h6>
                         <p class="fw-light">A proof of concept app that records the route of a vehicle to determine and
                             analyse the quality of the road.</p>
                     </div>
                 </div>
-                <div class="row g-4 pb-5 row-cols-1 row-cols-lg-3">
-                    <div class="col px-3">
+                <div class="row g-4 py-3 row-cols-1 row-cols-lg-3">
+                    <div class="col py-3">
+                        <h4 class="fw-light">Azure AEMO Settlements Database</h4>
+                        <h6 class="fw-light">Nov 2019 – May 2020</h6>
+                        <p class="fw-light">Designed, developed, and deployed a process to process and store AEMO
+                            settlements in a way that allows Energy Locals to quickly and easily retrieved and run
+                            queries for analysis. This lays the foundations for Energy Locals in terms of data storage
+                            and analysis.</p>
+                        <p class="fw-light">The database is an Azure MSSQL database that can dynamically scale to meet
+                            the demand.</p>
+                        <p class="fw-light">The project included the development of tools, backups processes, and
+                            scripts to ensure data integrity.
+                        </p>
+                    </div>
+                    <div class="col py-3">
                         <h4 class="fw-light">AER Trend Analysis</h4>
+                        <h6 class="fw-light">Oct 2019</h6>
+                        <p class="fw-light">A python tool used to compare AER Market Performance Reports trends. It is
+                            mainly used to find errors in the reports.</p>
+                    </div>
+                    <div class="col py-3">
+                        <h4 class="fw-light">Partner Report Summary Generator</h4>
+                        <h6 class="fw-light">Apr 2021</h6>
                         <p class="fw-light">Developed a tool to quickly pull partner data from a database to create
-                            partner
-                            reports automatically.
+                            partner reports automatically.
                             The original process was manual and took a full 3 - 4 hours. The automated process takes 5
                             minutes.</p>
                     </div>
-                    <div class="col px-3">
+                </div>
+                <div class="row g-4 py-3 row-cols-1 row-cols-lg-3">
+                    <div class="col py-3">
                         <h4 class="fw-light">ESP8266 Estimate Wifi Distance Using RSSI</h4>
+                        <h6 class="fw-light">Nov 2019 – May 2020</h6>
                         <p class="fw-light">An attempt to estimate distance using wifi based on the 'Estimate Distance
-                            Measurement using NodeMCU ESP8266 based on RSSI Technique' paper.</p>
+                            Measurement using NodeMCU ESP8266 based on RSSI Technique' paper.
+                        </p>
                     </div>
-                    <div class="col px-3">
-
+                    <div class="col py-3">
+                    </div>
+                    <div class="col py-3">
                     </div>
                 </div>
             </div>
         </div>
-        <div class="row align-items-center g-5  pb-5 mb-5">
+        <div class="row align-items-center g-5 pb-5 mb-5">
             <div class="col-lg">
-                <h1 class="display-6 mb-3">Education</h1>
+                <h1 class="display-6 mb-3">#Education</h1>
                 <div class="row g-4 pb-5 row-cols-1 row-cols-lg-3">
-                    <div class="col p-3">
+                    <div class="col py-3">
                         <h4 class="fw-light">Computer and Network Engineering (Honours)</h4>
                         <p class="fw-light">Mar 2016 to Mar 2020</p>
                     </div>
