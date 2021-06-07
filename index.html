@@ -13,9 +13,9 @@
     <title>Home - Huy Nguyen</title>
 </head>
 
-<body>
+<body data-bs-spy="scroll" data-bs-target="#navbar">
     <header class="p-3 mb-3" id="home">
-        <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-white border-bottom">
+        <nav id="navbar" class="navbar fixed-top navbar-expand-lg navbar-light bg-white border-bottom">
             <div class="container-fluid">
                 <a class="navbar-brand" href="#"><img src="https://via.placeholder.com/32" class="d-block img-fluid"
                         loading="lazy" width="32" height="32"></a>
@@ -60,7 +60,7 @@
             </div>
         </nav>
     </header>
-    <div class="container px-5 pt-5 mt-5">
+    <div class="container px-5 pt-5 mt-5" data-bs-spy="scroll" data-bs-target="#navbar" data-bs-offset="0" class="scrollspy-example" tabindex="0">
         <div class="row g-5 vh-100">
             <div class="col-lg-6">
                 <h1 class="display-5 mb-3">Hello, I'm <span class="fw-bold">Huy Nguyen.</span></h1>
