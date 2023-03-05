@@ -1,0 +1,112 @@
+---
+import Project from "../components/project.astro";
+import Experience from "../components/experience.astro";
+import Skill from "../components/skill.astro";
+import Header from "../components/header.astro";
+import Education from "../components/education.astro";
+import About from "../components/about.astro";
+import Hero from "../components/hero.astro";
+---
+
+<html lang="en">
+  <head>
+    <title>Huy Nguyen</title>
+  </head>
+  <body>
+    <Header items={["Experience", "Projects", "Skills", "Education"]} />
+    <Hero />
+    <About />
+    <Experience
+      experiences={[
+        {
+          logo: "/images/jetcharge.svg",
+          position: "Software Engineer",
+          startDate: "Oct 2021",
+          company: "JET Charge",
+          points: [
+            "Development of on-premise and autonomous EV charging load management system.",
+            "Development of cloud platform EV smart-charging management and optimisation system.",
+          ],
+        },
+        {
+          logo: "/images/energylocals.svg",
+          position: "IT Specialist",
+          startDate: "Sep 2020",
+          endDate: "Oct 2021",
+          company: "Energy Locals",
+          points: [
+            "Developed programs and deployed Azure services to process and handle AEMO settlements.",
+            "Automated backups of databases and IT systems.",
+          ],
+        },
+        {
+          logo: "/images/energylocals.svg",
+          position: "Graduate IT Specialist",
+          startDate: "Sep 2019",
+          endDate: "Sep 2020",
+          company: "Energy Locals",
+          points: [
+            "Develop and deployed a white labelled customer sign up journey.",
+            "Process automation.",
+            "VPS deployment and maintenance.",
+            "Government reporting and business reporting using SQL.",
+            "Installing, testing, and configuring IT equipment.",
+          ],
+        },
+      ]}
+    />
+    <Project
+      projects={[
+        {
+          name: "Wobbly ML",
+          startDate: "Jul 2022",
+          description:
+            "A machine learning library using the the Neural Networks From Scratch book.",
+          link: "https://github.com/HuyNguyenAu/wobbly-ml",
+        },
+        {
+          name: "Lox Crystal Lang",
+          startDate: "Aug 2021",
+          endDate: "Nov 2022",
+          description:
+            "A Crystal programming language implementation of the Lox programming language using the Crafting Interpreters book.",
+          link: "https://github.com/HuyNguyenAu/lox-lang-crystal",
+        },
+        {
+          name: "Matrix Bot",
+          startDate: "Apr 2021",
+          endDate: "Apr 2021",
+          description:
+            "A small and simple bot built with Matrix Nio. Currently, it can fetch send RSS feed updates to different rooms.",
+          link: "https://github.com/HuyNguyenAu/matrix-bot",
+        },
+      ]}
+    />
+    <Skill
+      skills={[
+        {
+          title: "Programming Languages",
+          skills: ["C#", "Typescript", "JavaScript", "Python"],
+        },
+        {
+          title: "Frameworks",
+          skills: [".NET 6.0", "React", "DevExtreme"],
+        },
+        {
+          title: "Platforms",
+          skills: ["Windows", "Linux", "MacOS"],
+        },
+      ]}
+    />
+     <Education
+      education={[
+        {
+          institution: "RMIT",
+          name: "Computer and Network Engineering (Honours)",
+          startDate: "Mar 2016",
+          endDate: "Mar 2020",
+        },
+      ]}
+    />
+  </body>
+</html>
