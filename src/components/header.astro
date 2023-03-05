@@ -1,15 +1,19 @@
 ---
-type Props = {
-  items: Array<string>;
+export type Link = {
+  text: string;
+  url: string;
 };
 
-const { items } = Astro.props;
+type Props = {
+  links: Array<Link>;
+};
+
+const { links } = Astro.props;
 ---
 
 <header class="text-gray-600 body-font">
- 
   <div
-    class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center"
+    class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center justify-between"
   >
     <a
       class="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0"
@@ -23,16 +27,30 @@ const { items } = Astro.props;
         stroke-width="2"
         class="w-10 h-10 text-white p-2 bg-indigo-500 rounded-full"
         viewBox="0 0 24 24"
+        ><polyline points="4 17 10 11 4 5"></polyline><line
+          x1="12"
+          y1="19"
+          x2="20"
+          y2="19"></line></svg
       >
-        <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"
-        ></path>
-      </svg>
       <span class="ml-3 text-xl">Huy Nguyen</span>
     </a>
     <nav
-      class="md:ml-auto flex flex-wrap items-center text-base justify-center"
+      class="w-full md:w-fit flex flex-wrap items-center text-base justify-center gap-6"
     >
-      <!-- {items.map((text: string) => <a class="mr-5 hover:text-gray-900 cursor-pointer">{text}</a>)} -->
+      {
+        links.map((link: Link) => (
+          <>
+            <a
+              class="hover:text-gray-900 cursor-pointer"
+              href={link.url}
+              target="_blank"
+            >
+              {link.text}
+            </a>
+          </>
+        ))
+      }
     </nav>
   </div>
 </header>

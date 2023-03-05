@@ -13,7 +13,18 @@ import Hero from "../components/hero.astro";
     <title>Huy Nguyen</title>
   </head>
   <body>
-    <Header items={["Experience", "Projects", "Skills", "Education"]} />
+    <Header
+      links={[
+        {
+          text: "LinkedIn",
+          url: "https://www.linkedin.com/in/huy-nguyen-454a6016a/",
+        },
+        {
+          text: "Github",
+          url: "https://github.com/HuyNguyenAu",
+        },
+      ]}
+    />
     <Hero />
     <About />
     <Experience
@@ -98,7 +109,7 @@ import Hero from "../components/hero.astro";
         },
       ]}
     />
-     <Education
+    <Education
       education={[
         {
           institution: "RMIT",
