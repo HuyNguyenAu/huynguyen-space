@@ -16,6 +16,10 @@ import Hero from "../components/hero.astro";
     <Header
       links={[
         {
+          text: "Resume",
+          url: "https://huynguyen.space/resume.pdf",
+        },
+        {
           text: "LinkedIn",
           url: "https://www.linkedin.com/in/huy-nguyen-454a6016a/",
         },
@@ -35,7 +39,7 @@ import Hero from "../components/hero.astro";
           startDate: "Oct 2021",
           company: "JET Charge",
           points: [
-            "Development of on-premise and autonomous EV charging load management system.",
+            "Development of on-premise and autonomous EV charging load management system and web interface.",
             "Development of cloud platform EV smart-charging management and optimisation system.",
           ],
         },
@@ -69,11 +73,28 @@ import Hero from "../components/hero.astro";
     <Project
       projects={[
         {
+          name: "GPT Decoder",
+          startDate: "Apr 2023",
+          endDate: "Current",
+          description:
+            "A simple GPT decoder for educational purposes following Andrej Karpathy's 'Let's build GPT: from scratch, in code, spelled out' with some optimisations.",
+          link: "https://github.com/HuyNguyenAu/gpt-decoder",
+        },
+        {
           name: "Wobbly ML",
           startDate: "Jul 2022",
+          endDate: "March 2023",
           description:
             "A machine learning library using the the Neural Networks From Scratch book.",
           link: "https://github.com/HuyNguyenAu/wobbly-ml",
+        },
+        {
+          name: "Loop",
+          startDate: "Mar 2023",
+          endDate: "Mar 2023",
+          description:
+            "An attempt to replicate Microsoft Loop front end.",
+          link: "https://github.com/HuyNguyenAu/loop",
         },
         {
           name: "Lox Crystal Lang",
@@ -83,25 +104,21 @@ import Hero from "../components/hero.astro";
             "A Crystal programming language implementation of the Lox programming language using the Crafting Interpreters book.",
           link: "https://github.com/HuyNguyenAu/lox-lang-crystal",
         },
-        {
-          name: "Matrix Bot",
-          startDate: "Apr 2021",
-          endDate: "Apr 2021",
-          description:
-            "A small and simple bot built with Matrix Nio. Currently, it can fetch send RSS feed updates to different rooms.",
-          link: "https://github.com/HuyNguyenAu/matrix-bot",
-        },
       ]}
     />
     <Skill
       skills={[
         {
           title: "Programming Languages",
-          skills: ["C#", "Typescript", "JavaScript", "Python"],
+          skills: ["C#", "Typescript", "JavaScript"],
         },
         {
           title: "Frameworks",
-          skills: [".NET 6.0", "React", "DevExtreme"],
+          skills: [".NET 6.0", "React", "NextJS"],
+        },
+        {
+          title: "Tools",
+          skills: ["Docker", "Figma"],
         },
         {
           title: "Platforms",
