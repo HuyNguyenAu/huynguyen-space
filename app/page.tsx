@@ -11,9 +11,8 @@ const NavigationLink = ({ text, href }: { text: string, href: string }) => {
 const Logo = () => {
   return (
     <div className="w-10 p-px">
-      <svg className="text-[#FF5943] p-2 border border-2 border-[#FF5943] rounded-full" xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24">
-        <polyline points="4 17 10 11 4 5"></polyline>
-        <line x1="12" y1="19" x2="20" y2="19"></line>
+      <svg className="text-[#FF5943]" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1} stroke="currentColor">
+        <path strokeLinecap="round" strokeLinejoin="round" d="M6.75 7.5l3 2.25-3 2.25m4.5 0h3m-9 8.25h13.5A2.25 2.25 0 0021 18V6a2.25 2.25 0 00-2.25-2.25H5.25A2.25 2.25 0 003 6v12a2.25 2.25 0 002.25 2.25z" />
       </svg>
     </div>
   );
@@ -21,14 +20,14 @@ const Logo = () => {
 
 const Navigation = () => {
   return (
-    <div className="flex w-full justify-center">
-      <div className="flex flex gap-x-18 w-fit border rounded-lg border-white rounded-lg bg-white">
+    <div className="flex justify-center">
+      <div className="w-full flex flex gap-x-18 w-fit border rounded-lg border-white rounded-lg bg-white">
         <div className="p-4 w-60 flex items-center gap-x-4 rounded-l-lg border-white">
           <Logo />
           <p className="text-xs font-bold tracking-[0.75em] text-[#FF5943]">HUY NGUYEN</p>
         </div>
-        <div className="p-6 pl-20 flex flex gap-x-20 bg-[#FF5943] rounded-r-lg">
-          <div className="flex flex gap-x-14 items-center">
+        <div className="p-6 pl-20 grow flex flex gap-x-20 bg-[#FF5943] rounded-r-lg">
+          <div className="grow flex flex gap-x-14 justify-center items-center">
             <NavigationLink text="About" href="" />
             <NavigationLink text="Experience" href="" />
             <NavigationLink text="Projects" href="" />
@@ -48,8 +47,12 @@ const Navigation = () => {
 
 const Page = () => {
   return (
-    <div className="h-full w-full border p-8">
+    <div className="h-screen w-screen border p-8 flex flex-col gap-y-8">
       <Navigation />
+      <div className="border w-fit p-8 flex flex-col gap-y-12">
+        <p className="w-fit text-center text-xs text-white font-bold tracking-[0.75em]">FULLSTACK SOFTWARE ENGINEER</p>
+        <p className="w-fit text-center text-8xl text-white font-bold tracking-tight leading-[80%]">HUY<br />NGUYEN</p>
+      </div>
     </div>
   );
 };
