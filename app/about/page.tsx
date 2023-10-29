@@ -1,5 +1,5 @@
 import Image from "next/image";
-import HeroImage from "./hero.png";
+import HeroImage from "../hero.png";
 
 const Leading = () => {
   return (
