@@ -1,25 +1,26 @@
+import Divider from "./Divider";
+import Item from "./Item";
+
 const Page = () => {
   return (
-    <>
-      <div className="h-full w-fit flex items-center gap-8">
-        <div className="p-4 border rounded-lg border-[#F9DEC9] rounded-lg">
-          <p className="p-1 w-fit font-bold text-[#F9DEC9]">Full Stack Software Engineer @ JET Charge</p>
-          <p className="p-1 w-fit text-sm text-[#F9DEC9]">Oct 2021 - Present</p>
-          <ul className="list-disc list-inside">
-            <li className="p-1 text-[#F9DEC9]">Development of on-premise and autonomous EV charging load management system and web interface.</li>
-            <li className="p-1 text-[#F9DEC9]">Development of cloud platform EV smart-charging management and optimisation system.</li>
-          </ul>
-        </div>
-        <div className="p-4 border rounded-lg border-[#F9DEC9] rounded-lg">
-          <p className="p-1 w-fit font-bold text-[#F9DEC9]">IT Specialist @ Energy Locals</p>
-          <p className="p-1 w-fit text-sm text-[#F9DEC9]">Sep 2020 - Oct 2021</p>
-          <ul className="list-disc list-inside">
-            <li className="p-1 text-[#F9DEC9]">Developed programs and deployed Azure services to process and handle AEMO settlements.</li>
-            <li className="p-1 text-[#F9DEC9]">Automated backups of databases and IT systems.</li>
-          </ul>
-        </div>
-      </div>
-    </>
+    <div className="h-full w-full flex flex-col items-center gap-8">
+      <Item title="Full Stack Software Engineer @ JET Charge" start="Oct 2021" end="Present" items={[
+        "On-premise and autonomous Electric Vehicle (EV) charging load management system, developing both a user-friendly web interface green field project and implementing backend APIs.",
+        "Cloud-based platform focused on Electric Vehicle smart-charging management and optimisation. This encompassed implementing the web interface and backend APIs.",
+      ]} />
+      <Divider />
+      <Item title="IT Specialist @ Energy Locals" start="Sep 2020" end="Oct 2021" items={[
+        "Implemented specialised programs, utilising Azure services for efficient processing and management of AEMO settlements.",
+        "Streamlined data management processes by implementing automated backup solutions for databases and IT systems.",
+      ]} />
+      <Divider />
+      <Item title="Graduate IT Specialist @ Energy Locals" start="Sep 2019" end="Oct 2020" items={[
+        "Creation and implementation of a customized customer sign-up journey under the umbrella of white-label branding, streamlining and enhancing user onboarding.",
+        "Managed the deployment and maintenance of Virtual Private Servers (VPS), ensuring seamless functionality and system reliability.",
+        "Government and business reporting tasks utilizing SQL, demonstrating a keen understanding of data management and reporting principles.",
+        "Conducted the installation, testing, and configuration of IT equipment, contributing to a robust and well-functioning technological infrastructure.",
+      ]} />
+    </div>
   );
 };
 

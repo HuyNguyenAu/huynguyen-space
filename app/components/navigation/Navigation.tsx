@@ -5,7 +5,7 @@ import NavigationLink from "./navigation-link/NavigationLink";
 
 const Navigation = () => {
     return (
-        <div className="flex justify-center">
+        <div className="flex justify-center w-full">
             <div className="w-full flex flex gap-x-18 w-fit border rounded-lg border-[#F9DEC9] rounded-lg bg-[#F9DEC9]">
                 <Link className="p-4 w-60 flex items-center gap-x-4 rounded-l-lg border-[#F9DEC9]" href="/">
                     <Logo />

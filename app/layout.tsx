@@ -18,9 +18,9 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`bg-[#1B2432] ${inter.className}`}>
-        <div className="min-h-screen max-w-screen-2xl py-16 mx-auto flex flex-col gap-y-8">
+        <div className="min-h-screen py-16 px-16 md:px-32 lg:px-64 flex flex-col justify-center items-center gap-y-32">
           <Navigation />
-          <div className="grow h-full w-full flex justify-center items-center">
+          <div className="grow h-full w-full flex justify-center items-start">
             {children}
           </div>
         </div>
