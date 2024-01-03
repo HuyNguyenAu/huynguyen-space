@@ -1,25 +1,28 @@
-import Divider from "./Divider";
-import Item from "./Item";
-
 const Page = () => {
   return (
     <article className="prose dark:prose-invert text-[#F9DEC9]">
-      <Item title="Full Stack Software Engineer" company="JET Charge" start="Oct 2021" end="Present" items={[
-        "On-premise and autonomous Electric Vehicle (EV) charging load management system, developing both a user-friendly web interface green field project and implementing backend APIs.",
-        "Cloud-based platform focused on Electric Vehicle smart-charging management and optimisation. This encompassed implementing the web interface and backend APIs.",
-      ]} />
-      <Divider />
-      <Item title="IT Specialist" company="Energy Locals" start="Sep 2020" end="Oct 2021" items={[
-        "Implemented specialised programs, utilising Azure services for efficient processing and management of AEMO settlements.",
-        "Streamlined data management processes by implementing automated backup solutions for databases and IT systems.",
-      ]} />
-      <Divider />
-      <Item title="Graduate IT Specialist" company="Energy Locals" start="Sep 2019" end="Oct 2020" items={[
-        "Creation and implementation of a customized customer sign-up journey under the umbrella of white-label branding, streamlining and enhancing user onboarding.",
-        "Managed the deployment and maintenance of Virtual Private Servers (VPS), ensuring seamless functionality and system reliability.",
-        "Government and business reporting tasks utilizing SQL, demonstrating a keen understanding of data management and reporting principles.",
-        "Conducted the installation, testing, and configuration of IT equipment, contributing to a robust and well-functioning technological infrastructure.",
-      ]} />
+      <h3>Full Stack Software Engineer</h3>
+      <small>JET Charge | Oct 2021 - Present</small>
+      <ul>
+        <li>On-premise and autonomous Electric Vehicle (EV) charging load management system, developing both a user-friendly web interface green field project and implementing backend APIs.</li>
+        <li>Cloud-based platform focused on Electric Vehicle smart-charging management and optimisation. This encompassed implementing the web interface and backend APIs.</li>
+      </ul>
+
+      <h3>IT Specialist</h3>
+      <small>Energy Locals | Sep 2020 - Oct 2021</small>
+      <ul>
+        <li>Implemented specialised programs, utilising Azure services for efficient processing and management of AEMO settlements.</li>
+        <li>Streamlined data management processes by implementing automated backup solutions for databases and IT systems.</li>
+      </ul>
+
+      <h3>Graduate IT Specialist</h3>
+      <small>Energy Locals | Sep 2019 - Oct 2020</small>
+      <ul>
+        <li>Creation and implementation of a customized customer sign-up journey under the umbrella of white-label branding, streamlining and enhancing user onboarding.</li>
+        <li>Managed the deployment and maintenance of Virtual Private Servers (VPS), ensuring seamless functionality and system reliability.</li>
+        <li>Government and business reporting tasks utilizing SQL, demonstrating a keen understanding of data management and reporting principles.</li>
+        <li>Conducted the installation, testing, and configuration of IT equipment, contributing to a robust and well-functioning technological infrastructure.</li>
+      </ul>
     </article>
   );
 };
