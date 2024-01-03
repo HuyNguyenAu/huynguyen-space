@@ -1,5 +1,6 @@
 type Props = {
     title: string;
+    company: string;
     start: string;
     end: string;
     items: string[];
@@ -7,13 +8,13 @@ type Props = {
 
 const Item = (props: Props) => {
     return (
-        <div className="p-4 w-full">
-            <p className="p-1 w-fit font-bold text-[#F9DEC9]">{props.title}</p>
-            <p className="p-1 w-fit text-sm text-[#F9DEC9]">{props.start}- {props.end}</p>
-            <ul className="list-disc">
-                {props.items.map((item) => (<li className="p-1 text-[#F9DEC9]">{item}</li>))}
+        <>
+            <h3>{props.title}</h3>
+            <small>{props.company} | {props.start} - {props.end}</small>
+            <ul>
+                {props.items.map((item, index) => (<li key={`item-${index}`}>{item}</li>))}
             </ul>
-        </div>
+        </>
     );
 };
 
