@@ -13,6 +13,7 @@ const Navigation = () => {
                 </Link>
                 <div className="p-6 pl-20 grow flex flex gap-x-20 bg-[#1B2432] rounded-r-lg">
                     <div className="grow flex flex gap-x-14 justify-center items-center">
+                        <NavigationLink text="Home" href="/" />
                         <NavigationLink text="About" href="/about" />
                         <NavigationLink text="Experience" href="/experience" />
                         <NavigationLink text="Projects" href="/projects" />
