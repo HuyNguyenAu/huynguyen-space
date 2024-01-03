@@ -13,7 +13,7 @@ const Page = () => {
         I believe the main focus should always be, how does this design and decision impact the user experience and journey.
         As Steve Jobs wisely said:
       </p>
-      <strong>&quot;You got to start with the customer experience and work backwards to the technology&quot;</strong>.
+      <blockquote><strong>&quot;You got to start with the customer experience and work backwards to the technology.&quot;</strong></blockquote>
       <p>
         This philosophy is at the core of my approach for creating impactful and user-centric solutions.
       </p>
