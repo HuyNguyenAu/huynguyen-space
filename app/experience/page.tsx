@@ -1,6 +1,6 @@
 const Page = () => {
   return (
-    <article className="prose dark:prose-invert text-[#F9DEC9]">
+    <article className="prose dark:prose-invert text-[#F9DEC9] w-full">
       <h3>Full Stack Software Engineer</h3>
       <p><small>Oct 2021 - Present</small><br /><small>JET Charge</small></p>
       <ul>
