@@ -33,7 +33,7 @@ export const MobileMenu = () => {
                             <Item text="Projects" href="/projects" />
                             <Item text="Skills" href="/skills" />
                             <Item text="Education" href="/education" />
-                            <div className="flex flex gap-x-2.5 items-center justify-between p-3 rounded-b-lg bg-[#F9DEC9] absolute bottom-0 left-0 right-0">
+                            <div className="flex flex gap-x-6 items-center justify-around p-3 rounded-b-lg bg-[#F9DEC9] absolute bottom-0 left-0 right-0">
                                 <ExternalLink className="" href="https://github.com/HuyNguyenAu">
                                     <GithubIcon className="fill-[#1B2432]" />
                                 </ExternalLink>
