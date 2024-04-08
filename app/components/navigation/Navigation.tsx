@@ -20,7 +20,7 @@ const Navigation = () => {
                     <p className="text-xs font-bold tracking-[0.75em] text-[#1B2432] max-[402px]:hidden">HUY NGUYEN</p>
                 </Link>
                 <div className="flex grow gap-x-10 rounded-r-lg bg-[#1B2432] p-3 pl-10">
-                    <div className="flex grow items-center justify-center gap-x-6 max-[1295px]:hidden">
+                    <div className="flex grow items-center justify-center gap-x-6 max-[1360px]:hidden">
                         <NavigationLink href="/" text="Home" />
                         <NavigationLink href="/about" text="About" />
                         <NavigationLink href="/experience" text="Experience" />
@@ -28,15 +28,15 @@ const Navigation = () => {
                         <NavigationLink href="/skills" text="Skills" />
                         <NavigationLink href="/education" text="Education" />
                     </div>
-                    <div className="flex items-center gap-x-2.5 max-[1295px]:grow max-[1295px]:justify-end">
+                    <div className="flex items-center gap-x-2.5 max-[1360px]:grow max-[1360px]:justify-end">
                         <MobileMenu/>
-                        <ExternalLink className="max-[1382px]:hidden" href="https://github.com/HuyNguyenAu">
+                        <ExternalLink className="max-[1428px]:hidden" href="https://github.com/HuyNguyenAu">
                             <GithubIcon className="fill-[#F9DEC9]" />
                         </ExternalLink>
-                        <ExternalLink className="max-[1382px]:hidden" href="https://www.linkedin.com/in/huy-nguyen-454a6016a">
+                        <ExternalLink className="max-[1428px]:hidden" href="https://www.linkedin.com/in/huy-nguyen-454a6016a">
                             <LinkedInIcon className="fill-[#F9DEC9]" />
                         </ExternalLink>
-                        <ExternalLink className="max-[1382px]:hidden" href="">
+                        <ExternalLink className="max-[1428px]:hidden" href="">
                             <PDFIcon className="fill-[#F9DEC9]" />
                         </ExternalLink>
                     </div>
