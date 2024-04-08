@@ -18,7 +18,7 @@ const Navigation = () => {
                     <p className="text-xs font-bold tracking-[0.75em] text-[#1B2432] max-[402px]:hidden">HUY NGUYEN</p>
                 </Link>
                 <div className="p-3 pl-10 grow flex flex gap-x-10 bg-[#1B2432] rounded-r-lg">
-                    <div className="grow flex flex gap-x-6 justify-center items-center max-[1280px]:hidden">
+                    <div className="grow flex flex gap-x-6 justify-center items-center max-[1295px]:hidden">
                         <NavigationLink text="Home" href="/" />
                         <NavigationLink text="About" href="/about" />
                         <NavigationLink text="Experience" href="/experience" />
@@ -26,7 +26,7 @@ const Navigation = () => {
                         <NavigationLink text="Skills" href="/skills" />
                         <NavigationLink text="Education" href="/education" />
                     </div>
-                    <div className="flex flex gap-x-2.5 items-center max-[1280px]:grow max-[1280px]:justify-end">
+                    <div className="flex flex gap-x-2.5 items-center max-[1295px]:grow max-[1295px]:justify-end">
                         <MobileMenu/>
                         <ExternalLink className="max-[1382px]:hidden" href="https://github.com/HuyNguyenAu">
                             <GithubIcon className="fill-[#F9DEC9]" />

@@ -10,10 +10,10 @@ import { Fragment } from "react";
 
 export const MobileMenu = () => {
     return (
-        <Popover className="relative h-6 w-6">
+        <Popover className="relative h-6 w-6 min-[1382px]:hidden">
             <Popover.Button className="h-6 w-6 transition ease-in-out hover:-translate-y-1 hover:scale-105 duration-300">
-                <BarsThreeIcon className="min-[1280px]:hidden fill-[#F9DEC9]" />
-                <ThreeDotsIcon className="min-[1382px]:hidden max-[1280px]:hidden fill-[#F9DEC9]" />
+                <BarsThreeIcon className="min-[1295px]:hidden fill-[#F9DEC9]" />
+                <ThreeDotsIcon className="min-[1382px]:hidden max-[1295px]:hidden fill-[#F9DEC9]" />
             </Popover.Button>
             <Transition
                 as={Fragment}
@@ -24,16 +24,17 @@ export const MobileMenu = () => {
                 leaveFrom="opacity-100 translate-y-0"
                 leaveTo="opacity-0 translate-y-1"
             >
-                <Popover.Panel className="absolute bg-[#1B2432] border-[#F9DEC9] border border-b-0 rounded-lg mt-8 w-screen max-w-[282px] max-[1382px]:-translate-x-[86%] -translate-x-1/2 transform p-3 pb-14">
-                    <div className="overflow-hidden">
-                        <div className="flex flex-col gap-3 p-3">
-                            <Item text="Home" href="/" />
-                            <Item text="About" href="/about" />
-                            <Item text="Experience" href="/experience" />
-                            <Item text="Projects" href="/projects" />
-                            <Item text="Skills" href="/skills" />
-                            <Item text="Education" href="/education" />
-                            <div className="flex flex gap-x-6 items-center justify-around p-3 rounded-b-lg bg-[#F9DEC9] absolute bottom-0 left-0 right-0">
+                <Popover.Panel className="absolute mt-8 w-screen max-w-[282px] max-[1382px]:-translate-x-[86%] -translate-x-1/2 transform min-[1382px]:p-3">
+                    <div className="overflow-hidden border border-[#F9DEC9] bg-[#F9DEC9] rounded-lg">
+                        <div className="flex flex-col gap-3 bg-[#1B2432] max-[1295px]:p-3">
+                            <Item className="min-[1295px]:hidden" text="Home" href="/" />
+                            <Item className="min-[1295px]:hidden" text="About" href="/about" />
+                            <Item className="min-[1295px]:hidden" text="Experience" href="/experience" />
+                            <Item className="min-[1295px]:hidden" text="Projects" href="/projects" />
+                            <Item className="min-[1295px]:hidden" text="Skills" href="/skills" />
+                            <Item className="min-[1295px]:hidden" text="Education" href="/education" /> 
+                        </div>
+                        <div className="flex flex gap-x-6 items-center justify-around p-3">
                                 <ExternalLink className="" href="https://github.com/HuyNguyenAu">
                                     <GithubIcon className="fill-[#1B2432]" />
                                 </ExternalLink>
@@ -44,7 +45,6 @@ export const MobileMenu = () => {
                                     <PDFIcon className="fill-[#1B2432]" />
                                 </ExternalLink>
                             </div>
-                        </div>
                     </div>
                 </Popover.Panel>
             </Transition>
