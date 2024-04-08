@@ -1,8 +1,9 @@
 import Link from "next/link";
+import React from "react";
 
 const Page = () => {
   return (
-    <article className="prose dark:prose-invert text-[#F9DEC9] w-full">
+    <article className="prose w-full text-[#F9DEC9] dark:prose-invert">
       <h3><Link href="https://github.com/HuyNguyenAu/gpt-decoder">GPT Decoder</Link></h3>
       <p><small>Apr 2023 - Nov 2023</small></p>
       <p>A simple GPT decoder for educational purposes following Andrej Karpathy&apos;s &quot;Let&apos;s build GPT: from scratch, in code, spelled out&quot; with some optimisations.</p>

@@ -1,32 +1,34 @@
 "use client";
 
 import Link from "next/link";
-import ExternalLink from "./external-link/ExternalLink";
-import Logo from "./logo/Logo";
-import NavigationLink from "./navigation-link/NavigationLink";
+import React from "react";
+
 import { GithubIcon } from "../icons/github/Github";
 import { LinkedInIcon } from "../icons/linkedin/LinkedIn";
 import { PDFIcon } from "../icons/pdf/PDF";
+import ExternalLink from "./external-link/ExternalLink";
+import Logo from "./logo/Logo";
 import { MobileMenu } from "./mobile-menu/MobileMenu";
+import NavigationLink from "./navigation-link/NavigationLink";
 
 const Navigation = () => {
     return (
-        <div className="flex justify-center w-full">
-            <div className="w-full flex flex gap-x-18 w-fit border rounded-lg border-[#F9DEC9] rounded-lg bg-[#F9DEC9]">
-                <Link className="p-4 w-60 flex items-center gap-x-4 rounded-l-lg border-[#F9DEC9]" href="/">
+        <div className="flex w-full justify-center">
+            <div className="flex w-full gap-x-16 rounded-lg border border-[#F9DEC9] bg-[#F9DEC9]">
+                <Link className="flex w-60 items-center gap-x-4 rounded-l-lg border-[#F9DEC9] p-4" href="/">
                     <Logo />
                     <p className="text-xs font-bold tracking-[0.75em] text-[#1B2432] max-[402px]:hidden">HUY NGUYEN</p>
                 </Link>
-                <div className="p-3 pl-10 grow flex flex gap-x-10 bg-[#1B2432] rounded-r-lg">
-                    <div className="grow flex flex gap-x-6 justify-center items-center max-[1295px]:hidden">
-                        <NavigationLink text="Home" href="/" />
-                        <NavigationLink text="About" href="/about" />
-                        <NavigationLink text="Experience" href="/experience" />
-                        <NavigationLink text="Projects" href="/projects" />
-                        <NavigationLink text="Skills" href="/skills" />
-                        <NavigationLink text="Education" href="/education" />
+                <div className="flex grow gap-x-10 rounded-r-lg bg-[#1B2432] p-3 pl-10">
+                    <div className="flex grow items-center justify-center gap-x-6 max-[1295px]:hidden">
+                        <NavigationLink href="/" text="Home" />
+                        <NavigationLink href="/about" text="About" />
+                        <NavigationLink href="/experience" text="Experience" />
+                        <NavigationLink href="/projects" text="Projects" />
+                        <NavigationLink href="/skills" text="Skills" />
+                        <NavigationLink href="/education" text="Education" />
                     </div>
-                    <div className="flex flex gap-x-2.5 items-center max-[1295px]:grow max-[1295px]:justify-end">
+                    <div className="flex items-center gap-x-2.5 max-[1295px]:grow max-[1295px]:justify-end">
                         <MobileMenu/>
                         <ExternalLink className="max-[1382px]:hidden" href="https://github.com/HuyNguyenAu">
                             <GithubIcon className="fill-[#F9DEC9]" />

@@ -2,21 +2,22 @@
 
 import Link from "next/link";
 import { usePathname } from "next/navigation";
+import React from "react";
 
-type Item = {
+type Props = {
     className?: string;
-    text: string;
     href: string;
+    text: string;
 };
 
-export const Item = (props: Item) => {
+export const Item = (props: Props) => {
     const pathname = usePathname();
     const active = pathname.endsWith(props.href);
     
     return (
-        <Link className={`text-sm font-bold tracking-wide h-fit text-[#F9DEC9] transition ease-in-out data-[active=false]:hover:-translate-y-1 data-[active=false]:hover:scale-105 duration-900 border-transparent border rounded-lg p-3 data-[active=false]:hover:border-[#F9DEC9] transition-all after:duration-300 data-[active=true]:text-white ${props.className ?? ""}`}
-            href={props.href}
-            data-active={active}>
+        <Link className={`h-fit rounded-lg border border-transparent p-3 text-sm font-bold tracking-wide text-[#F9DEC9] transition-all duration-700 ease-in-out after:duration-300 data-[active=true]:text-white data-[active=false]:hover:-translate-y-1 data-[active=false]:hover:scale-105 data-[active=false]:hover:border-[#F9DEC9] ${props.className ?? ""}`}
+            data-active={active}
+            href={props.href}>
             {props.text}
         </Link>
     );

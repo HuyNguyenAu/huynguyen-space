@@ -1,6 +1,8 @@
+import React from "react";
+
 const Page = () => {
   return (
-    <article className="prose dark:prose-invert text-[#F9DEC9] w-full">
+    <article className="prose w-full text-[#F9DEC9] dark:prose-invert">
       <h3>Full Stack Software Engineer</h3>
       <p><small>Oct 2021 - Present</small><br /><small>JET Charge</small></p>
       <ul>
