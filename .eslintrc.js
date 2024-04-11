@@ -4,6 +4,7 @@ module.exports = {
     "eslint:recommended",
     "plugin:react/recommended",
     "plugin:tailwindcss/recommended",
+    "plugin:eslint-plugin-next-on-pages",
     "plugin:perfectionist/recommended-natural"
   ],
   root: true
