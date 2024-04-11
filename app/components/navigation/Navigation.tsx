@@ -36,7 +36,7 @@ const Navigation = () => {
                         <ExternalLink className="max-[1428px]:hidden" href="https://www.linkedin.com/in/huy-nguyen-454a6016a">
                             <LinkedInIcon className="fill-[#F9DEC9]" />
                         </ExternalLink>
-                        <ExternalLink className="max-[1428px]:hidden" href="">
+                        <ExternalLink className="max-[1428px]:hidden" href="https://huynguyen.space/resume.pdf">
                             <PDFIcon className="fill-[#F9DEC9]" />
                         </ExternalLink>
                     </div>
