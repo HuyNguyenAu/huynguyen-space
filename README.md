@@ -1,0 +1,2 @@
+# A Simple Digital Resume
+A simple single page site that is designed to replace my paper resume using Next.js with Tailwind CSS.
