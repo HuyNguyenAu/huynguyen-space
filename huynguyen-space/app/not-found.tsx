@@ -26,29 +26,29 @@ export default function NotFound() {
 }
 
 const styles = {
+  error: {
+    fontFamily:
+      'system-ui,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji"',
+    height: "100vh",
+    textAlign: "center",
+    display: "flex",
+    flexDirection: "column",
+    alignItems: "center",
+    justifyContent: "center",
+  },
+
   desc: {
     display: "inline-block",
   },
 
-  error: {
-    alignItems: "center",
-    display: "flex",
-    flexDirection: "column",
-    fontFamily:
-      'system-ui,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji"',
-    height: "100vh",
-    justifyContent: "center",
-    textAlign: "center",
-  },
-
   h1: {
     display: "inline-block",
-    fontSize: 24,
-    fontWeight: 500,
-    lineHeight: "49px",
     margin: "0 20px 0 0",
     padding: "0 23px 0 0",
+    fontSize: 24,
+    fontWeight: 500,
     verticalAlign: "top",
+    lineHeight: "49px",
   },
 
   h2: {
