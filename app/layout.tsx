@@ -21,7 +21,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`bg-[#1B2432] ${inter.className}`}>
-        <div className="flex min-h-screen flex-col items-center justify-center gap-y-32 p-16 md:px-32 lg:px-64">
+        <div className="flex min-h-screen flex-col items-center justify-center gap-y-32 p-8 md:px-16 lg:px-32 xl:px-64">
           <Navigation />
           <div className="flex size-full grow items-start justify-center">
             {children}

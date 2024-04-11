@@ -3,7 +3,7 @@ import React from "react";
 
 const Page = () => {
   return (
-    <article className="prose w-full text-[#F9DEC9] dark:prose-invert">
+    <article className="prose text-[#F9DEC9] dark:prose-invert">
       <p>
         In my current role as a Software Engineer at JET Charge, I actively contribute to a dynamic team dedicated to advancing the groundbreaking <Link className="underline" href="https://jetcharge.com.au/solutions/core/">Energy Management System (JET Charge CORE)</Link> project.
       </p>
