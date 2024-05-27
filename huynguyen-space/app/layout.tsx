@@ -20,6 +20,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
+      <head>
+        <link rel="icon" href="/icon?<generated>" type="image/png" sizes="32x32" />
+      </head>
       <body className={`bg-[#1B2432] ${inter.className}`}>
         <div className="flex min-h-screen flex-col items-center justify-center gap-y-32 p-8 md:px-16 lg:px-32 xl:px-64">
           <Navigation />
