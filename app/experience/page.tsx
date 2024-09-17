@@ -2,13 +2,22 @@ import React from "react";
 
 const Page = () => {
   return (
-    <article className="prose text-[#F9DEC9] dark:prose-invert">
+    <article className="prose text-[#F9DEC9] dark:prose-invert marker:text-[#F9DEC9]">
       <h2>Full Stack Software Engineer</h2>
       <h4>Oct 2021 - Present</h4>
       <p>JET Charge</p>
       <ul>
-        <li>On-premise and autonomous Electric Vehicle (EV) charging load management system, developing both a user-friendly web interface green field project and implementing backend APIs.</li>
-        <li>Cloud-based platform focused on Electric Vehicle smart-charging management and optimisation. This encompassed implementing the web interface and backend APIs.</li>
+        <li>On-premise and autonomous Electric Vehicle (EV) charging load management system, developing both a user-friendly web interface and backend APIs.
+          <ul>
+            <li>Developed a user-friendly web interface for EV charging station management, allowing users to monitor and control their charging stations remotely.</li>
+            <li>Implemented backend APIs for the web interface, enabling seamless live data updates and real-time control of charging stations.</li>
+          </ul>
+        </li>
+       <li>Cloud-based platform for Electric Vehicle (EV) smart-charging asset management: Enables efficient tracking and control of charging assets, improving operational efficiency and reducing downtime.
+          <ul>
+            <li>Fixed various bugs and issues in the existing codebase, ensuring the platform&apos;s stability and reliability.</li>
+          </ul>
+       </li>
       </ul>
 
       <h2>IT Specialist</h2>
