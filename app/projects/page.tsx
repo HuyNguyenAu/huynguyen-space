@@ -15,6 +15,10 @@ const Page = () => {
       <h2><Link href="https://github.com/HuyNguyenAu/lox-lang-crystal">Lox Crystal Lang</Link></h2>
       <h4>Aug 2021 - Nov 2022</h4>
       <p>A Crystal programming language implementation of the Lox programming language using the Crafting Interpreters book.</p>
+   
+      <h2><Link href="https://github.com/HuyNguyenAu/huynguyen">Static Site Generator</Link></h2>
+      <h4>Apr 2021 - Jul 2022</h4>
+      <p>A hacked together minimal static website generated from JSON files for things that interest me.</p>
     </article>
   );
 };

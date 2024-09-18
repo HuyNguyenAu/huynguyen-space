@@ -1,7 +1,7 @@
 import Image from "next/image";
 import React from "react";
 
-import HeroImage from "./hero.png";
+import HeroImage from "./hero_small.png";
 
 const Page = () => {
   return (
