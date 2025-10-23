@@ -1,4 +1,3 @@
-import { Link } from "lucide-react";
 import { Experience } from "./Experience";
 import { Hero } from "./Hero";
 import { Links } from "./Links";
