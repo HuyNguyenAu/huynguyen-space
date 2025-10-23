@@ -1,9 +1,13 @@
 import { Experience } from "./Experience";
+import { Hero } from "./Hero";
 import { Project } from "./Project";
+import { Skills } from "./Skills";
 
 export const App = () => {
   return (
     <div className="flex flex-col mx-auto py-10 px-20 font-mono">
+      <Hero />
+      <Skills />
       <Experience>
         <Experience.Company company="JET Charge">
           <Experience.Item
@@ -35,14 +39,17 @@ export const App = () => {
       <Project>
         <Project.Item
           title="GPT Decoder"
+          link="https://github.com/HuyNguyenAu/gpt-decoder"
           description="A Minimal GPT decoder with some optimisations"
         />
         <Project.Item
           title="Wobbly ML"
+          link="https://github.com/HuyNguyenAu/wobbly-ml"
           description="A simple machine learning library"
         />
         <Project.Item
           title="Lox Crystal Lang"
+          link="https://github.com/HuyNguyenAu/lox-lang-crystal"
           description="A Lox interpreter written in Crystal"
         />
       </Project>

@@ -11,7 +11,7 @@ const ExperienceItem = ({
 }) => {
   return (
     <div className="flex justify-between py-2">
-      <p className="text-primary font-normal border-b border-dashed border-primary">
+      <p className="text-primary font-normal border-b border-dashed border-primary cursor-pointer hover:bg-tertiary">
         {role}
       </p>
       <p className="text-primary font-normal">
@@ -27,7 +27,7 @@ const Company = ({
 }: PropsWithChildren<{ company: string }>) => {
   return Children.map(children, (child, index) => (
     <>
-      <p className="text-primary font-normal text-end w-40 py-2 pr-8">
+      <p className="text-secondary font-normal text-end w-40 py-2 pr-8">
         {index == 0 ? company : undefined}
       </p>
       {child}
@@ -73,7 +73,7 @@ const Experience = ({ children }: PropsWithChildren) => {
   }
   return (
     <article className="flex flex-col py-4 pr-40">
-      <p className="text-primary text-sm font-normal px-40">/WORK</p>
+      <p className="text-primary text-sm font-normal px-40">/EXPERIENCE</p>
       <div className="grid grid-cols-[auto_1fr]">{children}</div>
     </article>
   );

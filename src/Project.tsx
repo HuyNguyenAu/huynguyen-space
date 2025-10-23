@@ -2,14 +2,16 @@ import type { PropsWithChildren } from "react";
 
 const ProjectItem = ({
   title,
+  link,
   description,
 }: {
   title: string;
+  link: string;
   description: string;
 }) => {
   return (
     <div className="flex justify-between py-2">
-      <p className="text-primary font-normal border-b border-dashed border-primary">{title}</p>
+      <a className="text-primary font-normal border-b border-dashed border-primary cursor-pointer hover:bg-tertiary" href={link}>{title}</a>
       <p className="text-primary font-normal">{description}</p>
     </div>
   );
