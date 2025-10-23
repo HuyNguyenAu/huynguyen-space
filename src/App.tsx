@@ -1,5 +1,7 @@
+import { Link } from "lucide-react";
 import { Experience } from "./Experience";
 import { Hero } from "./Hero";
+import { Links } from "./Links";
 import { Project } from "./Project";
 import { Skills } from "./Skills";
 
@@ -53,8 +55,15 @@ export const App = () => {
           description="A Lox interpreter written in Crystal"
         />
       </Project>
-      <div>
-        {/* <Experience
+      <Links>
+        <Links.Item title="GitHub" link="https://github.com/HuyNguyenAu" />
+        <Links.Item
+          title="LinkedIn"
+          link="https://www.linkedin.com/in/huy-nguyen-454a6016a"
+        />
+        <Links.Item title="Resume" link="/resume.pdf" />
+      </Links>
+      {/* <Experience
           startDate="October 2021"
           endDate="Present"
           company="JET Charge"
@@ -105,7 +114,6 @@ export const App = () => {
             "Volunteered for Openday.",
           ]}
         /> */}
-      </div>
     </div>
   );
 };
