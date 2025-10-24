@@ -27,7 +27,7 @@ const Company = ({
 }: PropsWithChildren<{ company: string }>) => {
   return Children.map(children, (child, index) => (
     <>
-      <p className="text-secondary font-normal text-end w-40 py-2 pr-8">
+      <p className="text-secondary text-sm font-normal text-end w-40 py-2 pr-8">
         {index == 0 ? company : undefined}
       </p>
       {child}
