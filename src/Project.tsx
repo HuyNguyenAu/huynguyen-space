@@ -10,8 +10,8 @@ const ProjectItem = ({
   description: string;
 }) => {
   return (
-    <div className="flex justify-between py-2">
-      <a className="text-primary font-normal border-b border-dashed border-primary cursor-pointer hover:bg-tertiary" href={link}>{title}</a>
+    <div className="flex justify-between py-2 flex-col md:flex-row">
+      <a className="transition-all size-fit text-primary font-normal underline underline-offset-6 decoration-dashed decoration-[0.667px] cursor-pointer hover:bg-tertiary" href={link}>{title}</a>
       <p className="text-primary font-normal">{description}</p>
     </div>
   );
@@ -19,7 +19,7 @@ const ProjectItem = ({
 
 const Project = ({ children }: PropsWithChildren) => {
   return (
-    <article className="flex flex-col px-40 py-4">
+    <article className="flex flex-col px-10 md:px-20 lg:px-40 py-4">
       <p className="text-primary text-sm font-normal">/SIDE PROJECTS</p>
       {children}
     </article>

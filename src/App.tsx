@@ -6,7 +6,7 @@ import { Skills } from "./Skills";
 
 export const App = () => {
   return (
-    <div className="flex flex-col mx-auto py-10 px-20 max-w-7xl font-mono">
+    <div className="flex flex-col mx-auto lg:py-10 lg:px-20 max-w-7xl font-mono">
       <Hero />
       <Skills />
       <Experience>
