@@ -1,12 +1,12 @@
-import { Experience } from "./Experience";
-import { Hero } from "./Hero";
-import { Links } from "./Links";
-import { Project } from "./Project";
-import { Skills } from "./Skills";
+import { Experience } from "@/experience";
+import { Hero } from "@/hero";
+import { Links } from "@/links";
+import { SideProjects } from "@/side-projects";
+import { Skills } from "@/skills";
 
 export const App = () => {
   return (
-    <div className="flex flex-col mx-auto lg:py-10 lg:px-20 max-w-7xl font-mono">
+    <div className="flex flex-col mx-auto py-5 lg:py-10 lg:px-20 max-w-7xl font-mono">
       <Hero />
       <Skills />
       <Experience>
@@ -37,30 +37,30 @@ export const App = () => {
           />
         </Experience.Company>
       </Experience>
-      <Project>
-        <Project.Item
+      <SideProjects>
+        <SideProjects.Item
           title="GPT Decoder"
-          link="https://github.com/HuyNguyenAu/gpt-decoder"
+          href="https://github.com/HuyNguyenAu/gpt-decoder"
           description="A Minimal GPT decoder with some optimisations"
         />
-        <Project.Item
+        <SideProjects.Item
           title="Wobbly ML"
-          link="https://github.com/HuyNguyenAu/wobbly-ml"
+          href="https://github.com/HuyNguyenAu/wobbly-ml"
           description="A simple machine learning library"
         />
-        <Project.Item
+        <SideProjects.Item
           title="Lox Crystal Lang"
-          link="https://github.com/HuyNguyenAu/lox-lang-crystal"
+          href="https://github.com/HuyNguyenAu/lox-lang-crystal"
           description="A Lox interpreter written in Crystal"
         />
-      </Project>
+      </SideProjects>
       <Links>
-        <Links.Item title="GitHub" link="https://github.com/HuyNguyenAu" />
+        <Links.Item title="GitHub" href="https://github.com/HuyNguyenAu" />
         <Links.Item
           title="LinkedIn"
-          link="https://www.linkedin.com/in/huy-nguyen-454a6016a"
+          href="https://www.linkedin.com/in/huy-nguyen-454a6016a"
         />
-        <Links.Item title="Resume" link="/resume.pdf" />
+        <Links.Item title="Resume" href="/resume.pdf" />
       </Links>
       {/* <Experience
           startDate="October 2021"

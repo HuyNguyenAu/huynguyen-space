@@ -1,4 +1,5 @@
-import { Children, type PropsWithChildren } from "react";
+import { type PropsWithChildren } from "react";
+import { Body, Heading, Link, Small } from "./ui/typography";
 
 const ExperienceItem = ({
   role,
@@ -10,13 +11,11 @@ const ExperienceItem = ({
   endDate: string;
 }) => {
   return (
-    <div className="flex justify-between grow py-2 gap-3">
-      <p className="transition-all h-fit text-primary font-normal underline underline-offset-6 decoration-dashed decoration-[0.667px] cursor-pointer hover:bg-tertiary">
-        {role}
-      </p>
-      <p className="text-primary font-normal text-end">
+    <div className="flex justify-between grow">
+      <Link className="" href="">{role}</Link>
+      <Body className="text-end">
         {startDate} - {endDate}
-      </p>
+      </Body>
     </div>
   );
 };
@@ -26,15 +25,9 @@ const Company = ({
   children,
 }: PropsWithChildren<{ company: string }>) => {
   return (
-    <div className="flex flex-col lg:flex-row pl-10 md:pl-20 lg:pl-0">
-      <div className="flex py-2 md:mt-0.5">
-        <p className="text-secondary text-sm font-normal w-40 pr-4 lg:text-end">
-          {company}
-        </p>
-      </div>
-      <div className="flex flex-col grow">
-        {children}
-      </div>
+    <div className="flex flex-col lg:flex-row ml-10 md:ml-20 lg:ml-0">
+      <Small className="w-36 mt-2 lg:mt-3 mr-4 lg:text-end">{company}</Small>
+      <div className="flex flex-col grow">{children}</div>
     </div>
   );
   // return Children.map(children, (child, index) => (
@@ -88,12 +81,10 @@ const Experience = ({ children }: PropsWithChildren) => {
         )} */
   }
   return (
-    <article className="flex flex-col py-4 pr-10 md:pr-20 lg:pr-40">
-      <p className="text-primary text-sm font-normal px-10 md:px-20 lg:px-40">
-        /EXPERIENCE
-      </p>
+    <div className="flex flex-col my-4 mr-10 md:mr-20 lg:mr-40">
+      <Heading className="mx-10 md:mx-20 lg:mx-40">/EXPERIENCE</Heading>
       {children}
-    </article>
+    </div>
   );
 };
 
