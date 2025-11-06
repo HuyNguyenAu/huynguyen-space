@@ -1,0 +1,20 @@
+@import "tailwindcss";
+@plugin "@tailwindcss/typography";
+
+:root {
+  --background-color: #ede9e3;
+  --primary-color: #241f19;
+  --secondary-color: #87816e;
+  --tertiary-color: #e7d7c9;
+}
+
+@theme {
+  --color-background: var(--background-color);
+  --color-primary: var(--primary-color);
+  --color-secondary: var(--secondary-color);
+  --color-tertiary: var(--tertiary-color);
+}
+
+body {
+  background-color: var(--color-background);
+}
