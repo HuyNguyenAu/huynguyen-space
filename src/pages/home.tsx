@@ -1,12 +1,13 @@
-import { Experience } from "@/experience";
-import { Hero } from "@/hero";
-import { Links } from "@/links";
-import { SideProjects } from "@/side-projects";
-import { Skills } from "@/skills";
+import { Experience } from "@/components/experience";
+import { Hero } from "@/components/hero";
+import { Layout } from "@/components/layout";
+import { Links } from "@/components/links";
+import { SideProjects } from "@/components/side-projects";
+import { Skills } from "@/components/skills";
 
-export const App = () => {
+export const HomePage = () => {
   return (
-    <div className="flex flex-col mx-auto py-5 lg:py-10 lg:px-20 max-w-7xl font-mono">
+    <Layout>
       <Hero />
       <Skills />
       <Experience>
@@ -15,6 +16,7 @@ export const App = () => {
             role="Full Stack Software Engineer"
             startDate="Oct 2021"
             endDate="Present"
+            href="/experience/jetcharge/full-stack-software-engineer"
           />
         </Experience.Company>
         <Experience.Company company="Energy Locals">
@@ -22,11 +24,13 @@ export const App = () => {
             role="IT Specialist"
             startDate="Oct 2020"
             endDate="Oct 2021"
+            href="/experience/energy-locals/it-specialist"
           />
           <Experience.Item
             role="Graduate IT Specialist"
             startDate="Sep 2019"
             endDate="Oct 2020"
+            href="/experience/energy-locals/graduate-it-specialist"
           />
         </Experience.Company>
         <Experience.Company company="RMIT">
@@ -34,6 +38,7 @@ export const App = () => {
             role="Computer and Network Engineering (Honours)"
             startDate="Mar 2016"
             endDate="Mar 2020"
+            href=""
           />
         </Experience.Company>
       </Experience>
@@ -113,6 +118,6 @@ export const App = () => {
             "Volunteered for Openday.",
           ]}
         /> */}
-    </div>
+    </Layout>
   );
 };
