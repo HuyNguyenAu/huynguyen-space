@@ -15,7 +15,7 @@ export const ExperienceJetchargeFullStackEngineerPage = () => {
       <ul>
         <li>
           Developed Australia's first leading web app using node based UI to
-          setup, deploy, and manage an EV charging site.
+          setup, deploy, and manage an EV charging site:
           <ul>
             <li>
               Built UI to create and manage devices such as chargers, power
@@ -30,7 +30,7 @@ export const ExperienceJetchargeFullStackEngineerPage = () => {
         </li>
         <li>
           Designed and developed RESTful APIs for communication between the
-          local front-end and back-end systems.
+          local front-end and back-end systems:
           <ul>
             <li>
               Created endpoints for authentication, managing user accounts,
@@ -47,7 +47,7 @@ export const ExperienceJetchargeFullStackEngineerPage = () => {
       </p>
       <ul>
         <li>
-          Developed apartment EV charging billing solution.
+          Developed apartment EV charging billing solution:
           <ul>
             <li>
               Built UI assign chargers to residents and set tariffs for EV
@@ -65,7 +65,7 @@ export const ExperienceJetchargeFullStackEngineerPage = () => {
         </li>
         <li>
           Developed partner and contractor management solution enabling
-          organisations to provision and manage EV charging assets.
+          organisations to provision and manage EV charging assets:
           <ul>
             <li>
               Built UI and workflows for partners and contractors to manage
@@ -76,6 +76,25 @@ export const ExperienceJetchargeFullStackEngineerPage = () => {
               contractors to view and manage multiple organisations' EV charging
               assets from a single account while maintaining full compliance and
               compatibility with existing codebase.
+            </li>
+          </ul>
+        </li>
+        <li>
+          Zero Touch Config (ZTC) solution which streamline the onboarding
+          process of a new EV charging site remotely without the need for
+          on-site technician:
+          <ul>
+            <li>
+              Built UI and workflows for partners and contractors to onboard and
+              manage new EV charging sites remotely.
+            </li>
+            <li>
+              Implemented real-time visualisation to monitor the onboarding
+              process of new EV charging sites.
+            </li>
+            <li>
+              Developed RESTful API endpoints and websockets communications to
+              support the ZTC workflows.
             </li>
           </ul>
         </li>
