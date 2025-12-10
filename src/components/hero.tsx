@@ -1,5 +1,5 @@
-import { Section } from "@/ui/section";
-import { Body, Small } from "@/ui/typography";
+import { Section } from "@/components/ui/section";
+import { Body, Small } from "@/components/ui/typography";
 
 export const Hero = () => {
   return (

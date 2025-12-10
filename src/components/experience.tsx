@@ -1,5 +1,5 @@
 import { type PropsWithChildren } from "react";
-import { Body, Heading, Link, Small } from "@/ui/typography";
+import { Body, Heading, Link, Small } from "@/components/ui/typography";
 
 const ExperienceItem = ({
   role,

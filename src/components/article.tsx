@@ -1,13 +1,13 @@
 import { Layout } from "@/components/layout";
-import { Section } from "@/ui/section";
-import { Link } from "@/ui/typography";
+import { Section } from "@/components/ui/section";
+import { Link } from "@/components/ui/typography";
 import type { PropsWithChildren } from "react";
 
-export const ArticlePage = ({ children }: PropsWithChildren) => {
+export const Article = ({ children }: PropsWithChildren) => {
   return (
     <Layout>
       <Section>
-        <Link className="m-0 mt-2 md:my-2" href="/">
+        <Link className="m-0" href="/">
           Home
         </Link>
       </Section>
