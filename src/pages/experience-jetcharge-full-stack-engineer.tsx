@@ -50,7 +50,7 @@ export const ExperienceJetchargeFullStackEngineerPage = () => {
           Developed apartment EV charging billing solution.
           <ul>
             <li>
-              Built UI assign chargers to residents and set tarriffs for EV
+              Built UI assign chargers to residents and set tariffs for EV
               charging sessions.
             </li>
             <li>
