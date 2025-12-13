@@ -19,24 +19,10 @@ createRoot(rootElement).render(
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<HomePage />} />
-        <Route path="experience">
-          <Route path="jetcharge">
-            <Route
-              path="full-stack-software-engineer"
-              element={<JETChargeFullStackEngineerPage />}
-            />
-          </Route>
-          <Route path="energy-locals">
-            <Route
-              path="it-specialist"
-              element={<EnergyLocalsITSpecialistPage />}
-            />
-            <Route
-              path="graduate-it-specialist"
-              element={<EnergyLocalsGraduateITSpecialistPage />}
-            />
-          </Route>
-        </Route>
+        <Route
+          path="experience/jetcharge/full-stack-software-engineer"
+          element={<JETChargeFullStackEngineerPage />}
+        />
       </Routes>
     </BrowserRouter>
   </StrictMode>
