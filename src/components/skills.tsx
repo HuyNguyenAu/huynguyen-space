@@ -1,5 +1,5 @@
-import { Section } from "@/ui/section";
-import { Body, Heading } from "@/ui/typography";
+import { Section } from "@/components/ui/section";
+import { Body, Heading } from "@/components/ui/typography";
 
 export const Skills = () => {
   return (

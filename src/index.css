@@ -15,6 +15,12 @@
   --color-tertiary: var(--tertiary-color);
 }
 
+@utility prose {
+  & > * {
+    --tw-prose-bullets: var(--color-secondary);
+  }
+}
+
 body {
   background-color: var(--color-background);
 }

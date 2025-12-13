@@ -1,6 +1,6 @@
 import type { PropsWithChildren } from "react";
-import { Body, Heading, Link } from "@/ui/typography";
-import { Section } from "@/ui/section";
+import { Body, Heading, Link } from "@/components/ui/typography";
+import { Section } from "@/components/ui/section";
 
 const Item = ({
   title,
