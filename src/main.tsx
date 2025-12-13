@@ -7,6 +7,7 @@ import { HashRouter, Route, Routes } from "react-router";
 import { JETChargeFullStackEngineerPage } from "@/pages/experience/jetcharge-full-stack-engineer";
 import { EnergyLocalsITSpecialistPage } from "@/pages/experience/energy-locals-it-specialist";
 import { EnergyLocalsGraduateITSpecialistPage } from "@/pages/experience/energy-locals-graduate-it-specialist";
+import { RootPage } from "./pages/root";
 
 const rootElement = document.getElementById("root");
 
@@ -18,7 +19,8 @@ createRoot(rootElement).render(
   <StrictMode>
     <HashRouter>
       <Routes>
-        <Route path="/" element={<HomePage />}>
+        <Route path="/" element={<RootPage />}>
+          <Route index element={<HomePage />} />
           <Route path="/experience">
             <Route path="jetcharge">
               <Route

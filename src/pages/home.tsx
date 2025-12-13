@@ -1,15 +1,12 @@
 import { Experience } from "@/components/experience";
 import { Hero } from "@/components/hero";
-import { Layout } from "@/components/layout";
 import { Links } from "@/components/links";
 import { SideProjects } from "@/components/side-projects";
 import { Skills } from "@/components/skills";
-import { Outlet } from "react-router";
 
 export const HomePage = () => {
   return (
-    <Layout>
-      <Outlet />
+    <>
       <Hero />
       <Skills />
       <Experience>
@@ -67,7 +64,6 @@ export const HomePage = () => {
         />
         <Links.Item title="Resume" href="/resume.pdf" />
       </Links>
-      <Outlet />
-    </Layout>
+    </>
   );
 };
