@@ -17,7 +17,7 @@ export const EnergyLocalsITSpecialistPage = () => {
           bills, and track energy usage.
         </li>
         <li>
-          Integrated with third-party services for identity verification such as
+          Integrated with third-party services for identity verification, such as
           Westpac and Equifax.
         </li>
       </ul>
@@ -29,7 +29,7 @@ export const EnergyLocalsITSpecialistPage = () => {
       <ul>
         <li>
           Administered and maintained Virtual Private Servers (VPS) that hosted
-          cricital databases, internal tools, and applications, ensuring high
+          critical databases, internal tools, and applications, ensuring high
           availability and performance.
         </li>
         <li>
@@ -37,7 +37,7 @@ export const EnergyLocalsITSpecialistPage = () => {
           for hardware, software, and network problems.
         </li>
         <li>
-          Provision and tested new IT equipment and software, ensuring
+          Provisioned and tested new IT equipment and software, ensuring
           compatibility and optimal performance.
         </li>
       </ul>

@@ -12,7 +12,7 @@ export const Article = ({ children }: PropsWithChildren) => {
         </Link>
       </Section>
       <Section>
-        <article className="prose max-w-full">{children}</article>
+        <article className="prose">{children}</article>
       </Section>
     </Layout>
   );

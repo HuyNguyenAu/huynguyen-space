@@ -10,7 +10,7 @@ export const EnergyLocalsGraduateITSpecialistPage = () => {
       <h4>AEMO Market Management System (MMS)</h4>
       <p>
         Lead development of tools and processes to pull electricity market data
-        from MMS for pricing, analysis and reporting:
+        from MMS for pricing, analysis, and reporting:
       </p>
       <ul>
         <li>
