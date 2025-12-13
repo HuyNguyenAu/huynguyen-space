@@ -17,7 +17,7 @@ const ExperienceItem = ({
 }) => {
   return (
     <>
-      <Link className="mb-0 mt-2 md:my-2" href={href}>{role}</Link>
+      <Link className="m-0" href={href}>{role}</Link>
       <div>
         <Body className="text-start md:text-end m-0 md:mb-0">
           {startDate} - {endDate}
@@ -31,7 +31,7 @@ const ExperienceItem = ({
 const Experience = ({ children }: PropsWithChildren) => {
   return (
      <Section className="grid grid-cols-1 md:grid-cols-[auto_1fr]">
-      <Heading className="md:col-span-2">/EXPERIENCE</Heading>
+      <Heading className="mb-2 md:col-span-2">/EXPERIENCE</Heading>
       {children}
     </Section>
   );
