@@ -11,36 +11,34 @@ export const HomePage = () => {
       <Hero />
       <Skills />
       <Experience>
-        <Experience.Company company="JET Charge">
-          <Experience.Item
-            role="Full Stack Software Engineer"
-            startDate="Oct 2021"
-            endDate="Present"
-            href="/experience/jetcharge/full-stack-software-engineer"
-          />
-        </Experience.Company>
-        <Experience.Company company="Energy Locals">
-          <Experience.Item
-            role="IT Specialist"
-            startDate="Oct 2020"
-            endDate="Oct 2021"
-            href="/experience/energy-locals/it-specialist"
-          />
-          <Experience.Item
-            role="Graduate IT Specialist"
-            startDate="Sep 2019"
-            endDate="Oct 2020"
-            href="/experience/energy-locals/graduate-it-specialist"
-          />
-        </Experience.Company>
-        <Experience.Company company="RMIT">
-          <Experience.Item
-            role="Computer and Network Engineering (Honours)"
-            startDate="Mar 2016"
-            endDate="Mar 2020"
-            href=""
-          />
-        </Experience.Company>
+        <Experience.Item
+          company="JET Charge"
+          role="Full Stack Software Engineer"
+          startDate="Oct 2021"
+          endDate="Present"
+          href="/experience/jetcharge/full-stack-software-engineer"
+        />
+        <Experience.Item
+          company="Energy Locals"
+          role="IT Specialist"
+          startDate="Oct 2020"
+          endDate="Oct 2021"
+          href="/experience/energy-locals/it-specialist"
+        />
+        <Experience.Item
+          company="Energy Locals"
+          role="Graduate IT Specialist"
+          startDate="Sep 2019"
+          endDate="Oct 2020"
+          href="/experience/energy-locals/graduate-it-specialist"
+        />
+        <Experience.Item
+          company="RMIT"
+          role="Computer and Network Engineering (Honours)"
+          startDate="Mar 2016"
+          endDate="Mar 2020"
+          href=""
+        />
       </Experience>
       <SideProjects>
         <SideProjects.Item

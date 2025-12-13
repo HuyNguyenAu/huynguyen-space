@@ -1,49 +1,42 @@
 import { type PropsWithChildren } from "react";
 import { Body, Heading, Link, Small } from "@/components/ui/typography";
+import { Section } from "./ui/section";
 
 const ExperienceItem = ({
+  company,
   role,
   startDate,
   endDate,
   href,
 }: {
+  company: string;
   role: string;
   startDate: string;
   endDate: string;
   href: string;
 }) => {
   return (
-    <div className="flex justify-between grow">
-      <Link href={href}>{role}</Link>
-      <Body className="text-end">
-        {startDate} - {endDate}
-      </Body>
-    </div>
-  );
-};
-
-const Company = ({
-  company,
-  children,
-}: PropsWithChildren<{ company: string }>) => {
-  return (
-    <div className="flex flex-col lg:flex-row ml-10 md:ml-20 lg:ml-0">
-      <Small className="w-36 mt-2 lg:mt-3 mr-4 lg:text-end">{company}</Small>
-      <div className="flex flex-col grow">{children}</div>
-    </div>
+    <>
+      <Link className="mb-0 mt-2 md:my-2" href={href}>{role}</Link>
+      <div>
+        <Body className="text-start md:text-end m-0 md:mb-0">
+          {startDate} - {endDate}
+        </Body>
+        <Small className="text-start md:text-end m-0">{company}</Small>
+      </div>
+    </>
   );
 };
 
 const Experience = ({ children }: PropsWithChildren) => {
   return (
-    <div className="flex flex-col my-4 mr-10 md:mr-20 lg:mr-40">
-      <Heading className="mx-10 md:mx-20 lg:mx-40">/EXPERIENCE</Heading>
+     <Section className="grid grid-cols-1 md:grid-cols-[auto_1fr]">
+      <Heading className="md:col-span-2">/EXPERIENCE</Heading>
       {children}
-    </div>
+    </Section>
   );
 };
 
 Experience.Item = ExperienceItem;
-Experience.Company = Company;
 
 export { Experience };
