@@ -60,9 +60,9 @@ export const HomePage = () => {
         <Links.Item title="GitHub" href="https://github.com/HuyNguyenAu" />
         <Links.Item
           title="LinkedIn"
-          href="https://www.linkedin.com/in/huy-nguyen-454a6016a"
+          href="https://www.linkedin.com/in/huy-nguyen-au"
         />
-        <Links.Item title="Resume" href="/resume.pdf" />
+        <Links.Item title="Resume" href="resume.pdf" as="a" />
       </Links>
     </>
   );

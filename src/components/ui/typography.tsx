@@ -5,18 +5,37 @@ import { Link as ReactLink } from "react-router";
 export const Link = ({
   className,
   href,
+  as = ReactLink,
   children,
-}: PropsWithChildren<{ className?: string; href: string }>) => {
+}: PropsWithChildren<{
+  className?: string;
+  href: string;
+  as?: React.ElementType;
+}>) => {
+  if (as === ReactLink) {
+    return (
+      <ReactLink
+        className={cn(
+          "my-2 size-fit text-primary font-normal transition-all underline underline-offset-6 decoration-dashed decoration-[0.667px] hover:bg-tertiary",
+          className
+        )}
+        to={href}
+      >
+        {children}
+      </ReactLink>
+    );
+  }
+
   return (
-    <ReactLink
+    <a
       className={cn(
         "my-2 size-fit text-primary font-normal transition-all underline underline-offset-6 decoration-dashed decoration-[0.667px] hover:bg-tertiary",
         className
       )}
-      to={href}
+      href={href}
     >
       {children}
-    </ReactLink>
+    </a>
   );
 };
 
