@@ -4,10 +4,12 @@ import { Layout } from "@/components/layout";
 import { Links } from "@/components/links";
 import { SideProjects } from "@/components/side-projects";
 import { Skills } from "@/components/skills";
+import { Outlet } from "react-router";
 
 export const HomePage = () => {
   return (
     <Layout>
+      <Outlet />
       <Hero />
       <Skills />
       <Experience>
@@ -16,21 +18,21 @@ export const HomePage = () => {
           role="Full Stack Software Engineer"
           startDate="Oct 2021"
           endDate="Present"
-          href="/experience/jetcharge/full-stack-software-engineer"
+          href="experience/jetcharge/full-stack-software-engineer"
         />
         <Experience.Item
           company="Energy Locals"
           role="IT Specialist"
           startDate="Oct 2020"
           endDate="Oct 2021"
-          href="/experience/energy-locals/it-specialist"
+          href="experience/energy-locals/it-specialist"
         />
         <Experience.Item
           company="Energy Locals"
           role="Graduate IT Specialist"
           startDate="Sep 2019"
           endDate="Oct 2020"
-          href="/experience/energy-locals/graduate-it-specialist"
+          href="experience/energy-locals/graduate-it-specialist"
         />
         <Experience.Item
           company="RMIT"
@@ -65,6 +67,7 @@ export const HomePage = () => {
         />
         <Links.Item title="Resume" href="/resume.pdf" />
       </Links>
+      <Outlet />
     </Layout>
   );
 };

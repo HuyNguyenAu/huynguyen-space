@@ -1,5 +1,6 @@
 import type { PropsWithChildren } from "react";
 import { cn } from "@/lib/utils";
+import { Link as ReactLink } from "react-router";
 
 export const Link = ({
   className,
@@ -7,15 +8,15 @@ export const Link = ({
   children,
 }: PropsWithChildren<{ className?: string; href: string }>) => {
   return (
-    <a
+    <ReactLink
       className={cn(
         "my-2 size-fit text-primary font-normal transition-all underline underline-offset-6 decoration-dashed decoration-[0.667px] hover:bg-tertiary",
         className
       )}
-      href={href}
+      to={href}
     >
       {children}
-    </a>
+    </ReactLink>
   );
 };
 
