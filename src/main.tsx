@@ -4,7 +4,9 @@ import { StrictMode } from "react";
 import { createRoot } from "react-dom/client";
 import { HomePage } from "@/pages/home";
 import { BrowserRouter, Route, Routes } from "react-router";
-import { ExperienceJetchargeFullStackEngineerPage } from "./pages/experience-jetcharge-full-stack-engineer";
+import { JETChargeFullStackEngineerPage } from "./pages/experience/jetcharge-full-stack-engineer";
+import { EnergyLocalsITSpecialistPage } from "./pages/experience/energy-locals-it-specialist";
+import { EnergyLocalsGraduateITSpecialistPage } from "./pages/experience/energy-locals-graduate-it-specialist";
 
 const rootElement = document.getElementById("root");
 
@@ -18,10 +20,22 @@ createRoot(rootElement).render(
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="experience">
-          <Route
-            path="jetcharge/full-stack-software-engineer"
-            element={<ExperienceJetchargeFullStackEngineerPage />}
-          />
+          <Route path="jetcharge">
+            <Route
+              path="full-stack-software-engineer"
+              element={<JETChargeFullStackEngineerPage />}
+            />
+          </Route>
+          <Route path="energy-locals">
+            <Route
+              path="it-specialist"
+              element={<EnergyLocalsITSpecialistPage />}
+            />
+            <Route
+              path="graduate-it-specialist"
+              element={<EnergyLocalsGraduateITSpecialistPage />}
+            />
+          </Route>
         </Route>
       </Routes>
     </BrowserRouter>

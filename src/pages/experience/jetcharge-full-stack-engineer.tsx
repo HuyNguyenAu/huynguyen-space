@@ -1,6 +1,6 @@
 import { Article } from "@/components/article";
 
-export const ExperienceJetchargeFullStackEngineerPage = () => {
+export const JETChargeFullStackEngineerPage = () => {
   return (
     <Article>
       <h3>Full Stack Software Engineer</h3>
