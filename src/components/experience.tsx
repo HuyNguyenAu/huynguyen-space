@@ -1,6 +1,6 @@
 import { type PropsWithChildren } from "react";
 import { Body, Heading, Link, Small } from "@/components/ui/typography";
-import { Section } from "./ui/section";
+import { Section } from "@/components/ui/section";
 
 const ExperienceItem = ({
   company,
