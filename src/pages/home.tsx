@@ -1,13 +1,12 @@
 import { Experience } from "@/components/experience";
 import { Hero } from "@/components/hero";
-import { Layout } from "@/components/layout";
 import { Links } from "@/components/links";
 import { SideProjects } from "@/components/side-projects";
 import { Skills } from "@/components/skills";
 
 export const HomePage = () => {
   return (
-    <Layout>
+    <>
       <Hero />
       <Skills />
       <Experience>
@@ -16,21 +15,21 @@ export const HomePage = () => {
           role="Full Stack Software Engineer"
           startDate="Oct 2021"
           endDate="Present"
-          href="/experience/jetcharge/full-stack-software-engineer"
+          href="experience/jetcharge/full-stack-software-engineer"
         />
         <Experience.Item
           company="Energy Locals"
           role="IT Specialist"
           startDate="Oct 2020"
           endDate="Oct 2021"
-          href="/experience/energy-locals/it-specialist"
+          href="experience/energy-locals/it-specialist"
         />
         <Experience.Item
           company="Energy Locals"
           role="Graduate IT Specialist"
           startDate="Sep 2019"
           endDate="Oct 2020"
-          href="/experience/energy-locals/graduate-it-specialist"
+          href="experience/energy-locals/graduate-it-specialist"
         />
         <Experience.Item
           company="RMIT"
@@ -61,10 +60,10 @@ export const HomePage = () => {
         <Links.Item title="GitHub" href="https://github.com/HuyNguyenAu" />
         <Links.Item
           title="LinkedIn"
-          href="https://www.linkedin.com/in/huy-nguyen-454a6016a"
+          href="https://www.linkedin.com/in/huy-nguyen-au"
         />
-        <Links.Item title="Resume" href="/resume.pdf" />
+        <Links.Item title="Resume" href="resume.pdf" as="a" />
       </Links>
-    </Layout>
+    </>
   );
 };

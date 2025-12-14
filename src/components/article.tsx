@@ -1,11 +1,10 @@
-import { Layout } from "@/components/layout";
 import { Section } from "@/components/ui/section";
 import { Link } from "@/components/ui/typography";
 import type { PropsWithChildren } from "react";
 
 export const Article = ({ children }: PropsWithChildren) => {
   return (
-    <Layout>
+    <>
       <Section>
         <Link className="m-0" href="/">
           Home
@@ -14,6 +13,6 @@ export const Article = ({ children }: PropsWithChildren) => {
       <Section>
         <article className="prose">{children}</article>
       </Section>
-    </Layout>
+    </>
   );
 };

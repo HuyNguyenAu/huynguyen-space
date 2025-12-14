@@ -9,7 +9,7 @@ export const Hero = () => {
         <Small>Software Engineer</Small>
       </Section>
       <Section>
-        <Body>
+        <Body className="m-0">
           Hello, I thrive on tackling interesting and difficult challenges. Over
           the years, I have built a diverse range of software solutions,
           including web and APIs, billing systems, and AEMO integrations.

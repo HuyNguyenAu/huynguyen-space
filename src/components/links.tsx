@@ -1,9 +1,21 @@
-import type { PropsWithChildren } from "react";
+import type { ElementType, PropsWithChildren } from "react";
 import { Heading, Link } from "@/components/ui/typography";
 import { Section } from "@/components/ui/section";
 
-const Item = ({ title, href }: { title: string; href: string }) => {
-  return <Link href={href}>{title}</Link>;
+const Item = ({
+  title,
+  href,
+  as,
+}: {
+  title: string;
+  href: string;
+  as?: ElementType;
+}) => {
+  return (
+    <Link href={href} as={as}>
+      {title}
+    </Link>
+  );
 };
 
 const Links = ({ children }: PropsWithChildren) => {
