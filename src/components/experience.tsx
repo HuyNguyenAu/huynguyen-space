@@ -31,7 +31,7 @@ const ExperienceItem = ({
 const Experience = ({ children }: PropsWithChildren) => {
   return (
      <Section className="grid grid-cols-1 md:grid-cols-[auto_1fr]">
-      <Heading className="md:col-span-2">/EXPERIENCE</Heading>
+      <Heading className="m-0 md:mb-2 md:col-span-2">/EXPERIENCE</Heading>
       {children}
     </Section>
   );
