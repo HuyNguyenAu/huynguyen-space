@@ -8,17 +8,17 @@ export const Skills = () => {
       <Heading className="text-center">/FRAMEWORKS</Heading>
       <Heading className="text-end">/PLATFORMS</Heading>
 
-      <Body>C#</Body>
-      <Body className="text-center">.NET 6.0</Body>
-      <Body className="text-end">Windows</Body>
+      <Body className="m-0 mt-2">C#</Body>
+      <Body className="text-center m-0 mt-2">.NET 6.0</Body>
+      <Body className="text-end m-0 mt-2">Windows</Body>
 
-      <Body>Typescript</Body>
-      <Body className="text-center">React</Body>
-      <Body className="text-end">Linux</Body>
+      <Body className="m-0 mt-2">Typescript</Body>
+      <Body className="text-center m-0 mt-2">React</Body>
+      <Body className="text-end m-0 mt-2">Linux</Body>
 
-      <Body>Javascript</Body>
-      <Body className="text-center">NextJS</Body>
-      <Body className="text-end">MacOS</Body>
+      <Body className="m-0 mt-2">Javascript</Body>
+      <Body className="text-center m-0 mt-2">NextJS</Body>
+      <Body className="text-end m-0 mt-2">MacOS</Body>
     </Section>
   );
 };
