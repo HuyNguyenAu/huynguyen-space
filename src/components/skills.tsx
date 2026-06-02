@@ -4,9 +4,9 @@ import { Body, Heading } from "@/components/ui/typography";
 export const Skills = () => {
   return (
     <Section className="grid grid-cols-3">
-      <Heading>/CODE</Heading>
-      <Heading className="text-center">/FRAMEWORKS</Heading>
-      <Heading className="text-end">/PLATFORMS</Heading>
+      <Heading>CODE</Heading>
+      <Heading className="text-center">FRAMEWORKS</Heading>
+      <Heading className="text-end">PLATFORMS</Heading>
 
       <Body className="m-0 mt-2">C#</Body>
       <Body className="text-center m-0 mt-2">.NET 6.0</Body>
