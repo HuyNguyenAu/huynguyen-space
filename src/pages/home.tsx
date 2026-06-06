@@ -41,6 +41,11 @@ export const HomePage = () => {
       </Experience>
       <SideProjects>
         <SideProjects.Item
+          title="LLM Native Virtual Machine"
+          href="https://github.com/HuyNguyenAu/llm_native_virtual_machine"
+          description="An experimental virtual processor that has an LLM instead of an ALU"
+        />
+        <SideProjects.Item
           title="GPT Decoder"
           href="https://github.com/HuyNguyenAu/gpt-decoder"
           description="A Minimal GPT decoder with some optimisations"

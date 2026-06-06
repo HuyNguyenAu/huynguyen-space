@@ -44,7 +44,7 @@ export const Heading = ({
   children,
 }: PropsWithChildren<{ className?: string }>) => {
   return (
-    <p className={cn("text-primary text-sm font-normal", className)}>
+    <p className={cn("text-primary font-serif text-base font-semibold tracking-tight uppercase border-b border-primary/20 pb-1 mb-2", className)}>
       {children}
     </p>
   );
@@ -55,7 +55,7 @@ export const Body = ({
   children,
 }: PropsWithChildren<{ className?: string }>) => {
   return (
-    <p className={cn("my-2 text-primary font-normal", className)}>{children}</p>
+    <p className={cn("my-2 text-primary text-base leading-relaxed", className)}>{children}</p>
   );
 };
 
@@ -64,7 +64,7 @@ export const Small = ({
   children,
 }: PropsWithChildren<{ className?: string }>) => {
   return (
-    <p className={cn("text-secondary text-sm font-normal", className)}>
+    <p className={cn("text-secondary text-sm font-normal leading-relaxed", className)}>
       {children}
     </p>
   );

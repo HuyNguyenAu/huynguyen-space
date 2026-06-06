@@ -21,7 +21,7 @@ const Item = ({
 const Links = ({ children }: PropsWithChildren) => {
   return (
     <Section>
-      <Heading>/LINKS</Heading>
+      <Heading>LINKS</Heading>
       <div className="flex justify-between">{children}</div>
     </Section>
   );

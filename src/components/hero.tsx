@@ -6,13 +6,11 @@ export const Hero = () => {
     <>
       <Section>
         <Body className="m-0">Huy Nguyen</Body>
-        <Small>Software Engineer</Small>
+        <Small>Full-Stack Engineer</Small>
       </Section>
       <Section>
         <Body className="m-0">
-          Hello, I thrive on tackling interesting and difficult challenges. Over
-          the years, I have built a diverse range of software solutions,
-          including web and APIs, billing systems, and AEMO integrations.
+          I am a Full-Stack Engineer specialising in high-throughput C#/.NET backend architectures, relational data modeling, and modern React interfaces for complex, compliance-driven industries. I bridge the gap between heavy enterprise backend architecture and fast-moving, modern user interfaces.
         </Body>
         <Body>Building software, I only follow one core principle:</Body>
         <Body className="m-0">
