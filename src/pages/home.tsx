@@ -67,8 +67,7 @@ export const HomePage = () => {
           title="LinkedIn"
           href="https://www.linkedin.com/in/huy-nguyen-au"
         />
-        <Links.Item title="Enterprise Resume" href="resume-enterprise.html" as="a" />
-        <Links.Item title="Scale-up Resume" href="resume-scaleup.html" as="a" />
+        <Links.Item title="Resume" href="resume.pdf" as="a" />
       </Links>
     </>
   );

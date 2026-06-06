@@ -5,24 +5,24 @@ export const Skills = () => {
   return (
     <Section className="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-0">
       <div>
-        <Heading>CORE BACKEND ARCHITECTURE</Heading>
+        <Heading>BACKEND</Heading>
         <Body className="m-0 mt-2">.NET</Body>
         <Body className="m-0 mt-2">C#</Body>
         <Body className="m-0 mt-2">SQL</Body>
+        <Body className="m-0 mt-2">Bicep</Body>
       </div>
 
       <div>
-        <Heading className="md:text-center">MODERN UI ENGINEERING</Heading>
-        <Body className="md:text-center m-0 mt-2">TypeScript</Body>
+        <Heading className="md:text-center">FRONTEND</Heading>
         <Body className="md:text-center m-0 mt-2">React</Body>
-        <Body className="md:text-center m-0 mt-2">Next.js</Body>
+        <Body className="md:text-center m-0 mt-2">TypeScript</Body>
       </div>
 
       <div>
-        <Heading className="md:text-end">CLOUD / AUTOMATION</Heading>
+        <Heading className="md:text-end">DEVOPS</Heading>
         <Body className="md:text-end m-0 mt-2">Azure</Body>
         <Body className="md:text-end m-0 mt-2">GitHub Actions</Body>
-        <Body className="md:text-end m-0 mt-2">Bicep / Linux</Body>
+        <Body className="md:text-end m-0 mt-2">Azure DevOps</Body>
       </div>
     </Section>
   );
