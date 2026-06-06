@@ -8,14 +8,14 @@ export const Skills = () => {
         <Heading>CODE</Heading>
         <Body className="m-0 mt-2">C#</Body>
         <Body className="m-0 mt-2">Typescript</Body>
-        <Body className="m-0 mt-2">Javascript</Body>
+        <Body className="m-0 mt-2">SQL</Body>
       </div>
 
       <div>
         <Heading className="md:text-center">FRAMEWORKS</Heading>
-        <Body className="md:text-center m-0 mt-2">.NET 6.0</Body>
+        <Body className="md:text-center m-0 mt-2">.NET</Body>
         <Body className="md:text-center m-0 mt-2">React</Body>
-        <Body className="md:text-center m-0 mt-2">NextJS</Body>
+        <Body className="md:text-center m-0 mt-2">Entity Framework Core</Body>
       </div>
 
       <div>
