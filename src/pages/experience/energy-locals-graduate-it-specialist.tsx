@@ -7,35 +7,22 @@ export const EnergyLocalsGraduateITSpecialistPage = () => {
       <p>
         Energy Locals<br></br>Oct 2019 - Oct 2020
       </p>
-      <h4>AEMO Market Management System (MMS)</h4>
-      <p>
-        Lead development of tools and processes to pull electricity market data
-        from MMS for pricing, analysis, and reporting:
-      </p>
+      <h4>AEMO Market Management System (MMS) Settlements</h4>
       <ul>
         <li>
-          Developed scripts to automate data extraction from MMS, transforming
-          and loading into internal databases for analysis.
+          Engineered automated data processing programs for AEMO market settlements using C# and SQL, handling high-volume transaction data with strict audit compliance.
         </li>
         <li>
-          Created reporting tools to generate insights on market prices, demand,
-          and supply trends for internal stakeholders.
-        </li>
-        <li>
-          Deployed reporting tools to support exploration and analysis of market
-          data.
+          Architected stable ETL data extraction processes from the MMS, supporting enterprise-grade reporting on market prices, demand, and supply.
         </li>
       </ul>
-      <h4>Systems admin, Operations and Support</h4>
-      <p>Managed internal IT systems and provided technical support:</p>
+      <h4>Complex Systems & Infrastructure Automation</h4>
       <ul>
         <li>
-          Provision IT equipment for new employees, ensuring proper setup and
-          configuration.
+          Authored automated backup pipelines for databases and critical infrastructure to ensure disaster recovery reliability.
         </li>
         <li>
-          Automated backup processes for databases and critical systems to
-          ensure data integrity and availability.
+          Spearheaded the provisioning and secure configuration of technical workstations for enterprise staff.
         </li>
       </ul>
     </Article>
