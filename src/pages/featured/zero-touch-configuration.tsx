@@ -22,7 +22,7 @@ export const ZeroTouchConfigurationPage = () => {
         delays, and risk of configuration errors.
       </p>
 
-      <h4>The Architecture</h4>
+      <h4>The Solution</h4>
       <ul>
         <li>
           <strong>Interactive Remote Configuration:</strong> Built React Node-UI

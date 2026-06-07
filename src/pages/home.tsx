@@ -12,15 +12,15 @@ export const HomePage = () => {
       <Skills />
       <Featured>
         <Featured.Item
-          title="Zero-Touch Configuration (ZTC)"
-          subtitle="ZTC Systems Architecture"
+          title="Zero-Touch Configuration"
+          subtitle="Remote EMS Provisioning"
           description="Cloud-based EV commissioning system enabling secure, plug-and-play remote hardware configuration and synchronisation."
           href="featured/zero-touch-configuration"
         />
         <Featured.Item
-          title="High-Availability Edge Load Management"
-          subtitle="Distributed Concurrency Design"
-          description="A resilient local load-shedding controller written in C# and running on edge gateways to dynamically balance EV charging capacity and prevent site-level grid overload."
+          title="Edge Energy Management System"
+          subtitle="EV Load Management"
+          description="Offline-capable dynamic edge load management system with real-time local monitoring dashboards."
           href="featured/edge-load-management"
         />
       </Featured>

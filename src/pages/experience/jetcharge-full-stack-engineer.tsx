@@ -39,9 +39,9 @@ export const JETChargeFullStackEngineerPage = () => {
         </li>
         <li>
           Designed and implemented a Zero-Touch Configuration (ZTC) system
-          utilising custom React Node-UI, dashboards, and .NET cloud
-          services, removing the need for manual on-site technician visits
-          during remote setups.
+          utilising custom React Node-UI, dashboards, and .NET cloud services,
+          removing the need for manual on-site technician visits during remote
+          setups.
         </li>
       </ul>
     </Article>
