@@ -7,36 +7,41 @@ export const JETChargeFullStackEngineerPage = () => {
       <p>
         JET Charge<br></br>Oct 2021 - Present
       </p>
-      <h4>CORE - EV Energy Management System</h4>
-      <p>
-        CORE is an on-premise Electric Vehicle (EV) charging load management
-        system.
-      </p>
+      <h4>CORE - Electric Vehicle (EV) Energy Management System</h4>
       <ul>
         <li>
-          Designed and optimised the C# backend architecture for an autonomous EV load management system, ensuring high uptime for real-time edge devices by implementing robust concurrency and state management.
+          Architected and implemented major upgrade and redesign of legacy
+          backend system, transitioning from a monolithic to modular modern
+          modular monolith, improving maintainability and scalability.
         </li>
         <li>
-          Spearheaded the frontend architecture for a greenfield smart-charging cloud optimisation platform, drastically improving user workflows and real-time data streaming.
+          Spearheaded the frontend architecture for a greenfield local-based
+          smart-charging system, introducing real-time data streaming and
+          streamlined commissioning workflows.
         </li>
         <li>
-          Implemented local RESTful APIs for communication between the fast-moving node-based UI and the high-throughput back-end system.
+          Designed RESTful APIs for communication between the React UI and the
+          C# backend hosted on device, enabling on-site configuration and
+          monitoring of EV charging assets.
         </li>
       </ul>
-      <h4>Illuminate - EV Charging Management Platform</h4>
-      <p>
-        Built and operated in Australia, Illuminate is a cloud-based platform
-        connecting people, EV charging assets, and locations.
-      </p>
+      <h4>Illuminate - EV Charging Asset Management Platform</h4>
       <ul>
         <li>
-          Lead development of apartment EV charging billing solution featuring UI to assign chargers, and handle Stripe integration for recurring invoicing.
+          Led the integration of Stripe recurring billing into the .NET backend
+          and React UI, automating multi-tenant invoicing and payment cycles for
+          apartment charging installations.
         </li>
         <li>
-          Engineered complex partner and contractor management solutions enabling full compliance, compatibility, and rapid cloud deployment of EV charging assets.
+          Engineered partner and contractor management solutions that
+          streamlined the cloud commissioning pipeline of distributed EV
+          charging assets.
         </li>
         <li>
-          Built a Zero Touch Config (ZTC) solution utilising React/TypeScript dashboards backed by .NET cloud services, reducing onboarding friction remotely without an on-site technician.
+          Designed and implemented a Zero-Touch Configuration (ZTC) system
+          utilising custom React Node-UI, dashboards, and .NET cloud
+          services, removing the need for manual on-site technician visits
+          during remote setups.
         </li>
       </ul>
     </Article>

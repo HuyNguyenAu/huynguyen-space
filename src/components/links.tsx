@@ -22,7 +22,7 @@ const Links = ({ children }: PropsWithChildren) => {
   return (
     <Section>
       <Heading>LINKS</Heading>
-      <div className="flex justify-between">{children}</div>
+      <div className="flex flex-wrap justify-between gap-y-2">{children}</div>
     </Section>
   );
 };
