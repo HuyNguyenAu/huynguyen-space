@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="100%" height="100%">
+  <rect x="3" y="3" width="58" height="58" rx="12" ry="12" fill="#e8e6e3" stroke="#222222" stroke-width="4" />
+  <!-- Left bar of the H -->
+  <rect x="16" y="16" width="6" height="32" rx="1.5" fill="#222222" />
+  <!-- Right bar of the N -->
+  <rect x="42" y="16" width="6" height="32" rx="1.5" fill="#222222" />
+  <!-- Lightning bolt connecting them, forming the crossbar of H / diagonal of N -->
+  <path d="M 22 22 L 40 22 L 28 36 L 42 36 L 42 42 L 24 42 L 36 28 L 22 28 Z" fill="#222222" />
+</svg>
