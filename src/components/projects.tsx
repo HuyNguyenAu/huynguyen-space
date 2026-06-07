@@ -19,7 +19,7 @@ const Item = ({
         <Link className="mt-2 mb-0 md:m-0" href={href}>
           {title}
         </Link>
-        <Small className="text-secondary italic m-0">{subtitle}</Small>
+        <Small className="text-secondary m-0">{subtitle}</Small>
       </div>
       <div>
         <Body className="text-start md:text-end m-0 md:mb-0">

@@ -7,8 +7,8 @@ import { HashRouter, Route, Routes } from "react-router";
 import { JETChargeFullStackEngineerPage } from "@/pages/experience/jetcharge-full-stack-engineer";
 import { EnergyLocalsITSpecialistPage } from "@/pages/experience/energy-locals-it-specialist";
 import { EnergyLocalsGraduateITSpecialistPage } from "@/pages/experience/energy-locals-graduate-it-specialist";
-import { ZeroTouchConfigurationPage } from "@/pages/featured/zero-touch-configuration";
-import { EdgeLoadManagementPage } from "@/pages/featured/edge-load-management";
+import { ZeroTouchConfigurationPage } from "@/pages/projects/zero-touch-configuration";
+import { EdgeLoadManagementPage } from "@/pages/projects/edge-load-management";
 import { RootPage } from "./pages/root";
 
 const rootElement = document.getElementById("root");
@@ -23,7 +23,7 @@ createRoot(rootElement).render(
       <Routes>
         <Route path="/" element={<RootPage />}>
           <Route index element={<HomePage />} />
-          <Route path="/featured">
+          <Route path="/projects">
             <Route
               path="zero-touch-configuration"
               element={<ZeroTouchConfigurationPage />}

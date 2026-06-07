@@ -15,13 +15,13 @@ export const HomePage = () => {
           title="Zero-Touch Configuration"
           subtitle="Remote EMS Provisioning"
           description="Cloud-based EV commissioning system enabling secure, plug-and-play remote hardware configuration and synchronisation."
-          href="featured/zero-touch-configuration"
+          href="projects/zero-touch-configuration"
         />
         <Projects.Item
           title="Edge Energy Management System"
           subtitle="EV Load Management"
           description="Offline-capable dynamic edge load management system with real-time local monitoring dashboards."
-          href="featured/edge-load-management"
+          href="projects/edge-load-management"
         />
       </Projects>
       <Experience>

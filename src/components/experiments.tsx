@@ -23,7 +23,7 @@ const Item = ({
 
 const Experiments = ({ children }: PropsWithChildren) => {
   return (
-    <Section className="grid grid-cols-1 md:grid-cols-[auto_1fr]">
+    <Section className="grid grid-cols-1 md:grid-cols-[auto_1fr] gap-y-4 md:gap-y-2">
       <Heading className="md:col-span-2">EXPERIMENTS</Heading>
       {children}
     </Section>
