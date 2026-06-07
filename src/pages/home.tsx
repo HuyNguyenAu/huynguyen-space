@@ -58,22 +58,22 @@ export const HomePage = () => {
         <SideProjects.Item
           title="LLM Native Virtual Machine"
           href="https://github.com/HuyNguyenAu/llm_native_virtual_machine"
-          description="An experimental virtual processor that has an LLM instead of an ALU"
+          description="An experimental virtual processor that has an LLM instead of an ALU."
         />
         <SideProjects.Item
           title="GPT Decoder"
           href="https://github.com/HuyNguyenAu/gpt-decoder"
-          description="A Minimal GPT decoder with some optimisations"
+          description="A Minimal GPT decoder with some optimisations."
         />
         <SideProjects.Item
           title="Wobbly ML"
           href="https://github.com/HuyNguyenAu/wobbly-ml"
-          description="A simple machine learning library"
+          description="A simple machine learning library."
         />
         <SideProjects.Item
           title="Lox Crystal Lang"
           href="https://github.com/HuyNguyenAu/lox-lang-crystal"
-          description="A Lox interpreter written in Crystal"
+          description="A simple programming language interpreter written in Crystal."
         />
       </SideProjects>
       <Links>
