@@ -17,7 +17,7 @@ export const Link = ({
       <ReactLink
         className={cn(
           "my-2 size-fit text-primary font-normal transition-all underline underline-offset-6 decoration-dashed decoration-[0.667px] hover:bg-tertiary",
-          className
+          className,
         )}
         to={href}
       >
@@ -30,7 +30,7 @@ export const Link = ({
     <a
       className={cn(
         "my-2 size-fit text-primary font-normal transition-all underline underline-offset-6 decoration-dashed decoration-[0.667px] hover:bg-tertiary",
-        className
+        className,
       )}
       href={href}
     >
@@ -44,7 +44,12 @@ export const Heading = ({
   children,
 }: PropsWithChildren<{ className?: string }>) => {
   return (
-    <p className={cn("text-primary font-serif text-base font-semibold tracking-tight uppercase border-b border-primary/20 pb-1 mb-2", className)}>
+    <p
+      className={cn(
+        "text-primary font-serif text-base font-semibold tracking-tight uppercase border-b border-primary/20 pb-1 mb-2",
+        className,
+      )}
+    >
       {children}
     </p>
   );
@@ -55,7 +60,9 @@ export const Body = ({
   children,
 }: PropsWithChildren<{ className?: string }>) => {
   return (
-    <p className={cn("my-2 text-primary text-base leading-relaxed", className)}>{children}</p>
+    <p className={cn("my-2 text-primary text-base leading-relaxed", className)}>
+      {children}
+    </p>
   );
 };
 
@@ -64,7 +71,12 @@ export const Small = ({
   children,
 }: PropsWithChildren<{ className?: string }>) => {
   return (
-    <p className={cn("text-secondary text-sm font-normal leading-relaxed", className)}>
+    <p
+      className={cn(
+        "text-secondary text-sm font-normal leading-relaxed",
+        className,
+      )}
+    >
       {children}
     </p>
   );

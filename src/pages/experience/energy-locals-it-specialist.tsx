@@ -10,22 +10,32 @@ export const EnergyLocalsITSpecialistPage = () => {
       <h4>Customer Portal & Identity Verification</h4>
       <ul>
         <li>
-          Developed dynamic, white-labeled customer onboarding journeys using React, optimising the sign-up funnel and automating downstream database provisioning.
+          Architected white-labeled customer onboarding web applications in
+          Bootstrap, automating end-to-end database provisioning to streamline
+          registration flows and handle high-volume sign-ups with Laravel
+          backend.
         </li>
         <li>
-          Integrated secure third-party identity verification services (Westpac, Equifax) satisfying complex regulatory requirements.
+          Integrated secure Westpac and Equifax identity verification services,
+          ensuring compliance with strict utility-sector regulatory requirements
+          (KYC) while maintaining a seamless onboarding flow.
         </li>
       </ul>
       <h4>Complex Data Engineering & Systems Operations</h4>
       <ul>
         <li>
-          Designed and maintained massive-scale ETL pipelines using C# and SQL, gathering critical compliance data into centralised reporting databases.
+          Designed and maintained high-throughput ETL data pipelines using C#
+          and SQL to consolidate operational and compliance reporting data.
         </li>
         <li>
-          Administered high-availability Virtual Private Servers (VPS) hosting core operational databases and enterprise tools, maintaining robust continuous uptime.
+          Administered high-availability Virtual Private Servers (VPS) hosting
+          core operational databases, implementing monitoring protocols and
+          regular updates.
         </li>
         <li>
-          Managed critical IT provisioning and network continuity for a fast-scaling corporate staff, building automated processes to eliminate technical debt.
+          Automated infrastructure setup and dev workstation configurations,
+          reducing technical debt and streamlining engineering onboarding
+          cycles.
         </li>
       </ul>
     </Article>

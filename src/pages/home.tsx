@@ -1,14 +1,29 @@
 import { Experience } from "@/components/experience";
 import { Hero } from "@/components/hero";
 import { Links } from "@/components/links";
-import { SideProjects } from "@/components/side-projects";
+import { Experiments } from "@/components/experiments";
 import { Skills } from "@/components/skills";
+import { Projects } from "@/components/projects";
 
 export const HomePage = () => {
   return (
     <>
       <Hero />
       <Skills />
+      <Projects>
+        <Projects.Item
+          title="Zero-Touch Configuration"
+          subtitle="Remote EMS Provisioning"
+          description="Cloud-based EV commissioning system enabling secure, plug-and-play remote hardware configuration and synchronisation."
+          href="projects/zero-touch-configuration"
+        />
+        <Projects.Item
+          title="Edge Energy Management System"
+          subtitle="EV Load Management"
+          description="Offline-capable dynamic edge load management system with real-time local monitoring dashboards."
+          href="projects/edge-load-management"
+        />
+      </Projects>
       <Experience>
         <Experience.Item
           company="JET Charge"
@@ -39,29 +54,30 @@ export const HomePage = () => {
           href=""
         />
       </Experience>
-      <SideProjects>
-        <SideProjects.Item
+      <Experiments>
+        <Experiments.Item
           title="LLM Native Virtual Machine"
           href="https://github.com/HuyNguyenAu/llm_native_virtual_machine"
-          description="An experimental virtual processor that has an LLM instead of an ALU"
+          description="An experimental virtual processor that has an LLM instead of an ALU."
         />
-        <SideProjects.Item
+        <Experiments.Item
           title="GPT Decoder"
           href="https://github.com/HuyNguyenAu/gpt-decoder"
-          description="A Minimal GPT decoder with some optimisations"
+          description="A Minimal GPT decoder with some optimisations."
         />
-        <SideProjects.Item
+        <Experiments.Item
           title="Wobbly ML"
           href="https://github.com/HuyNguyenAu/wobbly-ml"
-          description="A simple machine learning library"
+          description="A simple machine learning library."
         />
-        <SideProjects.Item
+        <Experiments.Item
           title="Lox Crystal Lang"
           href="https://github.com/HuyNguyenAu/lox-lang-crystal"
-          description="A Lox interpreter written in Crystal"
+          description="A simple programming language interpreter written in Crystal."
         />
-      </SideProjects>
+      </Experiments>
       <Links>
+        <Links.Item title="Email" href="mailto:work@huynguyen.email" as="a" />
         <Links.Item title="GitHub" href="https://github.com/HuyNguyenAu" />
         <Links.Item
           title="LinkedIn"

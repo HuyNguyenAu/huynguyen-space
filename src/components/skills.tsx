@@ -9,7 +9,6 @@ export const Skills = () => {
         <Body className="m-0 mt-2">.NET</Body>
         <Body className="m-0 mt-2">C#</Body>
         <Body className="m-0 mt-2">SQL</Body>
-        <Body className="m-0 mt-2">Bicep</Body>
       </div>
 
       <div>
@@ -19,10 +18,11 @@ export const Skills = () => {
       </div>
 
       <div>
-        <Heading className="md:text-end">DEVOPS</Heading>
+        <Heading className="md:text-end">PLATFORM</Heading>
         <Body className="md:text-end m-0 mt-2">Azure</Body>
         <Body className="md:text-end m-0 mt-2">GitHub Actions</Body>
         <Body className="md:text-end m-0 mt-2">Azure DevOps</Body>
+        <Body className="md:text-end m-0 mt-2">Bicep</Body>
       </div>
     </Section>
   );
