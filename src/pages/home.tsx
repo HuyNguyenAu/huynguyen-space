@@ -23,6 +23,12 @@ export const HomePage = () => {
           description="Offline-capable dynamic edge load management system with real-time local monitoring dashboards."
           href="projects/edge-load-management"
         />
+        <Projects.Item
+          title="Billing for Apartments"
+          subtitle="EV Energy Usage Billing"
+          description="Billing system for apartment EV energy usage, integrating with existing utility data and providing detailed usage reports."
+          href="projects/billing-for-apartments"
+        />
       </Projects>
       <Experience>
         <Experience.Item

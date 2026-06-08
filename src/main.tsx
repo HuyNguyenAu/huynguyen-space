@@ -9,7 +9,8 @@ import { EnergyLocalsITSpecialistPage } from "@/pages/experience/energy-locals-i
 import { EnergyLocalsGraduateITSpecialistPage } from "@/pages/experience/energy-locals-graduate-it-specialist";
 import { ZeroTouchConfigurationPage } from "@/pages/projects/zero-touch-configuration";
 import { EdgeLoadManagementPage } from "@/pages/projects/edge-load-management";
-import { RootPage } from "./pages/root";
+import { RootPage } from "@/pages/root";
+import { BillingForApartments } from "@/pages/projects/billing-for-apartments";
 
 const rootElement = document.getElementById("root");
 
@@ -31,6 +32,10 @@ createRoot(rootElement).render(
             <Route
               path="edge-load-management"
               element={<EdgeLoadManagementPage />}
+            />
+            <Route
+              path="billing-for-apartments"
+              element={<BillingForApartments />}
             />
           </Route>
           <Route path="/experience">
