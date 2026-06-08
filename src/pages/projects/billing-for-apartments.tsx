@@ -7,6 +7,8 @@ export const BillingForApartments = () => {
       <p>
         <strong>Role:</strong> Lead Full-Stack Engineer
         <br />
+        <strong>Company:</strong> JET Charge
+        <br />
         <strong>Context: </strong>Owners Corporations and property managers of
         apartment complexes face significant challenges in billing residents for
         EV energy usage.

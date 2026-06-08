@@ -1,18 +1,18 @@
-import { Section } from "@/components/ui/section";
 import { Link } from "@/components/ui/typography";
 import type { PropsWithChildren } from "react";
 
-export const Article = ({ children }: PropsWithChildren) => {
+export const Article = ({
+  hideHome,
+  children,
+}: PropsWithChildren<{ hideHome?: boolean }>) => {
   return (
-    <>
-      <Section>
-        <Link className="m-0" href="/">
+    <article className="prose mx-auto">
+      {!hideHome && (
+        <Link href="/" reactLink={true}>
           Home
         </Link>
-      </Section>
-      <Section>
-        <article className="prose">{children}</article>
-      </Section>
-    </>
+      )}
+      {children}
+    </article>
   );
 };

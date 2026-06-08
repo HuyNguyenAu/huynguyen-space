@@ -7,6 +7,8 @@ export const ZeroTouchConfigurationPage = () => {
       <p>
         <strong>Role:</strong> Lead Full-Stack Engineer
         <br />
+        <strong>Company:</strong> JET Charge
+        <br />
         <strong>Context:</strong> Cloud-based EV commissioning system that
         eliminated the need for on-site technicians by enabling secure,
         plug-and-play remote hardware configuration and synchronisation.
