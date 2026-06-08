@@ -3,7 +3,7 @@ import { Link } from "@/components/ui/typography";
 
 export const HomePage = () => {
   return (
-     <Article hideHome={true}>
+    <Article hideHome={true}>
       <h3>Huy Nguyen</h3>
       <figcaption>Senior Full Stack .NET & React Engineer</figcaption>
       <p>
@@ -43,9 +43,9 @@ export const HomePage = () => {
           </tr>
         </tbody>
       </table>
-      <h3>Projects</h3>
+      <h3>Selected Projects</h3>
       <h4>
-        <Link href="projects/zero-touch-configuration" reactLink={true}>
+        <Link href="projects/zero-touch-configuration" internal={true}>
           Zero-Touch Configuration
         </Link>
       </h4>
@@ -54,7 +54,7 @@ export const HomePage = () => {
         remote hardware configuration and synchronisation.
       </p>
       <h4>
-        <Link href="projects/edge-energy-management-system" reactLink={true}>
+        <Link href="projects/edge-load-management" internal={true}>
           Edge Energy Management System
         </Link>
       </h4>
@@ -63,7 +63,7 @@ export const HomePage = () => {
         monitoring dashboards.
       </p>
       <h4>
-        <Link href="projects/billing-for-apartments" reactLink={true}>
+        <Link href="projects/billing-for-apartments" internal={true}>
           Billing for Apartments
         </Link>
       </h4>
@@ -71,7 +71,7 @@ export const HomePage = () => {
         Billing system for apartment EV energy usage, integrating with existing
         utility data and providing detailed usage reports.
       </p>
-      <h3>Experience</h3>
+      <h3>Professional History</h3>
       <table>
         <thead>
           <tr>
@@ -82,28 +82,57 @@ export const HomePage = () => {
         </thead>
         <tbody>
           <tr>
-            <td>JET Charge</td>
-            <td>Full Stack Software Engineer</td>
+            <td>
+              <strong>JET Charge</strong>
+            </td>
+            <td>
+              <Link
+                href="experience/jetcharge/full-stack-software-engineer"
+                internal={true}
+              >
+                Full Stack Software Engineer
+              </Link>
+            </td>
             <td>Oct 2021 - Present</td>
           </tr>
           <tr>
-            <td>Energy Locals</td>
-            <td>IT Specialist</td>
+            <td>
+              <strong>Energy Locals</strong>
+            </td>
+            <td>
+              <Link
+                href="experience/energy-locals/it-specialist"
+                internal={true}
+              >
+                IT Specialist
+              </Link>
+            </td>
             <td>Oct 2020 - Oct 2021</td>
           </tr>
           <tr>
-            <td>Energy Locals</td>
-            <td>Graduate IT Specialist</td>
+            <td>
+              <strong>Energy Locals</strong>
+            </td>
+            <td>
+              <Link
+                href="experience/energy-locals/graduate-it-specialist"
+                internal={true}
+              >
+                Graduate IT Specialist
+              </Link>
+            </td>
             <td>Sep 2019 - Oct 2020</td>
           </tr>
           <tr>
-            <td>RMIT</td>
+            <td>
+              <strong>RMIT</strong>
+            </td>
             <td>Computer and Network Engineering (Honours)</td>
             <td>Mar 2016 - Mar 2020</td>
           </tr>
         </tbody>
       </table>
-      <h3>Experiments</h3>
+      <h3>Open Source & Experiments</h3>
       <h4>
         <Link href="https://github.com/HuyNguyenAu/llm_native_virtual_machine">
           LLM Native Virtual Machine
@@ -128,7 +157,7 @@ export const HomePage = () => {
         </Link>
       </h4>
       <p>A simple programming language interpreter written in Crystal.</p>
-      <h3>Links</h3>
+      <h3>Contact</h3>
       <table>
         <tbody>
           <tr>

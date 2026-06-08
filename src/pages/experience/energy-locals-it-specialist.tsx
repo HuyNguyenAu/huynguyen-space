@@ -5,7 +5,9 @@ export const EnergyLocalsITSpecialistPage = () => {
     <Article>
       <h3>IT Specialist</h3>
       <p>
-        Energy Locals<br></br>Oct 2020 - Oct 2021
+        <strong>Company:</strong> Energy Locals
+        <br />
+        <strong>Dates:</strong> Oct 2020 - Oct 2021
       </p>
       <h4>Customer Portal & Identity Verification</h4>
       <ul>

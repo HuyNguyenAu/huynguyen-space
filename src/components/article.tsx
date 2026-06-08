@@ -8,7 +8,7 @@ export const Article = ({
   return (
     <article className="prose mx-auto">
       {!hideHome && (
-        <Link href="/" reactLink={true}>
+        <Link href="/" internal={true}>
           Home
         </Link>
       )}
