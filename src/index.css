@@ -2,10 +2,10 @@
 @plugin "@tailwindcss/typography";
 
 :root {
-  --background-color: #e8e6e3;
-  --primary-color: #222222;
-  --secondary-color: #666666;
-  --tertiary-color: #d1cfcc;
+  --background-color: #f5f2eb;
+  --primary-color: #1c1917;
+  --secondary-color: #57534e;
+  --tertiary-color: #d6cebe;
 }
 
 @theme {

@@ -5,7 +5,9 @@ export const EnergyLocalsGraduateITSpecialistPage = () => {
     <Article>
       <h3>Graduate IT Specialist</h3>
       <p>
-        Energy Locals<br></br>Oct 2019 - Oct 2020
+        <strong>Company:</strong> Energy Locals
+        <br />
+        <strong>Dates:</strong> Oct 2019 - Oct 2020
       </p>
       <h4>AEMO Market Management System (MMS) Settlements</h4>
       <ul>

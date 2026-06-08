@@ -5,79 +5,29 @@ import { Link as ReactLink } from "react-router";
 export const Link = ({
   className,
   href,
-  as = ReactLink,
+  internal,
   children,
 }: PropsWithChildren<{
   className?: string;
   href: string;
-  as?: React.ElementType;
+  internal?: boolean;
 }>) => {
-  if (as === ReactLink) {
+  const classNames = cn(
+    "transition-all duration-200 underline underline-offset-4 decoration-[1px] decoration-stone-400/50 hover:decoration-stone-900 hover:bg-stone-200/50 text-stone-900 font-medium",
+    className,
+  );
+
+  if (internal) {
     return (
-      <ReactLink
-        className={cn(
-          "my-2 size-fit text-primary font-normal transition-all underline underline-offset-6 decoration-dashed decoration-[0.667px] hover:bg-tertiary",
-          className,
-        )}
-        to={href}
-      >
+      <ReactLink className={classNames} to={href}>
         {children}
       </ReactLink>
     );
   }
 
   return (
-    <a
-      className={cn(
-        "my-2 size-fit text-primary font-normal transition-all underline underline-offset-6 decoration-dashed decoration-[0.667px] hover:bg-tertiary",
-        className,
-      )}
-      href={href}
-    >
+    <a className={classNames} href={href}>
       {children}
     </a>
-  );
-};
-
-export const Heading = ({
-  className,
-  children,
-}: PropsWithChildren<{ className?: string }>) => {
-  return (
-    <p
-      className={cn(
-        "text-primary font-serif text-base font-semibold tracking-tight uppercase border-b border-primary/20 pb-1 mb-2",
-        className,
-      )}
-    >
-      {children}
-    </p>
-  );
-};
-
-export const Body = ({
-  className,
-  children,
-}: PropsWithChildren<{ className?: string }>) => {
-  return (
-    <p className={cn("my-2 text-primary text-base leading-relaxed", className)}>
-      {children}
-    </p>
-  );
-};
-
-export const Small = ({
-  className,
-  children,
-}: PropsWithChildren<{ className?: string }>) => {
-  return (
-    <p
-      className={cn(
-        "text-secondary text-sm font-normal leading-relaxed",
-        className,
-      )}
-    >
-      {children}
-    </p>
   );
 };

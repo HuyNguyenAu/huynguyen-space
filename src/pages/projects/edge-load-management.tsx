@@ -7,6 +7,8 @@ export const EdgeLoadManagementPage = () => {
       <p>
         <strong>Role:</strong> Lead Full-Stack Engineer
         <br />
+        <strong>Company:</strong> JET Charge
+        <br />
         <strong>Context:</strong> Engineered a real-time edge load management
         system with local monitoring dashboards to safely balance EV charging
         distribution on capacity-constrained grids.
