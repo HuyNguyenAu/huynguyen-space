@@ -79,7 +79,7 @@ export const Resume = () => {
             <p className="mb-0">
               Computer and Network Engineering (Honours)
               <br />
-              RMIT | Mar 2016 to Mar 2020
+              @RMIT | Mar 2016 to Mar 2020
             </p>
           </div>
           <div className="border border-[var(--color-primary)] rounded-lg p-5 box-border">
