@@ -11,6 +11,7 @@ import { ZeroTouchConfigurationPage } from "@/pages/projects/zero-touch-configur
 import { EdgeLoadManagementPage } from "@/pages/projects/edge-load-management";
 import { RootPage } from "@/pages/root";
 import { BillingForApartments } from "@/pages/projects/billing-for-apartments";
+import { Resume } from "@/pages/resume";
 
 const rootElement = document.getElementById("root");
 
@@ -24,6 +25,7 @@ createRoot(rootElement).render(
       <Routes>
         <Route path="/" element={<RootPage />}>
           <Route index element={<HomePage />} />
+          <Route path="resume" element={<Resume />} />
           <Route path="/projects">
             <Route
               path="zero-touch-configuration"
