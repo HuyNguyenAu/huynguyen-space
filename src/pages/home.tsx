@@ -142,6 +142,15 @@ export const HomePage = () => {
         An experimental virtual processor that has an LLM instead of an ALU.
       </p>
       <h4>
+        <Link href="https://github.com/HuyNguyenAu/lox-lang-ai">
+          Lox Lang Ai
+        </Link>
+      </h4>
+      <p>
+        A simple programming language interpreter written in C# with various
+        optimisations and AI capabilities.
+      </p>
+      <h4>
         <Link href="https://github.com/HuyNguyenAu/gpt-decoder">
           GPT Decoder
         </Link>
@@ -151,12 +160,6 @@ export const HomePage = () => {
         <Link href="https://github.com/HuyNguyenAu/wobbly-ml">Wobbly ML</Link>
       </h4>
       <p>A simple machine learning library.</p>
-      <h4>
-        <Link href="https://github.com/HuyNguyenAu/lox-lang-crystal">
-          Lox Crystal Lang
-        </Link>
-      </h4>
-      <p>A simple programming language interpreter written in Crystal.</p>
       <h3>Contact</h3>
       <table>
         <tbody>
