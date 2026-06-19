@@ -58,7 +58,7 @@ export const Resume = () => {
             </p>
             <h4># About Me</h4>
             <p>
-              I am a Senior Full Stack Engineer specialising in complex data
+              I am a Full Stack Engineer specialising in complex data
               integrations, billing systems, and energy/EV infrastructure
               platforms. I bridge the gap between high-throughput C#/.NET
               backend architectures and fast-moving, modern user interfaces.

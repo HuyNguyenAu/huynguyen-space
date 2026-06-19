@@ -5,9 +5,9 @@ export const HomePage = () => {
   return (
     <Article hideHome={true}>
       <h3>Huy Nguyen</h3>
-      <figcaption>Senior Full Stack .NET & React Engineer</figcaption>
+      <figcaption>Full Stack .NET & React Engineer</figcaption>
       <p>
-        I am a Senior Full Stack Engineer specialising in complex data
+        I am a Full Stack Engineer specialising in complex data
         integrations, billing systems, and energy/EV infrastructure platforms. I
         bridge the gap between high-throughput C#/.NET backend architectures and
         fast-moving, modern user interfaces.
