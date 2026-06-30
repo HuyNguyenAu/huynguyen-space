@@ -12,25 +12,25 @@ export const EnergyLocalsGraduateITSpecialistPage = () => {
       <h4>AEMO Market Management System (MMS) Settlements</h4>
       <ul>
         <li>
-          Engineered C# data-processing programs and SQL procedures to reconcile
-          AEMO market settlement datasets, ensuring audit compliance and
-          transaction reconciliation accuracy.
+          Engineered C# programs and SQL procedures to reconcile AEMO national
+          electricity market settlement data, ensuring audit compliance and
+          reconciliation accuracy across the company's market-facing financials.
         </li>
         <li>
-          Developed ETL pipelines to pull grid pricing, demand, and network load
-          telemetry from the AEMO MMS, enabling real-time analytics and database
-          reporting.
+          Built the ETL pipelines pulling grid pricing, demand, and network-load
+          telemetry from AEMO MMS. Establishing the company's reporting and
+          analytics data foundation.
         </li>
       </ul>
-      <h4>Complex Systems & Infrastructure Automation</h4>
+      <h4>Systems & Infrastructure Automation</h4>
       <ul>
         <li>
-          Designed automated backup pipelines and disaster recovery protocols to
-          secure critical databases and infrastructure environments.
+          Designed automated backup and disaster-recovery pipelines for critical
+          databases, replacing manual backups and cutting recovery risk.
         </li>
         <li>
-          Automated provisioning and configuration scripts for technical
-          workstations, lowering setup overhead for incoming engineering teams.
+          Automated provisioning scripts for technical workstations, making
+          engineering setup repeatable instead of hand-configured.
         </li>
       </ul>
     </Article>
