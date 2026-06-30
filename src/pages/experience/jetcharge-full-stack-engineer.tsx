@@ -7,7 +7,7 @@ export const JETChargeFullStackEngineerPage = () => {
       <p>
         <strong>Company: </strong>JET Charge
         <br />
-        <strong>Dates:</strong> Oct 2021 - Present
+        <strong>Dates:</strong> Oct 2021 - Jun 2026
       </p>
       <h4>CORE - Electric Vehicle (EV) Energy Management System</h4>
       <ul>

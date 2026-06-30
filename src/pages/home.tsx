@@ -93,7 +93,7 @@ export const HomePage = () => {
                 Full Stack Software Engineer
               </Link>
             </td>
-            <td>Oct 2021 - Present</td>
+            <td>Oct 2021 - Jun 2026</td>
           </tr>
           <tr>
             <td>
