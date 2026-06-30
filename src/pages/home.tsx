@@ -7,10 +7,11 @@ export const HomePage = () => {
       <h3>Huy Nguyen</h3>
       <figcaption>Full Stack .NET & React Engineer</figcaption>
       <p>
-        I am a Full Stack Engineer specialising in complex data
-        integrations, billing systems, and energy/EV infrastructure platforms. I
-        bridge the gap between high-throughput C#/.NET backend architectures and
-        fast-moving, modern user interfaces.
+        Full-stack engineer who ships across the entire stack and down it,
+        React and WebSockets through .NET/C# to SQL, ETL, and infrastructure.
+        Specialises in taking products 0 to 1 in the energy and EV space,
+        pairing runtime-level systems depth with a track record of tying
+        engineering to real revenue.
       </p>
       <table>
         <thead>
