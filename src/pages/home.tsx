@@ -143,7 +143,7 @@ export const HomePage = () => {
       </p>
       <h4>
         <Link href="https://github.com/HuyNguyenAu/lox-lang-ai">
-          Lox Lang Ai
+          Lox Lang AI
         </Link>
       </h4>
       <p>
