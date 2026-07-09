@@ -7,11 +7,7 @@ export const HomePage = () => {
       <h3>Huy Nguyen</h3>
       <figcaption>Full Stack .NET & React Engineer</figcaption>
       <p>
-        Full-stack engineer who ships across the entire stack and down it,
-        React and WebSockets through .NET/C# to SQL, ETL, and infrastructure.
-        Specialises in taking products 0 to 1 in the energy and EV space,
-        pairing runtime-level systems depth with a track record of tying
-        engineering to real revenue.
+        Full-stack engineer with 5+ years building high-availability, distributed products on C#/.NET Core and React. At JET Charge, I've shipped event-driven systems, edge-to-cloud synchronisation, and SQL query optimisation for some of Australia's largest EV operators, including Woolworths, RACV, Team Global Express and SG Fleet. I move comfortably across the stack, from re-architecting legacy backends into modular services to leading greenfield frontends that put complex systems in the hands of non-specialist users. New stacks don't slow me down - I believe the problem space should dictate the technology, not the reverse.
       </p>
       <table>
         <thead>
