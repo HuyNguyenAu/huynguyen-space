@@ -12,32 +12,31 @@ export const EnergyLocalsITSpecialistPage = () => {
       <h4>Customer Portal & Identity Verification</h4>
       <ul>
         <li>
-          Architected white-labeled customer onboarding web applications in
-          Bootstrap, automating end-to-end database provisioning to streamline
-          registration flows and handle high-volume sign-ups with Laravel
-          backend.
+          Built the company's first white-labeled customer onboarding platform
+          (Bootstrap & Laravel) with automated database provisioning, replacing
+          manual setup and enabling self-serve, high-volume sign-ups with no
+          per-customer engineering effort.
         </li>
         <li>
-          Integrated secure Westpac and Equifax identity verification services,
-          ensuring compliance with strict utility-sector regulatory requirements
-          (KYC) while maintaining a seamless onboarding flow.
+          Integrated Westpac and Equifax KYC verification, the company's first
+          automated identity-verification flow. Meeting utility-sector
+          regulatory requirements while removing a manual review step.
         </li>
       </ul>
-      <h4>Complex Data Engineering & Systems Operations</h4>
+      <h4>Data Engineering & Systems Operations</h4>
       <ul>
         <li>
-          Designed and maintained high-throughput ETL data pipelines using C#
-          and SQL to consolidate operational and compliance reporting data.
+          Designed C#/SQL ETL pipelines consolidating operational and compliance
+          data into a single source, replacing ad-hoc manual consolidation.
         </li>
         <li>
-          Administered high-availability Virtual Private Servers (VPS) hosting
-          core operational databases, implementing monitoring protocols and
-          regular updates.
+          Administered high-availability VPS hosting core operational databases,
+          establishing the monitoring and patching protocols the team ran on.
         </li>
         <li>
-          Automated infrastructure setup and dev workstation configurations,
-          reducing technical debt and streamlining engineering onboarding
-          cycles.
+          Automated infrastructure and dev-workstation provisioning, turning a
+          manual, error-prone setup into a repeatable script and standardising
+          engineer onboarding.
         </li>
       </ul>
     </Article>

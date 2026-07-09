@@ -5,12 +5,9 @@ export const HomePage = () => {
   return (
     <Article hideHome={true}>
       <h3>Huy Nguyen</h3>
-      <figcaption>Senior Full Stack .NET & React Engineer</figcaption>
+      <figcaption>Full Stack .NET & React Engineer</figcaption>
       <p>
-        I am a Senior Full Stack Engineer specialising in complex data
-        integrations, billing systems, and energy/EV infrastructure platforms. I
-        bridge the gap between high-throughput C#/.NET backend architectures and
-        fast-moving, modern user interfaces.
+        Full-stack engineer with 5+ years building high-availability, distributed products on C#/.NET Core and React. At JET Charge, I've shipped event-driven systems, edge-to-cloud synchronisation, and SQL query optimisation for some of Australia's largest EV operators, including Woolworths, RACV, Team Global Express and SG Fleet. I move comfortably across the stack, from re-architecting legacy backends into modular services to leading greenfield frontends that put complex systems in the hands of non-specialist users. New stacks don't slow me down - I believe the problem space should dictate the technology, not the reverse.
       </p>
       <table>
         <thead>
@@ -93,7 +90,7 @@ export const HomePage = () => {
                 Full Stack Software Engineer
               </Link>
             </td>
-            <td>Oct 2021 - Present</td>
+            <td>Oct 2021 - Jun 2026</td>
           </tr>
           <tr>
             <td>
@@ -142,6 +139,15 @@ export const HomePage = () => {
         An experimental virtual processor that has an LLM instead of an ALU.
       </p>
       <h4>
+        <Link href="https://github.com/HuyNguyenAu/lox-lang-ai">
+          Lox Lang AI
+        </Link>
+      </h4>
+      <p>
+        A simple programming language interpreter written in C# with various
+        optimisations and AI capabilities.
+      </p>
+      <h4>
         <Link href="https://github.com/HuyNguyenAu/gpt-decoder">
           GPT Decoder
         </Link>
@@ -151,12 +157,6 @@ export const HomePage = () => {
         <Link href="https://github.com/HuyNguyenAu/wobbly-ml">Wobbly ML</Link>
       </h4>
       <p>A simple machine learning library.</p>
-      <h4>
-        <Link href="https://github.com/HuyNguyenAu/lox-lang-crystal">
-          Lox Crystal Lang
-        </Link>
-      </h4>
-      <p>A simple programming language interpreter written in Crystal.</p>
       <h3>Contact</h3>
       <table>
         <tbody>
