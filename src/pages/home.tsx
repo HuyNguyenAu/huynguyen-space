@@ -157,6 +157,13 @@ export const HomePage = () => {
         <Link href="https://github.com/HuyNguyenAu/wobbly-ml">Wobbly ML</Link>
       </h4>
       <p>A simple machine learning library.</p>
+      <h3>Interview Materials</h3>
+      <h4>
+        <Link href="interview" internal={true}>
+          Interview Directory
+        </Link>
+      </h4>
+      <p>Work references and prep materials organised by company.</p>
       <h3>Contact</h3>
       <table>
         <tbody>
