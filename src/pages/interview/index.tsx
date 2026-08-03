@@ -29,12 +29,12 @@ export const InterviewIndexPage = () => {
         <Link href="/interview/xero" internal={true}>
           Xero Final Stage Briefing
         </Link>
-        <p>
-          Senior Software Engineer · Values / Future Proof round with Tymon Bernard &
-          Usman Khalid. STAR story bank, mid-to-senior mindset shift, AI differentiator,
-          values mapping, and daily drill routine.
-        </p>
       </h4>
+      <p>
+        Senior Software Engineer · Values / Future Proof round with Tymon Bernard &
+        Usman Khalid. STAR story bank, mid-to-senior mindset shift, AI differentiator,
+        values mapping, and daily drill routine.
+      </p>
     </Article>
   );
 };
