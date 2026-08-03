@@ -14,6 +14,7 @@ import { BillingForApartments } from "@/pages/projects/billing-for-apartments";
 import { Resume } from "@/pages/resume";
 import { InterviewIndexPage } from "@/pages/interview/index";
 import { JETChargeWorkReferencePage } from "@/pages/interview/jetcharge";
+import { Clear21FinalInterviewPage } from "@/pages/interview/clear21";
 
 const rootElement = document.getElementById("root");
 
@@ -45,6 +46,7 @@ createRoot(rootElement).render(
           <Route path="/interview">
             <Route index element={<InterviewIndexPage />} />
             <Route path="jetcharge" element={<JETChargeWorkReferencePage />} />
+            <Route path="clear21" element={<Clear21FinalInterviewPage />} />
           </Route>
           <Route path="/experience">
             <Route

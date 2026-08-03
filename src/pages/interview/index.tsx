@@ -16,6 +16,15 @@ export const InterviewIndexPage = () => {
         decisions, trade-offs, and impact across ZTC, Billing, Illuminate, and
         CORE v2.
       </p>
+      <h4>
+        <Link href="/interview/clear21" internal={true}>
+          Clear21 Final Stage Briefing
+        </Link>
+      </h4>
+      <p>
+        Senior Full-Stack · Final behavioural round with Christian Hope. Story
+        bank, product mindset, AI differentiator, questions to ask, and logistics.
+      </p>
     </Article>
   );
 };
