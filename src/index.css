@@ -19,6 +19,11 @@
   & > * {
     --tw-prose-bullets: var(--color-secondary);
   }
+  table {
+    display: block;
+    overflow-x: auto;
+    white-space: normal;
+  }
 }
 
 body {

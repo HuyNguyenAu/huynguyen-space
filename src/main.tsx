@@ -11,11 +11,6 @@ import { ZeroTouchConfigurationPage } from "@/pages/projects/zero-touch-configur
 import { EdgeLoadManagementPage } from "@/pages/projects/edge-load-management";
 import { RootPage } from "@/pages/root";
 import { BillingForApartments } from "@/pages/projects/billing-for-apartments";
-import { Resume } from "@/pages/resume";
-import { InterviewIndexPage } from "@/pages/interview/index";
-import { JETChargeWorkReferencePage } from "@/pages/interview/jetcharge";
-import { Clear21FinalInterviewPage } from "@/pages/interview/clear21";
-import { XeroFinalInterviewPage } from "@/pages/interview/xero";
 
 const rootElement = document.getElementById("root");
 
@@ -29,7 +24,6 @@ createRoot(rootElement).render(
       <Routes>
         <Route path="/" element={<RootPage />}>
           <Route index element={<HomePage />} />
-          <Route path="resume" element={<Resume />} />
           <Route path="/projects">
             <Route
               path="zero-touch-configuration"
@@ -43,12 +37,6 @@ createRoot(rootElement).render(
               path="billing-for-apartments"
               element={<BillingForApartments />}
             />
-          </Route>
-          <Route path="/interview">
-            <Route index element={<InterviewIndexPage />} />
-            <Route path="jetcharge" element={<JETChargeWorkReferencePage />} />
-            <Route path="clear21" element={<Clear21FinalInterviewPage />} />
-            <Route path="xero" element={<XeroFinalInterviewPage />} />
           </Route>
           <Route path="/experience">
             <Route

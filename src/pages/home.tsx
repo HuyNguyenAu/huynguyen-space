@@ -5,69 +5,172 @@ export const HomePage = () => {
   return (
     <Article hideHome={true}>
       <h3>Huy Nguyen</h3>
-      <figcaption>Full Stack .NET & React Engineer</figcaption>
+      <figcaption>
+        Senior Systems and Software Engineer
+        <br />
+        <span className="text-sm font-normal text-stone-600">
+          Technical Lead helping clean energy and hardware businesses cut
+          installation costs, solve grid limits, and grow recurring revenue.
+        </span>
+      </figcaption>
       <p>
-        Full-stack engineer with 5+ years building high-availability, distributed products on C#/.NET Core and React. At JET Charge, I've shipped event-driven systems, edge-to-cloud synchronisation, and SQL query optimisation for some of Australia's largest EV operators, including Woolworths, RACV, Team Global Express and SG Fleet. I move comfortably across the stack, from re-architecting legacy backends into modular services to leading greenfield frontends that put complex systems in the hands of non-specialist users. New stacks don't slow me down - I believe the problem space should dictate the technology, not the reverse.
+        I build software and systems that solve real-world problems for electric
+        vehicle charging and clean energy companies. Over the last 5+ years, I
+        have led software delivery for commercial EV fleets across Australia,
+        working with clients like{" "}
+        <strong>Woolworths, RACV, SG Fleet, and Team Global Express</strong>.
       </p>
+      <p>My focus is simple:</p>
+      <ul>
+        <li>
+          <strong>Cut installation and labour costs.</strong> Turn messy on-site
+          setups into simple plug-and-play tools so projects scale without hiring
+          armies of technicians.
+        </li>
+        <li>
+          <strong>Help sales close difficult deals.</strong> Remove the power
+          limits and electrical bottlenecks that stop customers from buying
+          chargers.
+        </li>
+        <li>
+          <strong>Protect client operations.</strong> Make sure charging systems
+          keep working even when the internet drops out, so fleets are always
+          ready to drive in the morning.
+        </li>
+      </ul>
+
+      <h3>Commercial and Operational Scale</h3>
       <table>
         <thead>
           <tr>
-            <th>Backend</th>
-            <th>Frontend</th>
-            <th>Platform</th>
+            <th>Impact Metric</th>
+            <th>Commercial and Operational Scope</th>
           </tr>
         </thead>
         <tbody>
           <tr>
-            <td>.NET</td>
-            <td>React</td>
-            <td>Azure</td>
+            <td>
+              <strong>$1.6M - $5.0M in Avoided Upgrade Costs</strong>
+            </td>
+            <td>
+              Allowed commercial sites to fit 5x more EV chargers onto existing
+              power supplies without waiting 12 - 18 months for expensive utility
+              upgrades.
+            </td>
           </tr>
           <tr>
-            <td>C#</td>
-            <td>TypeScript</td>
-            <td>GitHub Actions</td>
+            <td>
+              <strong>$1M+ Saved in Field Labour</strong>
+            </td>
+            <td>
+              Cut on-site setup from 6 hours to 2 - 3.5 hours (or zero with
+              warehouse pre-pairing), saving travel costs and speeding up rollouts
+              across national fleet contracts.
+            </td>
           </tr>
           <tr>
-            <td>SQL</td>
-            <td />
-            <td>Azure DevOps</td>
+            <td>
+              <strong>$150k - $500k in Fleet Outage Risk Prevented</strong>
+            </td>
+            <td>
+              Built systems that run 100% offline, protecting delivery fleets from
+              missing morning routes and avoiding $5k - $50k per hour delay
+              penalties.
+            </td>
           </tr>
           <tr>
-            <td />
-            <td />
-            <td>Bicep</td>
+            <td>
+              <strong>$100k - $300k in Recurring Annual Revenue</strong>
+            </td>
+            <td>
+              Built automated meter billing and payment splits, turning apartment
+              and commercial charging into predictable subscription income.
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <strong>3,500+ Commercial Fleet Vehicles Supported</strong>
+            </td>
+            <td>
+              Delivered the software and systems behind the national $25M ARENA
+              fleet rollout for major enterprise clients.
+            </td>
           </tr>
         </tbody>
       </table>
+
+      <h3>What I Work On</h3>
+      <table>
+        <thead>
+          <tr>
+            <th>Capability Area</th>
+            <th>Focus and Practical Value</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>
+              <strong>Field Automation and Setup Tools</strong>
+            </td>
+            <td>
+              Turning complicated hardware setups into simple web tools that
+              local electricians can use in minutes without engineering help.
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <strong>Billing and Subscription Systems</strong>
+            </td>
+            <td>
+              Building automated billing, meter tracking, and payment splits that
+              turn one-time hardware sales into ongoing monthly revenue.
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <strong>Reliable Offline Systems</strong>
+            </td>
+            <td>
+              Designing software that runs on site without internet, protecting
+              customer operations and avoiding expensive emergency support
+              calls.
+            </td>
+          </tr>
+        </tbody>
+      </table>
+
       <h3>Selected Projects</h3>
       <h4>
         <Link href="projects/zero-touch-configuration" internal={true}>
-          Zero-Touch Configuration
+          Zero-Touch Configuration (ZTC)
         </Link>
       </h4>
       <p>
-        Cloud-based EV commissioning system enabling secure, plug-and-play
-        remote hardware configuration and synchronisation.
+        A remote setup tool that removed the need for specialist engineers on
+        site. Slashed installation time by over 90% and saved more than $1M
+        across national rollouts.
       </p>
       <h4>
         <Link href="projects/edge-load-management" internal={true}>
-          Edge Energy Management System
+          Edge Energy Management System (CORE v2)
         </Link>
       </h4>
       <p>
-        Offline-capable dynamic edge load management system with real-time local
-        monitoring dashboards.
+        Smart energy software that balances power locally so sites can run 5x
+        more chargers on existing supplies. Avoided millions in utility upgrades
+        and unblocked stalled fleet deals.
       </p>
       <h4>
         <Link href="projects/billing-for-apartments" internal={true}>
-          Billing for Apartments
+          Billing for Apartments and Shared EV Infrastructure
         </Link>
       </h4>
       <p>
-        Billing system for apartment EV energy usage, integrating with existing
-        utility data and providing detailed usage reports.
+        An automated billing system that solved body corporate power disputes and
+        unlocked apartment charging, bringing in $100k - $300k a year in
+        recurring software revenue.
       </p>
+
       <h3>Professional History</h3>
       <table>
         <thead>
@@ -87,7 +190,7 @@ export const HomePage = () => {
                 href="experience/jetcharge/full-stack-software-engineer"
                 internal={true}
               >
-                Full Stack Software Engineer
+                Technical Lead and Systems Engineer
               </Link>
             </td>
             <td>Oct 2021 - Jun 2026</td>
@@ -129,14 +232,26 @@ export const HomePage = () => {
           </tr>
         </tbody>
       </table>
-      <h3>Open Source & Experiments</h3>
+
+      <h3>Applied AI and Systems Projects</h3>
+      <h4>
+        <Link href="https://github.com/HuyNguyenAu/Wayfare">
+          Wayfare
+        </Link>
+      </h4>
+      <p>
+        A simple coding agent bounded by a state machine that allows for
+        agentic workflows that are reproducible, easy to debug, and predictable.
+      </p>
       <h4>
         <Link href="https://github.com/HuyNguyenAu/llm_native_virtual_machine">
           LLM Native Virtual Machine
         </Link>
       </h4>
       <p>
-        An experimental virtual processor that has an LLM instead of an ALU.
+        An experimental project testing how to use language models as software
+        engines. Breaks large prompts into small, predictable steps to reduce
+        errors and cut computing costs.
       </p>
       <h4>
         <Link href="https://github.com/HuyNguyenAu/lox-lang-ai">
@@ -144,19 +259,27 @@ export const HomePage = () => {
         </Link>
       </h4>
       <p>
-        A simple programming language interpreter written in C# with various
-        optimisations and AI capabilities.
+        A custom programming language experiment testing how artificial
+        intelligence can help optimise and write software routines
+        automatically.
       </p>
       <h4>
         <Link href="https://github.com/HuyNguyenAu/gpt-decoder">
           GPT Decoder
         </Link>
       </h4>
-      <p>A Minimal GPT decoder with some optimisations.</p>
+      <p>
+        A minimal language model engine built from scratch to test how models run
+        on local hardware without depending on third party cloud providers.
+      </p>
       <h4>
         <Link href="https://github.com/HuyNguyenAu/wobbly-ml">Wobbly ML</Link>
       </h4>
-      <p>A simple machine learning library.</p>
+      <p>
+        A lightweight machine learning tool built from first principles to
+        understand mathematical optimisation and data models.
+      </p>
+
       <h3>Contact</h3>
       <table>
         <tbody>

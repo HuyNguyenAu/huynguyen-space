@@ -3,86 +3,97 @@ import { Article } from "@/components/article";
 export const JETChargeFullStackEngineerPage = () => {
   return (
     <Article>
-      <h3>Full Stack Software Engineer</h3>
+      <h3>Technical Lead and Systems Engineer</h3>
       <p>
         <strong>Company: </strong>JET Charge
         <br />
-        <strong>Dates:</strong> Oct 2021 - Jun 2026
+        <strong>Dates: </strong>Oct 2021 - Jun 2026
+        <br />
+        <strong>Location: </strong>Melbourne, Australia
+        <br />
+        <strong>Location: </strong>Melbourne, Australia
+        <br />
+        <strong>Official Band: </strong>Full Stack Software Engineer (Acting Lead / Systems Architecture)
       </p>
-      <h4>CORE - Electric Vehicle (EV) Energy Management System</h4>
+      <p>
+        Led technical architecture and product delivery across smart energy
+        management (CORE), automated field onboarding (ZTC), and multi-tenant
+        billing platforms. Served as technical lead supporting the $25M ARENA
+        Charging-as-a-Service program (3,500+ commercial fleet vehicles across
+        Woolworths, IAG, Kinetic, and ACT Gov) and major enterprise tenders
+        including Team Global Express ($45M fleet project), Public Transport
+        Authority WA ($10M electric bus depot), and DTF Victoria ($5M).
+      </p>
+
+      <h4>1. Energy Management and Enterprise Sales (CORE v2)</h4>
       <ul>
         <li>
-          Co-designed and led the frontend for a greenfield, first-in-Australia
-          edge system that lets a non-specialist electrician commission a site
-          without dealing directly with a convoluted configuration file. Enables
-          load management to fit up to 5x more chargers on the same power
-          supply, opening capacity-constrained sites (apartments, fleet depots)
-          that were previously uneconomic.
+          Delivered the smart edge energy management platform, allowing sites to
+          power 5x more EV chargers on existing supplies and saving clients
+          $1.6M - $5.0M in substation upgrade costs.
         </li>
         <li>
-          Built a real-time local dashboard (WebSocket streaming & RESTful APIs)
-          so technicians and owners diagnose faults on-site instantly, replacing
-          manual charger-by-charger and meter checks.
+          Built 100% offline reliability into commercial fleet charging,
+          protecting enterprise customers from morning delivery delays and
+          preventing $5k - $50k per hour contract penalties.
         </li>
         <li>
-          Re-architected parts of the legacy backend from a monolith to a
-          modular monolith and ported the communication layer to JET Charge's
-          cloud platform, cutting the effort to support new message types.
+          Designed an on-site visual dashboard that allows local electricians to
+          commission and verify equipment in minutes, removing the need to
+          dispatch senior engineers to customer sites.
+        </li>
+        <li>
+          Accelerated new equipment integration from weeks to days, helping
+          sales teams win tenders requiring specialised third party hardware.
         </li>
       </ul>
-      <h4>Illuminate - EV Charging Asset Management Platform</h4>
+
+      <h4>2. Operational Scaling and Deployment Automation (ZTC)</h4>
       <ul>
         <li>
-          Engineered partner/contractor management letting third parties manage
-          assets across multiple organisations, a dealer-style network that
-          offloaded operational burden and opened training/subscription revenue.
-          The platform backs Australia's largest EV operators, including
-          Woolworths, Team Global Express, RACV and SG Fleet.
+          Shipped the remote commissioning platform that cut on-site technician
+          time from 6 hours to 2 - 3.5 hours (or zero with warehouse
+          pre-pairing), saving over $1M in field labour across national fleet
+          contracts.
         </li>
         <li>
-          Refactored the core database permission layer to centralise access
-          control, eliminating scattered duplicate checks and developer-error
-          risk across the codebase.
+          Structured software boundaries so customer-facing web tools and device
+          teams could release new features independently, eliminating
+          development backlogs and speeding up product releases.
         </li>
         <li>
-          Contributed to the uplift of the legacy UI to a modern React component
-          system, speeding feature delivery and giving design freedom for a
-          consistent product standard.
+          Built visual safety checks into the setup portal, catching electrical
+          configuration errors before equipment leaves the warehouse and
+          preventing expensive on-site troubleshooting visits.
+        </li>
+        <li>
+          Optimised device connection speeds to under 3 seconds, improving user
+          experience while cutting monthly cloud infrastructure bills by 5% to
+          10%.
         </li>
       </ul>
-      <h4>Zero-Touch Configuration (ZTC) - Remote CORE Commissioning</h4>
+
+      <h4>3. Revenue Growth and Customer Operations (Illuminate and Billing)</h4>
       <ul>
         <li>
-          Designed and led the ZTC system (custom React Node-UI & secure .NET
-          cloud services) that pre-configures and pairs charger hardware before
-          shipping, removing on-site technician visits and cutting
-          commissioning from hours to minutes.
+          Architected the automated apartment and fleet billing engine with
+          Stripe split payments, unlocking $100k - $300k a year in recurring
+          subscription and transaction revenue.
         </li>
         <li>
-          Built a config sync engine with automatic push/pull and drift/conflict
-          detection that recovers from transient network drops and prevents
-          invalid device states, reducing config errors and engineer diagnosis
-          time.
+          Built customer and partner delegation portals that allow fleet
+          managers and contractors to manage their own assets, saving $300k -
+          $500k a year in customer support staffing costs.
         </li>
         <li>
-          Added a config pointer table & caching layer serving repeated reads
-          without hitting slower and costlier blob storage, cutting repeated-query
-          response times to under 3 seconds and lowering cloud query costs.
-        </li>
-      </ul>
-      <h4>Billing - Apartment & Commercial Charging</h4>
-      <ul>
-        <li>
-          Led integration of Stripe billing into a legacy .NET platform
-          supporting both private chargers billed to individual residents and
-          shared chargers billed per session, with automated quarterly
-          reimbursement to the Owners Corporation. Unlocking hundreds of
-          thousands in new recurring revenue across commercial customers.
+          Strengthened data security and customer account isolation across all
+          platforms, ensuring enterprise clients meet strict compliance
+          standards.
         </li>
         <li>
-          Exposed billing APIs to the JET Charge Connect mobile app so residents
-          self-manage usage and payments, lifting adoption and reducing manual
-          admin.
+          Upgraded core web applications to a standardised interface library,
+          helping engineering teams build and release client-requested features
+          faster.
         </li>
       </ul>
     </Article>

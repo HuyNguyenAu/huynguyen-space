@@ -6,7 +6,7 @@ export const Article = ({
   children,
 }: PropsWithChildren<{ hideHome?: boolean }>) => {
   return (
-    <article className="prose mx-auto">
+    <article className="prose mx-auto max-w-4xl">
       {!hideHome && (
         <Link href="/" internal={true}>
           Home
