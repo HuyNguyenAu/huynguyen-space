@@ -141,7 +141,7 @@ export const HomePage = () => {
 
       <h3>Selected Projects</h3>
       <h4>
-        <Link href="projects/zero-touch-configuration" internal={true}>
+        <Link href="/projects/zero-touch-configuration" internal={true}>
           Zero-Touch Configuration (ZTC)
         </Link>
       </h4>
@@ -151,7 +151,7 @@ export const HomePage = () => {
         across national rollouts.
       </p>
       <h4>
-        <Link href="projects/edge-load-management" internal={true}>
+        <Link href="/projects/edge-load-management" internal={true}>
           Edge Energy Management System (CORE v2)
         </Link>
       </h4>
@@ -161,7 +161,7 @@ export const HomePage = () => {
         and unblocked stalled fleet deals.
       </p>
       <h4>
-        <Link href="projects/billing-for-apartments" internal={true}>
+        <Link href="/projects/billing-for-apartments" internal={true}>
           Billing for Apartments and Shared EV Infrastructure
         </Link>
       </h4>
@@ -187,7 +187,7 @@ export const HomePage = () => {
             </td>
             <td>
               <Link
-                href="experience/jetcharge/full-stack-software-engineer"
+                href="/experience/jetcharge/full-stack-software-engineer"
                 internal={true}
               >
                 Technical Lead and Systems Engineer
@@ -201,7 +201,7 @@ export const HomePage = () => {
             </td>
             <td>
               <Link
-                href="experience/energy-locals/it-specialist"
+                href="/experience/energy-locals/it-specialist"
                 internal={true}
               >
                 IT Specialist
@@ -215,7 +215,7 @@ export const HomePage = () => {
             </td>
             <td>
               <Link
-                href="experience/energy-locals/graduate-it-specialist"
+                href="/experience/energy-locals/graduate-it-specialist"
                 internal={true}
               >
                 Graduate IT Specialist
