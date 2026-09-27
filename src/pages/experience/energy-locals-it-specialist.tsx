@@ -10,6 +10,8 @@ export const EnergyLocalsITSpecialistPage = () => {
         <strong>Dates: </strong>Oct 2020 - Oct 2021
         <br />
         <strong>Location: </strong>Melbourne, Australia
+        <br />
+        <strong>Core Stack: </strong>Laravel (PHP), Bootstrap, SQL Server, Westpac & Equifax KYC APIs, Linux VPS, Bash/PowerShell
       </p>
       <p>
         Built core customer onboarding, wholesale settlement, and data automation
@@ -22,18 +24,20 @@ export const EnergyLocalsITSpecialistPage = () => {
       <h4>1. Customer Onboarding and B2B Partnerships (Retailer-as-a-Service)</h4>
       <ul>
         <li>
-          Built the company's first white-label customer onboarding platform,
-          enabling Energy Locals' B2B "Retailer-as-a-Service" model to sign and
-          launch new retail partners with near-zero marginal onboarding cost.
+          Built the company's first white-label customer onboarding web
+          application using Laravel (PHP) and Bootstrap with automated
+          multi-tenant database provisioning, enabling Energy Locals' B2B
+          "Retailer as a Service" model to launch new retail partners with
+          near-zero marginal onboarding cost.
         </li>
         <li>
           Replaced manual account creation (~20 minutes per signup), saving over
           3,300 operational hours across 10,000 customers.
         </li>
         <li>
-          Automated identity and credit checks via Westpac and Equifax, cutting
-          verification turnaround from 2 - 3 business days to under 60 seconds
-          and lifting signup conversion rates.
+          Integrated automated identity and credit verification via Westpac and
+          Equifax KYC APIs, cutting verification turnaround from 2 - 3 business
+          days to under 60 seconds and lifting signup conversion rates.
         </li>
         <li>
           Mitigated bad debt and customer default rates (typically averaging 1% -
@@ -45,14 +49,14 @@ export const EnergyLocalsITSpecialistPage = () => {
       <h4>2. Wholesale Market Settlements and Revenue Assurance (AEMO & Billing)</h4>
       <ul>
         <li>
-          Engineered automated daily reconciliation systems for wholesale power
-          settlements with AEMO, auditing millions of dollars in wholesale power
-          transactions.
+          Engineered automated daily reconciliation systems using Python and SQL
+          for wholesale power settlements with AEMO, auditing millions of
+          dollars in wholesale electricity transactions.
         </li>
         <li>
           Resolved billing discrepancies between wholesale purchases and
-          customer meter usage, preventing cash flow loss from Unaccounted for
-          Energy (UFE) and avoiding market interest penalties.
+          customer meter telemetry, preventing cash flow loss from Unaccounted
+          for Energy (UFE) and avoiding market interest penalties.
         </li>
         <li>
           Eliminated exposure to AEMO financial audit fines and market
@@ -73,13 +77,14 @@ export const EnergyLocalsITSpecialistPage = () => {
           year) and removing spreadsheet errors.
         </li>
         <li>
-          Automated developer workstation setups with repeatable scripts, cutting
-          onboarding time for new engineers from 2 days down to under 2 hours.
+          Automated developer workstation and server setups with repeatable
+          Bash and PowerShell scripts, cutting onboarding time for new engineers
+          from 2 days down to under 2 hours.
         </li>
         <li>
-          Maintained core operational database servers on high-availability VPS,
-          establishing automated backups, monitoring, and disaster recovery
-          procedures.
+          Maintained core operational database servers on high-availability
+          Linux VPS, establishing automated backup pipelines, monitoring, and
+          disaster recovery procedures.
         </li>
       </ul>
     </Article>

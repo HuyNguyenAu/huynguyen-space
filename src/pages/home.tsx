@@ -7,14 +7,9 @@ export const HomePage = () => {
       <h3>Huy Nguyen</h3>
       <figcaption>
         Senior Systems and Software Engineer
-        <br />
-        <span className="text-sm font-normal text-stone-600">
-          Technical Lead helping clean energy and hardware businesses cut
-          installation costs, solve grid limits, and grow recurring revenue.
-        </span>
       </figcaption>
       <p>
-        I build software and systems that solve real-world problems for electric
+        I build software and systems that solve real world problems for electric
         vehicle charging and clean energy companies. Over the last 5+ years, I
         have led software delivery for commercial EV fleets across Australia,
         working with clients like{" "}
@@ -24,7 +19,7 @@ export const HomePage = () => {
       <ul>
         <li>
           <strong>Cut installation and labour costs.</strong> Turn messy on-site
-          setups into simple plug-and-play tools so projects scale without hiring
+          setups into simple plug and play tools so projects scale without hiring
           armies of technicians.
         </li>
         <li>
@@ -99,6 +94,43 @@ export const HomePage = () => {
         </tbody>
       </table>
 
+      <h3>Technical Stack</h3>
+      <table>
+        <thead>
+          <tr>
+            <th>Domain</th>
+            <th>Technologies</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>
+              <strong>Backend</strong>
+            </td>
+            <td>
+              C#, .NET / .NET Core, ASP.NET Core Web API, SQL Server,
+              PostgreSQL, Azure, Bicep.
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <strong>Frontend</strong>
+            </td>
+            <td>
+              React, TypeScript.
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <strong>Industrial IoT & Edge Systems</strong>
+            </td>
+            <td>
+              WebSockets, Modbus RTU / TCP, OCPP 1.6J / 2.0.1.
+            </td>
+          </tr>
+        </tbody>
+      </table>
+
       <h3>What I Work On</h3>
       <table>
         <thead>
@@ -142,7 +174,7 @@ export const HomePage = () => {
       <h3>Selected Projects</h3>
       <h4>
         <Link href="/projects/zero-touch-configuration" internal={true}>
-          Zero-Touch Configuration (ZTC)
+          Zero Touch Configuration (ZTC)
         </Link>
       </h4>
       <p>
@@ -239,6 +271,7 @@ export const HomePage = () => {
           Wayfare
         </Link>
       </h4>
+      <small>TypeScript · Finite State Machines · Deterministic Execution Flow</small>
       <p>
         A simple coding agent bounded by a state machine that allows for
         agentic workflows that are reproducible, easy to debug, and predictable.
@@ -248,6 +281,9 @@ export const HomePage = () => {
           LLM Native Virtual Machine
         </Link>
       </h4>
+      <small>
+        Rust · RISC Inspired Assembly · Context Stack Registers · GGUF Models
+      </small>
       <p>
         An experimental project testing how to use language models as software
         engines. Breaks large prompts into small, predictable steps to reduce
@@ -258,6 +294,9 @@ export const HomePage = () => {
           Lox Lang AI
         </Link>
       </h4>
+      <small>
+        C# · Bytecode Interpreter · AST Evaluation · Compiler Construction
+      </small>
       <p>
         A custom programming language experiment testing how artificial
         intelligence can help optimise and write software routines
@@ -268,13 +307,20 @@ export const HomePage = () => {
           GPT Decoder
         </Link>
       </h4>
+      <small>
+        Python · PyTorch · Transformer Architecture · KeyValue Caching
+      </small>
       <p>
         A minimal language model engine built from scratch to test how models run
         on local hardware without depending on third party cloud providers.
+
       </p>
       <h4>
         <Link href="https://github.com/HuyNguyenAu/wobbly-ml">Wobbly ML</Link>
       </h4>
+      <small>
+        C# · Matrix Operations · Numerical Gradients · Backpropagation
+      </small>
       <p>
         A lightweight machine learning tool built from first principles to
         understand mathematical optimisation and data models.

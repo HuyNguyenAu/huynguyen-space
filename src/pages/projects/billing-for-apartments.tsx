@@ -9,9 +9,10 @@ export const BillingForApartments = () => {
         <br />
         <strong>Company:</strong> JET Charge
         <br />
-        <strong>Scope:</strong> Automated tenant metering and billing platform
-        that unblocks apartment property sales and generates recurring software
-        revenue.
+        <strong>Scope:</strong> Automated multi-tenant EV metering and financial
+        settlement platform unlocking residential strata infrastructure.
+        <br />
+        <strong>Tech Stack:</strong> C# / .NET Core, Stripe, SQL Server, RESTful APIs, EntityFramework, Azure
       </p>
 
       <blockquote>
