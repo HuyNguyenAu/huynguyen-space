@@ -5,96 +5,91 @@ export const ZeroTouchConfigurationPage = () => {
     <Article>
       <h3>Zero-Touch Configuration (ZTC)</h3>
       <p>
-        <strong>Role:</strong> Technical Lead and Systems Engineer
+        <strong>Role:</strong> Full Stack Software Engineer
         <br />
         <strong>Company:</strong> JET Charge
         <br />
-        <strong>Scope:</strong> A remote setup platform that eliminates
-        specialist field labour and speeds up nationwide fleet rollouts.
+        <strong>Tech Stack:</strong> React, TypeScript, C# / .NET Core, Azure,
+        Blob Storage, Application Insights, Azure DevOps
       </p>
 
       <blockquote>
         <p>
-          <strong>TLDR:</strong>
+          <strong>Problem:</strong> Every site installation required a
+          specialist on site for 6+ hours to configure equipment by hand.
           <br />
-          Rolling out commercial EV
-          chargers across Australia was slow and expensive because every site
-          required sending a specialist technician at $130/hr for 6+ hours to
-          configure equipment by hand. This created project delays, annoyed
-          clients, and ate into profit margins.
+          <strong>Solution:</strong> A visual web tool that validates
+          electrical configurations before hardware leaves the warehouse,
+          paired with an automatic sync service devices pull from on boot.
           <br />
-          Built a visual web tool for
-          pre-configuring hardware before shipping, paired with an automatic
-          sync system so local electricians can simply plug the equipment in and
-          walk away.
-          <br />
-          Cut on-site setup from 6 hours
-          to 2 - 3.5 hours (or zero with warehouse pre-pairing), saved over $1M
-          in field labour across national fleet contracts, and dropped device
-          connection times to under 3 seconds.
+          <strong>Result:</strong> Cut on-site setup from 6h to 2 - 3.5h (or
+          zero with warehouse pre-pairing), dropped device handshake from
+          &gt;30s to &lt;3s, and reduced service Azure costs by 5% - 10%.
         </p>
       </blockquote>
 
-      <h4>The Problem: The $1M Field Labour Bottleneck</h4>
+      <h4>The Problem: The Field Labour Bottleneck</h4>
       <p>
         When enterprise clients like Woolworths and Team Global Express signed
-        fleet electrification contracts, we had to install charging equipment
-        across hundreds of commercial depots nationwide.
+        commercial fleet electrification contracts, we had to install charging
+        equipment across hundreds of depots nationwide on tight rollout schedules.
       </p>
       <p>
-        The biggest bottleneck was on-site labour. Every site required sending a
-        specialist technician at $130/hr for 6+ hours to set up network
-        settings, configure devices, and troubleshoot issues. Travel costs were
-        high, projects fell weeks behind schedule, and small typos in
-        configuration files forced technicians to travel back for expensive
-        repeat visits.
-      </p>
-      <p>
-        Our sales and operations teams needed hardware that could arrive on site
-        pre-configured and ready to run, so any local electrician could install
-        it without needing software help.
+        The biggest operational bottleneck was on-site labour. Every single site
+        required sending a specialist technician at ~$130/hr for 6+ hours just
+        to configure network settings, pair equipment, and troubleshoot
+        connections. Travel costs were high, projects fell behind schedule, and
+        a single typo in a configuration file meant an expensive repeat visit.
+        Operations needed to scale depot rollouts without having to hire a massive
+        team of travelling specialists.
       </p>
 
-      <h4>How We Solved It</h4>
-
-      <h4>1. Letting Teams Ship Updates Independently</h4>
+      <h4>How It Works: Key Engineering Decisions</h4>
       <p>
-        Hardware teams and web teams need to move fast when customer requirements
-        change. The textbook engineering approach would have locked every team
-        into coordinated releases, slowing down new product launches. Instead,
-        we designed our setup files so the customer-facing web tools and the
-        device software could update independently. This allowed teams to launch
-        new features for clients without waiting on long development cycles.
+        We needed hardware that could arrive on site pre-configured and ready to
+        run, so any local electrician could simply mount it, wire it up, and
+        walk away:
       </p>
-
-      <h4>2. Catching Mistakes in the Office Instead of in the Field</h4>
-      <p>
-        The most expensive bug is one found by an electrician on site. We built
-        visual guardrails directly into the web tool used by our project
-        managers and operations team. They connect equipment on screen using a
-        visual map that checks electrical rules in real time, like breaker
-        limits and power phases. If a setup exceeds power capacity or is missing
-        key details, the system will not let them save it. This stopped bad
-        configurations before equipment ever left the warehouse.
-      </p>
-
-      <h4>3. Automatic Sync Over Flaky Depot Internet</h4>
-      <p>
-        Depot basements often have poor mobile phone reception. We built an
-        automatic sync system so that when the hardware powers on, it checks
-        whether its local settings match the customer order. If there is an
-        update, it downloads and applies it automatically. Contractors did not
-        have to wait on the phone with customer support to confirm device
-        activation.
-      </p>
-
-      <h4>4. Faster Startup and Lower Cloud Bills</h4>
-      <p>
-        As thousands of devices came online, querying cloud databases repeatedly
-        made device bootups slow and drove up our monthly cloud bill. We added an
-        instant-access memory layer that cut connection times to under 3 seconds
-        and reduced our monthly cloud infrastructure costs by 5% to 10%.
-      </p>
+      <ul>
+        <li>
+          <strong>Pre-configuring with strict validation:</strong> The most
+          expensive bug is one found by an electrician in the field. We built a
+          visual equipment map where project managers configure site layouts
+          before hardware ever leaves the warehouse. The UI enforces electrical
+          rules in real time—checking breaker limits and phase allocation—and
+          blocks invalid configurations from ever being saved or shipped.
+        </li>
+        <li>
+          <strong>Decoupled configuration contracts:</strong> Web and firmware
+          teams move at different speeds. The textbook approach would have locked
+          everyone into lockstep, coordinated releases. Instead, we decoupled
+          the configuration contract between the web portal and edge devices,
+          allowing teams to ship updates independently without blocking each
+          other.
+        </li>
+        <li>
+          <strong>Automatic sync over flaky depot internet:</strong> Commercial
+          depot basements often have terrible mobile reception. We built an
+          automatic sync system so that when hardware boots up, it compares its
+          local configuration against the cloud order and pulls down updates
+          automatically. Contractors never had to sit on hold with customer
+          support to confirm device activation.
+        </li>
+        <li>
+          <strong>Pointer-table caching to cut cloud bills and boot times:</strong>{" "}
+          As thousands of devices came online, querying Azure Blob Storage on
+          every device handshake made boots slow (&gt;30s) and drove up our
+          cloud bill. We introduced a pointer-table cache layer in front of Blob
+          Storage, slashing median connection times to under 3 seconds and
+          reducing our service Azure costs by 5% - 10% (measured).
+        </li>
+        <li>
+          <strong>Delivery and observability:</strong> Automated CI/CD pipelines
+          in Azure DevOps deploy builds to dedicated per-environment Azure
+          subscriptions, while device handshakes, boot syncs, and latency are
+          monitored with Application Insights and Azure Monitor alerts.
+        </li>
+      </ul>
 
       <h4>System Architecture Flow</h4>
       <figure className="my-6">
@@ -106,27 +101,24 @@ export const ZeroTouchConfigurationPage = () => {
         />
       </figure>
 
-      <h4>Business Outcomes</h4>
+      <h4>The Impact</h4>
       <ul>
         <li>
-          <strong>Over $1M Saved in Field Labour:</strong> Cut on-site setup from
-          6 hours to 2 - 3.5 hours, saving around $520 per site in technician
-          time. With warehouse pre-pairing, technician site time was eliminated
-          completely.
+          Cut on-site setup from 6 hours down to 2 - 3.5 hours (and down to zero
+          when pre-paired in the warehouse), saving an estimated $325 - $520 per
+          site in specialist field labour (2.5 - 4 hours * $130/hr).
         </li>
         <li>
-          <strong>Rollouts Scaled Without Extra Staff:</strong> Allowed our
-          operations team to deliver hundreds of commercial depot installations
-          on schedule without hiring a large team of travelling specialists.
+          Slashed median device handshake from &gt;30s to &lt;3s and cut
+          service Azure infrastructure costs by 5% - 10% (measured).
         </li>
         <li>
-          <strong>Faster Customer Updates:</strong> Decoupled software parts so
-          teams could ship dozens of updates without blocking each other.
+          Delivered hundreds of commercial depot installs on schedule without
+          hiring additional travelling engineers.
         </li>
         <li>
-          <strong>Lower Operating Costs:</strong> Device connection times
-          dropped to under 3 seconds, cutting recurring cloud data costs by 5% to
-          10%.
+          Eliminated configuration typos and repeat site visits through automated
+          pre-shipping validation rules.
         </li>
       </ul>
     </Article>

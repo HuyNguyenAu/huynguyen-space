@@ -11,80 +11,62 @@ export const EnergyLocalsITSpecialistPage = () => {
         <br />
         <strong>Location: </strong>Melbourne, Australia
         <br />
-        <strong>Core Stack: </strong>Laravel (PHP), Bootstrap, SQL Server, Westpac & Equifax KYC APIs, Linux VPS, Bash/PowerShell
+        <strong>Core Stack: </strong>Laravel (PHP), Bootstrap, C#, Python, SQL
+        Server, Westpac & Equifax KYC APIs, Linux VPS, Bash / PowerShell
       </p>
       <p>
-        Built core customer onboarding, wholesale settlement, and data automation
-        systems for an Australian retail energy provider. Enabled Energy
-        Locals' B2B "Retailer-as-a-Service" model to onboard partner customers
-        with near-zero marginal cost, while automating daily settlement
-        reconciliation across millions of dollars in wholesale power purchases.
+        I built customer onboarding systems, wholesale settlement reconciliation
+        tools, and internal data pipelines for an Australian energy retailer,
+        operating in a strictly regulated market handling customer identity and
+        financial records.
       </p>
 
-      <h4>1. Customer Onboarding and B2B Partnerships (Retailer-as-a-Service)</h4>
+      <h4>1. Multi-Tenant Customer Onboarding</h4>
       <ul>
         <li>
-          Built the company's first white-label customer onboarding web
-          application using Laravel (PHP) and Bootstrap with automated
-          multi-tenant database provisioning, enabling Energy Locals' B2B
-          "Retailer as a Service" model to launch new retail partners with
-          near-zero marginal onboarding cost.
+          Built the company's first white-label onboarding platform (Laravel,
+          Bootstrap) featuring automated multi-tenant database provisioning,
+          allowing us to spin up new retail energy partners without custom code.
         </li>
         <li>
-          Replaced manual account creation (~20 minutes per signup), saving over
-          3,300 operational hours across 10,000 customers.
+          Replaced manual account creation (~20 minutes per signup) with an
+          automated signup pipeline that processed 10,000+ customers.
         </li>
         <li>
-          Integrated automated identity and credit verification via Westpac and
-          Equifax KYC APIs, cutting verification turnaround from 2 - 3 business
-          days to under 60 seconds and lifting signup conversion rates.
-        </li>
-        <li>
-          Mitigated bad debt and customer default rates (typically averaging 1% -
-          3% of retail utility revenue) while ensuring 100% compliance with strict
-          energy-sector KYC regulations.
+          Integrated automated identity and credit verification using Westpac
+          and Equifax KYC APIs, slashing verification times from 2 - 3 business
+          days to under 60 seconds while meeting retail energy compliance rules.
         </li>
       </ul>
 
-      <h4>2. Wholesale Market Settlements and Revenue Assurance (AEMO & Billing)</h4>
+      <h4>2. Wholesale Settlement Reconciliation</h4>
       <ul>
         <li>
-          Engineered automated daily reconciliation systems using Python and SQL
-          for wholesale power settlements with AEMO, auditing millions of
-          dollars in wholesale electricity transactions.
+          Built automated daily reconciliation in Python and SQL between AEMO
+          wholesale electricity settlements and customer meter data, catching
+          discrepancies before they became billing or compliance headaches.
         </li>
         <li>
-          Resolved billing discrepancies between wholesale purchases and
-          customer meter telemetry, preventing cash flow loss from Unaccounted
-          for Energy (UFE) and avoiding market interest penalties.
-        </li>
-        <li>
-          Eliminated exposure to AEMO financial audit fines and market
-          participant breach notices through automated transaction checks.
-        </li>
-        <li>
-          Delivered foundational billing and usage pipelines for variable
-          time-of-use tariffs and wholesale pass-through, speeding up the
-          meter-to-cash cycle and reducing unbilled accounts receivable.
+          Engineered billing calculation pipelines supporting complex
+          time-of-use tariffs and wholesale pass-through pricing models.
         </li>
       </ul>
 
-      <h4>3. Data Automation and Systems Operations (ETL & Infrastructure)</h4>
+      <h4>3. Data Pipelines and Infrastructure Automation</h4>
       <ul>
         <li>
-          Consolidated business and compliance reporting data into automated C#
-          and SQL ETL pipelines, saving analysts 10 - 15 hours a week (~$40k a
-          year) and removing spreadsheet errors.
+          Consolidated business reporting into automated C# and SQL ETL
+          pipelines, saving business analysts 10 - 15 hours every week and
+          eliminating spreadsheet errors.
         </li>
         <li>
-          Automated developer workstation and server setups with repeatable
-          Bash and PowerShell scripts, cutting onboarding time for new engineers
-          from 2 days down to under 2 hours.
+          Automated developer workstations and server provisioning with
+          repeatable Bash and PowerShell scripts, cutting new engineer setup time
+          from 2 days to under 2 hours.
         </li>
         <li>
-          Maintained core operational database servers on high-availability
-          Linux VPS, establishing automated backup pipelines, monitoring, and
-          disaster recovery procedures.
+          Managed core database servers on Linux, writing automated backup
+          routines, monitoring, and disaster recovery procedures.
         </li>
       </ul>
     </Article>

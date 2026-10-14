@@ -5,100 +5,99 @@ export const EdgeLoadManagementPage = () => {
     <Article>
       <h3>Edge Energy Management System (CORE v2)</h3>
       <p>
-        <strong>Role:</strong> Technical Lead and Systems Engineer
+        <strong>Role:</strong> Full Stack Software Engineer
         <br />
         <strong>Company:</strong> JET Charge
         <br />
-        <strong>Scope:</strong> Smart energy management software that maximises
-        site electrical capacity, avoids expensive utility upgrades, and protects
-        commercial delivery fleets from downtime.
+        <strong>Tech Stack:</strong> C# / .NET Core, Linux, Modbus RTU / TCP,
+        OCPP 1.6J / 2.0.1, Next.js, React, TypeScript, WebSockets, Azure DevOps
       </p>
 
       <blockquote>
         <p>
-          <strong>TLDR:</strong>
+          <strong>Problem:</strong> Commercial depots lacked the electrical
+          capacity to charge entire fleets, and delivery operations could not
+          risk relying on cloud connectivity.
           <br />
-          Commercial depots have limited
-          power supplies. Adding enough chargers to electrify fleets risked
-          $80,000 - $250,000 substation upgrades per site and $5,000 - $50,000
-          per hour in contract penalties if charging failed overnight.
+          <strong>Solution:</strong> An offline-first C# / .NET control daemon
+          running directly on local Linux edge gateways, balancing power in real
+          time over Modbus and OCPP.
           <br />
-          Built a smart energy controller that
-          balances power in real time and works 100% offline, paired with a clean
-          on-site screen for local electricians.
-          <br />
-          Avoided $1.6M - $5.0M in
-          substation upgrade costs across client sites, allowed 5x more chargers
-          on existing power feeds, and protected commercial fleets from expensive
-          morning delivery delays.
+          <strong>Result:</strong> Powered up to 5x more chargers on the same
+          supply, saved clients an estimated $1.6M - $5.0M in avoided substation
+          upgrades, and kept fleet charging completely uninterrupted during
+          network outages.
         </p>
       </blockquote>
 
       <h4>The Problem: The Grid Limits That Stopped Sales Deals</h4>
       <p>
-        For commercial fleets, going electric comes down to a simple physical
-        limit: a depot only has so much electricity coming from the street. A
-        client might want to buy 30 electric delivery vans, but their building
-        only has enough power to charge 6 of them at once.
+        When commercial delivery fleets go electric, they immediately run into a
+        hard physical constraint: a depot only has so much electricity coming
+        from the street. A client might need to charge 30 delivery vans
+        overnight, but the existing switchboard only has capacity for 6
+        unmanaged 22 kW chargers.
       </p>
       <p>
-        Asking the power company for a substation upgrade costs between $80,000
-        and $250,000 per site and takes 12 to 18 months of construction work.
-        For many prospective customers, that price tag and waiting period killed
-        the deal before it started.
+        Asking the local utility for a substation or supply upgrade costs
+        between $80,000 and $250,000 per site and takes 12 to 18 months of civil
+        works—which regularly killed sales deals before they even got off the
+        ground.
       </p>
       <p>
-        At the same time, commercial delivery fleets (like Woolworths online
-        groceries or express couriers) operate on tight morning schedules. If an
-        internet outage caused chargers to shut down overnight, delivery vans
-        could not leave on time, triggering customer contract penalties between
-        $5,000 and $50,000 per hour. Sales teams needed a solution that proved
-        EV fleets could charge safely on existing power supplies without relying
-        on internet connections.
+        To make matters worse, commercial delivery fleets (like supermarket home
+        deliveries and express couriers) run on tight morning departure
+        schedules. If chargers shut down overnight because the depot's internet
+        dropped out, vans couldn't leave on time, triggering customer contract
+        penalties between $5,000 and $50,000 per hour. A cloud-dependent load
+        controller was simply not acceptable.
       </p>
 
-      <h4>How We Solved It</h4>
-
-      <h4>1. Guaranteed Offline Reliability to Protect Fleet Schedules</h4>
+      <h4>How It Works: Key Engineering Decisions</h4>
       <p>
-        Our primary promise was that a client fleet would never be stuck because
-        the internet went down. The smart load balancing software runs directly
-        on hardware installed at the depot. It constantly reads power meters and
-        adjusts charger speeds every split second. If the mobile network drops
-        out overnight, vehicles continue charging safely without tripping the
-        building main circuit breaker. This allowed sales teams to reassure
-        clients that their morning delivery runs were completely safe.
+        We needed a system that kept site power draw strictly within breaker
+        limits while operating entirely on-premise without cloud dependencies:
       </p>
-
-      <h4>2. Making Setup Easy for Electricians</h4>
-      <p>
-        In the past, energy management systems required sending software
-        engineers to customer sites to hand-edit fragile configuration files.
-        This slowed down projects and frustrated customers. We built a local web
-        dashboard that runs directly from the device over Wi-Fi. Any local
-        electrician can open the screen on a phone or tablet, verify the
-        installation with clear visual diagrams, and finish setup in minutes
-        without calling software support.
-      </p>
-
-      <h4>3. Clear Diagnostics Without Expensive Mobile Bills</h4>
-      <p>
-        To provide ongoing support, our operations team needed performance data
-        from customer sites. But streaming live data every second from hundreds
-        of chargers over cellular connections would have created huge mobile
-        bills. We used a smart data summarisation method that cuts data volume
-        while making sure that sudden electrical faults, like breaker trips, are
-        immediately highlighted. This gave our customer support team clear
-        visibility while keeping monthly mobile data costs low.
-      </p>
-
-      <h4>4. Quick Integration for New Charger Brands</h4>
-      <p>
-        Different fleet clients use different brands of chargers and power
-        meters. We redesigned our communication layer so sales and engineering
-        could support new hardware brands in days rather than months, keeping our
-        bids competitive in enterprise tenders.
-      </p>
+      <ul>
+        <li>
+          <strong>Local, offline-first control loop:</strong> Our primary promise
+          was that a fleet would never be stranded because of a network outage.
+          The control service runs as a C# / .NET daemon directly on the on-site
+          Linux gateway. It continuously polls local power meters over Modbus
+          RTU/TCP and throttles charger outputs via OCPP 1.6J / 2.0.1 every split
+          second. If the internet drops out completely, load balancing continues
+          locally without tripping the main breaker.
+        </li>
+        <li>
+          <strong>Embedded web dashboard for local electricians:</strong> In the
+          past, commissioning edge energy hardware required sending specialized
+          software engineers to customer sites to manually edit configuration
+          files. We built an embedded Next.js dashboard served right from the
+          gateway over local Wi-Fi, streaming live telemetry over WebSockets. Any
+          local electrician can open the UI on a tablet, verify meter and
+          charger readings, and finish commissioning without software support.
+        </li>
+        <li>
+          <strong>Pluggable hardware abstraction layer:</strong> Different
+          commercial tenders specify different brands of power meters and
+          chargers. We built a clean device abstraction layer so integrating a
+          new meter or charger brand takes days instead of weeks, keeping sales
+          bids fast and competitive.
+        </li>
+        <li>
+          <strong>Telemetry summarisation and alerting:</strong> Streaming raw
+          telemetry every second from hundreds of chargers over cellular links
+          would have created huge mobile data bills. We built an edge data
+          pipeline that summarizes normal operating telemetry to keep bandwidth
+          minimal, while instantly dispatching critical fault events (like
+          breaker trips) to Azure Monitor and our on-call rotation.
+        </li>
+        <li>
+          <strong>Delivery and packaging:</strong> Gateway runtimes and packages
+          are built, tested, and released via automated Azure DevOps pipelines,
+          ensuring reproducible deployments across diverse customer hardware.
+        </li>
+      </ul>
 
       <h4>System Architecture Flow</h4>
       <figure className="my-6">
@@ -110,28 +109,24 @@ export const EdgeLoadManagementPage = () => {
         />
       </figure>
 
-      <h4>Business Outcomes</h4>
+      <h4>The Impact</h4>
       <ul>
         <li>
-          <strong>$1.6M - $5.0M in Avoided Substation Upgrades:</strong> Allowed
-          client depots and residential properties to deploy EV charging
-          immediately without waiting for expensive utility upgrades, closing
-          sales deals over a year faster.
+          Powered up to 5x more chargers on the same supply (such as charging 30
+          vans on a 150 kW supply that previously could only support 6 unmanaged
+          22 kW chargers).
         </li>
         <li>
-          <strong>5x More Chargers on Existing Power:</strong> Allowed clients
-          to install 5x more charging stations than normal electrical limits
-          would allow.
+          Saved clients an estimated $1.6M - $5.0M in avoided substation upgrades
+          across ~20 depot installations ($80k - $250k per site).
         </li>
         <li>
-          <strong>$150k - $500k in Downtime Risk Prevented:</strong> Protected
-          overnight charging schedules during internet outages, shielding
-          clients from heavy contractual penalties.
+          Guaranteed 100% charging continuity through network dropouts,
+          protecting commercial fleets from expensive SLA downtime penalties.
         </li>
         <li>
-          <strong>Faster Troubleshooting:</strong> Replaced hours of manual
-          electrical testing with clear on-screen diagnostics, reducing customer
-          support calls and repair times.
+          Enabled electricians to commission sites in minutes via the embedded
+          dashboard, removing the need for on-site software engineers.
         </li>
       </ul>
     </Article>

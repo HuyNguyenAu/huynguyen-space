@@ -3,7 +3,7 @@ import { Article } from "@/components/article";
 export const JETChargeFullStackEngineerPage = () => {
   return (
     <Article>
-      <h3>Technical Lead and Systems Engineer</h3>
+      <h3>Full Stack Software Engineer</h3>
       <p>
         <strong>Company: </strong>JET Charge
         <br />
@@ -11,92 +11,108 @@ export const JETChargeFullStackEngineerPage = () => {
         <br />
         <strong>Location: </strong>Melbourne, Australia
         <br />
-        <strong>Official Band: </strong>Full Stack Software Engineer (Acting Technical Lead / Systems Architect)
-        <br />
-        <strong>Core Stack: </strong>C#, .NET Core, React, TypeScript, WebSockets, Modbus-RTU/TCP, OCPP, Azure, SQL Server, Stripe, EntityFramework
+        <strong>Core Stack: </strong>C#, .NET Core, ASP.NET Core, Entity
+        Framework, React, Next.js, TypeScript, Zustand, Azure Functions, App
+        Service, Container Apps, Service Bus, Event Grid, Azure SQL, Cosmos DB,
+        Azure DevOps, Stripe, WebSockets, Modbus, OCPP
       </p>
       <p>
-        Led technical architecture and product delivery across smart energy
-        management (CORE), automated field onboarding (ZTC), and multi-tenant
-        billing platforms. Served as technical lead supporting the $25M ARENA
-        Charging-as-a-Service program (3,500+ commercial fleet vehicles across
-        Woolworths, IAG, Kinetic, and ACT Gov) and major enterprise tenders
-        including Team Global Express ($45M fleet project), Public Transport
-        Authority WA ($10M electric bus depot), and DTF Victoria ($5M).
+        I built and operated backend services, edge systems, and web
+        applications across three core products: the Illuminate cloud platform,
+        our remote commissioning system (ZTC), and an edge energy management
+        controller (CORE v2). Supported the $25M ARENA Charging-as-a-Service
+        program, delivering software for 3,500+ commercial fleet vehicles across
+        clients like Woolworths, IAG, Kinetic, and the ACT Government.
       </p>
 
-      <h4>1. Energy Management and Enterprise Sales (CORE v2)</h4>
+      <h4>1. Cloud Platform and Multi-Tenant Billing (Illuminate)</h4>
       <ul>
         <li>
-          Delivered the smart edge energy management platform (C#/.NET Core
-          daemon on Linux edge gateways), allowing sites to power 5x more EV
-          chargers on existing supplies and saving clients $1.6M - $5.0M in
-          substation upgrade costs.
+          Built an independent billing engine from scratch using ASP.NET Core
+          and Stripe Connect split payouts, unlocking $100k - $300k a year in
+          recurring subscription and transaction revenue (measured).
         </li>
         <li>
-          Built 100% offline edge autonomy into commercial fleet charging via
-          Modbus power meter polling and OCPP charge point control, protecting
-          enterprise customers from morning delivery delays and preventing $5k -
-          $50k per hour contract penalties.
+          Built self-service asset delegation portals in React, TypeScript,
+          Zustand, and ASP.NET Core, letting fleet managers and electrical
+          contractors manage their own charging infrastructure directly.
         </li>
         <li>
-          Designed an on-site visual dashboard (embedded web server, WebSockets,
-          React) that allows local electricians to commission and verify
-          equipment in minutes, removing the need to dispatch senior engineers to
-          customer sites.
+          Centralised multi-tenant authorisation directly in the Entity
+          Framework data access layer, eliminating duplicate permission checks
+          across endpoints and ensuring strict customer data isolation.
         </li>
         <li>
-          Accelerated new equipment integration from weeks to days, helping
-          sales teams win tenders requiring specialised third party hardware.
+          Helped modernize legacy web apps by migrating frontend code to
+          reusable React components.
         </li>
       </ul>
 
-      <h4>2. Operational Scaling and Deployment Automation (ZTC)</h4>
+      <h4>2. Remote Commissioning and Device Sync (ZTC)</h4>
       <ul>
         <li>
-          Shipped the remote commissioning platform (React Node-UI, .NET Core,
-          & cloud APIs) that cut on-site technician time from 6 hours to 2 - 3.5
-          hours (or zero with warehouse pre-pairing), saving over $1M in field
-          labour across national fleet contracts.
+          Built a validated remote pre-configuration web tool and automated boot
+          sync service, cutting on-site technician time from 6 hours to 2 - 3.5
+          hours (and down to zero when hardware was pre-paired in the
+          warehouse).
         </li>
         <li>
-          Structured software boundaries so customer-facing web tools and device
-          teams could release new features independently, eliminating
-          development backlogs and speeding up product releases.
+          Decoupled the configuration contract between the web application and
+          edge firmware, letting both teams release features independently
+          without coordinated release bottlenecks.
         </li>
         <li>
-          Built visual safety checks into the setup portal, catching electrical
-          configuration errors before equipment leaves the warehouse and
-          preventing expensive on-site troubleshooting visits.
-        </li>
-        <li>
-          Optimised device connection speeds to under 3 seconds, improving user
-          experience while cutting monthly cloud infrastructure bills by 5% to
-          10%.
+          Slashed median device handshake latency from &gt;30s to &lt;3s and cut
+          the service's monthly Azure bill by 5% - 10% (measured) by adding a
+          pointer-table cache in front of Blob Storage.
         </li>
       </ul>
 
-      <h4>3. Revenue Growth and Customer Operations (Illuminate and Billing)</h4>
+      <h4>3. Smart Edge Energy Management (CORE v2)</h4>
       <ul>
         <li>
-          Architected the automated apartment and fleet billing engine with
-          Stripe split disbursements, unlocking $100k - $300k a year in recurring
-          subscription and transaction revenue.
+          Built an offline-first C# / .NET Core control daemon running on Linux
+          edge gateways that balances charger loads in real time via Modbus and
+          OCPP, allowing sites to power up to 5x more chargers on existing
+          supplies.
         </li>
         <li>
-          Built customer and partner delegation portals in React and .NET,
-          allowing fleet managers and contractors to manage their own assets and
-          saving $300k - $500k a year in customer support staffing costs.
+          Developed an embedded Next.js dashboard streaming live telemetry over
+          WebSockets, allowing local electricians to commission and verify sites
+          on a tablet without software engineers on site.
         </li>
         <li>
-          Refactored the core database permission layer in C# and EntityFramework to
-          centralise access control, eliminating duplicate checks and ensuring
-          enterprise clients meet strict data isolation compliance standards.
+          Redesigned the hardware integration layer with clean device
+          abstractions, slashing onboarding time for new meter and charger brands
+          from weeks to days.
+        </li>
+      </ul>
+
+      <h4>4. Team Practices and Production Operations</h4>
+      <ul>
+        <li>
+          Maintained automated CI/CD pipelines in Azure DevOps deploying to
+          isolated per-environment Azure subscriptions, managing cloud
+          infrastructure as code with Bicep.
         </li>
         <li>
-          Contributed to the uplift of legacy web applications to modern React
-          components (ShadCN UI), accelerating squad delivery cycles across all
-          product teams.
+          Wrote comprehensive unit and integration test suites (xUnit, NUnit,
+          MSTest, Jest, Vitest) backed by SonarQube and Roslyn analyzers in
+          every build pipeline.
+        </li>
+        <li>
+          Supported production systems on-call using Application Insights, Azure
+          Monitor, and KQL log analysis for rapid incident triage.
+        </li>
+        <li>
+          Ran collaborative system design sessions for squads of 3 - 5
+          engineers, conducted regular 1:1 code reviews, pair-programmed with
+          teammates, and onboarded junior developers.
+        </li>
+        <li>
+          Worked in active Scrum sprints alongside product owners and QA, and
+          contributed technical architecture input to major enterprise tenders
+          (Team Global Express, PTA WA, DTF Victoria).
         </li>
       </ul>
     </Article>

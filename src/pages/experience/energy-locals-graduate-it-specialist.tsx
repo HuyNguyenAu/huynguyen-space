@@ -7,34 +7,43 @@ export const EnergyLocalsGraduateITSpecialistPage = () => {
       <p>
         <strong>Company:</strong> Energy Locals
         <br />
-        <strong>Dates:</strong> Oct 2019 - Oct 2020
+        <strong>Dates:</strong> Sep 2019 - Oct 2020
         <br />
         <strong>Location:</strong> Melbourne, Australia
         <br />
-        <strong>Core Stack:</strong> Python, SQL Server, AEMO Market Management System (MMS), PowerShell, Bash, Azure
+        <strong>Core Stack:</strong> Python, SQL Server, AEMO Market Management
+        System (MMS), PowerShell, Bash, Azure
       </p>
-      <h4>Energy Market Financial Reconciliation</h4>
+      <p>
+        My first role out of RMIT, where I focused on automating energy market
+        data ingestion, wholesale settlement audits, and day-to-day engineering
+        workflows for a fast-scaling retail energy startup.
+      </p>
+
+      <h4>Market Data and Settlement Automation</h4>
       <ul>
         <li>
-          Engineered automated AEMO market reconciliation systems, verifying daily
-          wholesale settlement runs to ensure 100% financial accuracy and prevent
-          costly market balancing penalties.
+          Automated daily verification of AEMO wholesale settlement runs using
+          Python and SQL, identifying calculation discrepancies early and
+          keeping wholesale statements balanced with zero unresolved variances.
         </li>
         <li>
-          Automated market pricing and energy demand data feeds to support
-          commercial decision-making and operational planning.
+          Built automated ingestion feeds for electricity spot prices and
+          regional energy demand data, feeding commercial forecasting and
+          operational planning.
         </li>
       </ul>
+
       <h4>Systems and Infrastructure Automation</h4>
       <ul>
         <li>
-          Designed automated database backup pipelines and disaster recovery
-          procedures using PowerShell, Bash, and Python, protecting critical
-          customer datasets and securing business continuity.
+          Built automated database backup routines and disaster recovery
+          procedures using PowerShell, Bash, and Python to safeguard critical
+          customer account data.
         </li>
         <li>
-          Wrote automated setup scripts for technical workstations,
-          standardising developer onboarding.
+          Created standardized workstation configuration scripts, cutting down
+          manual setup and getting new engineers productive faster.
         </li>
       </ul>
     </Article>
