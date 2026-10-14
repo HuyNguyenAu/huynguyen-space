@@ -41,7 +41,7 @@ export const EdgeLoadManagementPage = () => {
       <p>
         Asking the local utility for a substation or supply upgrade costs
         between $80,000 and $250,000 per site and takes 12 to 18 months of civil
-        works—which regularly killed sales deals before they even got off the
+        works which regularly killed sales deals before they even got off the
         ground.
       </p>
       <p>
@@ -99,7 +99,7 @@ export const EdgeLoadManagementPage = () => {
         </li>
       </ul>
 
-      <h4>System Architecture Flow</h4>
+      <h4>End to End System Architecture</h4>
       <figure className="my-6">
         <img
           src={`${import.meta.env.BASE_URL}edge-load-management-architecture.svg`}
@@ -109,7 +109,7 @@ export const EdgeLoadManagementPage = () => {
         />
       </figure>
 
-      <h4>The Impact</h4>
+      <h4>Commercial Impact & Business Outcomes</h4>
       <ul>
         <li>
           Powered up to 5x more chargers on the same supply (such as charging 30

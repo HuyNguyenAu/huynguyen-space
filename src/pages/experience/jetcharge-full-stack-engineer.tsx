@@ -20,7 +20,7 @@ export const JETChargeFullStackEngineerPage = () => {
         I built and operated backend services, edge systems, and web
         applications across three core products: the Illuminate cloud platform,
         our remote commissioning system (ZTC), and an edge energy management
-        controller (CORE v2). Supported the $25M ARENA Charging-as-a-Service
+        controller (CORE v2). Supported the $25M ARENA Charging as a Service
         program, delivering software for 3,500+ commercial fleet vehicles across
         clients like Woolworths, IAG, Kinetic, and the ACT Government.
       </p>
@@ -88,7 +88,7 @@ export const JETChargeFullStackEngineerPage = () => {
         </li>
       </ul>
 
-      <h4>4. Team Practices and Production Operations</h4>
+      <h4>4. Engineering Delivery & Production Operations</h4>
       <ul>
         <li>
           Maintained automated CI/CD pipelines in Azure DevOps deploying to
@@ -106,7 +106,7 @@ export const JETChargeFullStackEngineerPage = () => {
         </li>
         <li>
           Ran collaborative system design sessions for squads of 3 - 5
-          engineers, conducted regular 1:1 code reviews, pair-programmed with
+          engineers, conducted regular 1:1 code reviews, pair programmed with
           teammates, and onboarded junior developers.
         </li>
         <li>

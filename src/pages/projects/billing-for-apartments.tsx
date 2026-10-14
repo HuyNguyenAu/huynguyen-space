@@ -48,7 +48,7 @@ export const BillingForApartments = () => {
       <p>
         At the same time, the business wanted to transition from one-off
         hardware sales to steady recurring revenue. Our core platform had no
-        native concept of multi-tenant billing—and attempting a full
+        native concept of multi-tenant billing and attempting a full
         architectural rewrite of the legacy system was far too slow and risky.
       </p>
 
@@ -107,7 +107,7 @@ export const BillingForApartments = () => {
         </li>
       </ul>
 
-      <h4>System Architecture Flow</h4>
+      <h4>End to End System Architecture</h4>
       <figure className="my-6">
         <img
           src={`${import.meta.env.BASE_URL}billing-for-apartments-architecture.svg`}
@@ -117,7 +117,7 @@ export const BillingForApartments = () => {
         />
       </figure>
 
-      <h4>The Impact</h4>
+      <h4>Commercial Impact & Business Outcomes</h4>
       <ul>
         <li>
           Generated $100k - $300k a year in predictable, recurring SaaS and
@@ -126,7 +126,7 @@ export const BillingForApartments = () => {
         </li>
         <li>
           Saved an estimated $300k - $500k a year by avoiding 2 - 5 dedicated
-          billing support roles (~$100k - $150k each) through end-to-end
+          billing support roles (~$100k - $150k each) through end to end
           automation.
         </li>
         <li>

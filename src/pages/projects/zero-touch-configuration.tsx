@@ -3,7 +3,7 @@ import { Article } from "@/components/article";
 export const ZeroTouchConfigurationPage = () => {
   return (
     <Article>
-      <h3>Zero-Touch Configuration (ZTC)</h3>
+      <h3>Zero Touch Configuration (ZTC)</h3>
       <p>
         <strong>Role:</strong> Full Stack Software Engineer
         <br />
@@ -56,7 +56,7 @@ export const ZeroTouchConfigurationPage = () => {
           expensive bug is one found by an electrician in the field. We built a
           visual equipment map where project managers configure site layouts
           before hardware ever leaves the warehouse. The UI enforces electrical
-          rules in real time—checking breaker limits and phase allocation—and
+          rules in real time checking breaker limits and phase allocation and
           blocks invalid configurations from ever being saved or shipped.
         </li>
         <li>
@@ -91,17 +91,17 @@ export const ZeroTouchConfigurationPage = () => {
         </li>
       </ul>
 
-      <h4>System Architecture Flow</h4>
+      <h4>End to End System Architecture</h4>
       <figure className="my-6">
         <img
           src={`${import.meta.env.BASE_URL}zero-touch-configuration-architecture.svg`}
-          alt="Zero-Touch Configuration System Architecture Flow"
+          alt="Zero Touch Configuration System Architecture Flow"
           className="max-h-[600px]"
           loading="lazy"
         />
       </figure>
 
-      <h4>The Impact</h4>
+      <h4>Commercial Impact & Business Outcomes</h4>
       <ul>
         <li>
           Cut on-site setup from 6 hours down to 2 - 3.5 hours (and down to zero

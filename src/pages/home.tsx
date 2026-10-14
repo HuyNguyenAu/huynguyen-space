@@ -15,7 +15,7 @@ export const HomePage = () => {
         for <strong>Woolworths, RACV, SG Fleet, and Team Global Express</strong>.
       </p>
 
-      <h3>Engineering Practices</h3>
+      <h3>Engineering & Delivery Standards</h3>
       <table>
         <thead>
           <tr>
@@ -26,7 +26,7 @@ export const HomePage = () => {
         <tbody>
           <tr>
             <td>
-              <strong>Cloud-Native and Serverless</strong>
+              <strong>Cloud Native and Serverless</strong>
             </td>
             <td>
               Event-driven services on Azure Functions, Container Apps, and
@@ -89,7 +89,7 @@ export const HomePage = () => {
           </tr>
           <tr>
             <td>
-              <strong>AI-Assisted Engineering</strong>
+              <strong>AI Assisted Engineering</strong>
             </td>
             <td>
               AI coding agents in daily workflows; building my own (
@@ -100,7 +100,7 @@ export const HomePage = () => {
         </tbody>
       </table>
 
-      <h3>Technical Stack</h3>
+      <h3>Core Technical Stack & Architecture</h3>
       <table>
         <thead>
           <tr>
@@ -173,64 +173,7 @@ export const HomePage = () => {
         </tbody>
       </table>
 
-      <h3>Selected Outcomes</h3>
-      <table>
-        <thead>
-          <tr>
-            <th>Outcome</th>
-            <th>What Changed</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>
-              <strong>Device handshake from ~30s to ~3s</strong>
-            </td>
-            <td>
-              Replaced repeated Blob Storage lookups with a pointer-table cache,
-              also cutting the monthly Azure bill for the service by 5% - 10%.
-            </td>
-          </tr>
-          <tr>
-            <td>
-              <strong>On-site setup from 6h to 2 - 3.5h</strong>
-            </td>
-            <td>
-              Moved device configuration into a validated web tool with automatic
-              sync, so field installs need no engineering help.
-            </td>
-          </tr>
-          <tr>
-            <td>
-              <strong>Up to 5x more chargers per supply</strong>
-            </td>
-            <td>
-              Real-time, offline-first load balancing on edge gateways keeps
-              sites within their electrical limits without cloud connectivity.
-            </td>
-          </tr>
-          <tr>
-            <td>
-              <strong>Identity checks from 2 - 3 days to ~60s</strong>
-            </td>
-            <td>
-              Integrated automated KYC and credit checks through Westpac and
-              Equifax APIs into customer onboarding.
-            </td>
-          </tr>
-          <tr>
-            <td>
-              <strong>3,500+ fleet vehicles supported</strong>
-            </td>
-            <td>
-              Software behind the $25M ARENA fleet rollout for enterprise
-              clients.
-            </td>
-          </tr>
-        </tbody>
-      </table>
-
-      <h3>Selected Projects</h3>
+      <h3>Commercial Systems & Delivery</h3>
       <h4>
         <Link href="/projects/billing-for-apartments" internal={true}>
           Multi-Tenant Billing and Payments
@@ -265,59 +208,7 @@ export const HomePage = () => {
         chargers on existing supplies and avoids costly substation upgrades.
       </p>
 
-      <h3>AI and Systems Projects</h3>
-      <h4>
-        <Link href="https://github.com/HuyNguyenAu/Wayfare">Wayfare</Link>
-      </h4>
-      <small>TypeScript · Finite State Machines · Deterministic Execution Flow</small>
-      <p>
-        A coding agent bounded by a finite state machine to make agentic
-        workflows reproducible, predictable, and easy to debug.
-      </p>
-      <h4>
-        <Link href="https://github.com/HuyNguyenAu/llm_native_virtual_machine">
-          LLM Native Virtual Machine
-        </Link>
-      </h4>
-      <small>
-        Rust · RISC Inspired Assembly · Context Stack Registers · GGUF Models
-      </small>
-      <p>
-        An assembly-like virtual machine that breaks prompts into small,
-        predictable atomic steps to improve accuracy for small local models.
-      </p>
-      <h4>
-        <Link href="https://github.com/HuyNguyenAu/gpt-decoder">GPT Decoder</Link>
-      </h4>
-      <small>
-        Python · PyTorch · Transformer Architecture · KeyValue Caching
-      </small>
-      <p>
-        A minimal transformer inference engine built from scratch in Python and
-        PyTorch to explore KV-caching and local model execution.
-      </p>
-      <h4>
-        <Link href="https://github.com/HuyNguyenAu/lox-lang-ai">Lox Lang AI</Link>
-      </h4>
-      <small>
-        C# · Bytecode Interpreter · AST Evaluation · Compiler Construction
-      </small>
-      <p>
-        A bytecode interpreter and AST evaluator used to explore AI-generated
-        and AI-optimised execution routines.
-      </p>
-      <h4>
-        <Link href="https://github.com/HuyNguyenAu/wobbly-ml">Wobbly ML</Link>
-      </h4>
-      <small>
-        C# · Matrix Operations · Numerical Gradients · Backpropagation
-      </small>
-      <p>
-        A lightweight machine learning library built from first principles in C#
-        to explore backpropagation and numerical gradients.
-      </p>
-
-      <h3>Professional History</h3>
+      <h3>Professional Experience</h3>
       <table>
         <thead>
           <tr>
@@ -378,6 +269,58 @@ export const HomePage = () => {
           </tr>
         </tbody>
       </table>
+
+      <h3>Systems Research & Open Source</h3>
+      <h4>
+        <Link href="https://github.com/HuyNguyenAu/Wayfare">Wayfare</Link>
+      </h4>
+      <small>TypeScript · Finite State Machines · Deterministic Execution Flow</small>
+      <p>
+        A coding agent bounded by a finite state machine to make agentic
+        workflows reproducible, predictable, and easy to debug.
+      </p>
+      <h4>
+        <Link href="https://github.com/HuyNguyenAu/llm_native_virtual_machine">
+          LLM Native Virtual Machine
+        </Link>
+      </h4>
+      <small>
+        Rust · RISC Inspired Assembly · Context Stack Registers · GGUF Models
+      </small>
+      <p>
+        An assembly-like virtual machine that breaks prompts into small,
+        predictable atomic steps to improve accuracy for small local models.
+      </p>
+      <h4>
+        <Link href="https://github.com/HuyNguyenAu/gpt-decoder">GPT Decoder</Link>
+      </h4>
+      <small>
+        Python · PyTorch · Transformer Architecture · KeyValue Caching
+      </small>
+      <p>
+        A minimal transformer inference engine built from scratch in Python and
+        PyTorch to explore KV caching and local model execution.
+      </p>
+      <h4>
+        <Link href="https://github.com/HuyNguyenAu/lox-lang-ai">Lox Lang AI</Link>
+      </h4>
+      <small>
+        C# · Bytecode Interpreter · AST Evaluation · Compiler Construction
+      </small>
+      <p>
+        A bytecode interpreter and AST evaluator used to explore AI-generated
+        and AI-optimised execution routines.
+      </p>
+      <h4>
+        <Link href="https://github.com/HuyNguyenAu/wobbly-ml">Wobbly ML</Link>
+      </h4>
+      <small>
+        C# · Matrix Operations · Numerical Gradients · Backpropagation
+      </small>
+      <p>
+        A lightweight machine learning library built from first principles in C#
+        to explore backpropagation and numerical gradients.
+      </p>
 
       <h3>Contact</h3>
       <table>
