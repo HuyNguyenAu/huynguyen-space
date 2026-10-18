@@ -15,91 +15,85 @@ export const EdgeLoadManagementPage = () => {
 
       <blockquote>
         <p>
-          <strong>Problem:</strong> Commercial depots lacked the electrical
-          capacity to charge entire fleets, and delivery operations could not
-          risk relying on cloud connectivity.
-          <br />
-          <strong>Solution:</strong> An offline-first C# / .NET control daemon
-          running directly on local Linux edge gateways, balancing power in real
-          time over Modbus and OCPP.
-          <br />
-          <strong>Result:</strong> Powered up to 5x more chargers on the same
-          supply, saved clients an estimated $1.6M - $5.0M in avoided substation
-          upgrades, and kept fleet charging completely uninterrupted during
-          network outages.
+          Commercial delivery depots needed to charge electric van fleets
+          overnight, but their existing electrical switchboards could only power
+          a few chargers without triggering expensive substation upgrades. On top
+          of that, depots could not risk losing charging if their internet
+          connection dropped out.
+          <br /><br />
+          I built an offline first control service in C# / .NET that runs
+          directly on local Linux gateways, balancing power in real time over
+          Modbus and OCPP. I also built an embedded Next.js dashboard so
+          electricians could set up and verify the system on site using a tablet.
+          <br /><br />
+          This allowed sites to run up to 5x more chargers on their existing
+          supply, saved clients an estimated $1.6M - $5.0M across roughly 20
+          depot installations by avoiding grid upgrades, and kept fleets charging
+          reliably through internet outages.
         </p>
       </blockquote>
 
-      <h4>The Problem: The Grid Limits That Stopped Sales Deals</h4>
+      <h4>The Problem</h4>
       <p>
-        When commercial delivery fleets go electric, they immediately run into a
-        hard physical constraint: a depot only has so much electricity coming
-        from the street. A client might need to charge 30 delivery vans
-        overnight, but the existing switchboard only has capacity for 6
+        When commercial delivery fleets transition to electric vehicles, they
+        run into a hard physical constraint: the depot only has a limited
+        electrical supply from the street. A client might need to charge 30
+        delivery vans overnight, but the site switchboard only has capacity for 6
         unmanaged 22 kW chargers.
       </p>
       <p>
-        Asking the local utility for a substation or supply upgrade costs
-        between $80,000 and $250,000 per site and takes 12 to 18 months of civil
-        works which regularly killed sales deals before they even got off the
-        ground.
+        Asking the local utility for a substation upgrade costs between $80,000
+        and $250,000 per site and takes 12 to 18 months of civil works, which
+        often stalled rollout plans.
       </p>
       <p>
-        To make matters worse, commercial delivery fleets (like supermarket home
-        deliveries and express couriers) run on tight morning departure
-        schedules. If chargers shut down overnight because the depot's internet
-        dropped out, vans couldn't leave on time, triggering customer contract
-        penalties between $5,000 and $50,000 per hour. A cloud-dependent load
-        controller was simply not acceptable.
+        At the same time, commercial delivery fleets operate on strict morning
+        departure schedules. If chargers stopped working overnight because the
+        depot internet dropped out, vans would not be charged for morning routes,
+        leading to thousands of dollars in delay penalties. The system had to
+        manage power locally without depending on the cloud.
       </p>
 
-      <h4>How It Works: Key Engineering Decisions</h4>
-      <p>
-        We needed a system that kept site power draw strictly within breaker
-        limits while operating entirely on-premise without cloud dependencies:
-      </p>
+      <h4>How It Works</h4>
       <ul>
         <li>
-          <strong>Local, offline-first control loop:</strong> Our primary promise
-          was that a fleet would never be stranded because of a network outage.
-          The control service runs as a C# / .NET daemon directly on the on-site
-          Linux gateway. It continuously polls local power meters over Modbus
-          RTU/TCP and throttles charger outputs via OCPP 1.6J / 2.0.1 every split
-          second. If the internet drops out completely, load balancing continues
-          locally without tripping the main breaker.
+          <strong>Local offline first control loop:</strong> The control service
+          runs as a C# / .NET daemon directly on the on site Linux gateway. It
+          continuously polls local power meters over Modbus RTU/TCP and adjusts
+          charger outputs via OCPP 1.6J / 2.0.1 in real time. If the depot
+          internet drops out completely, load balancing continues locally so the
+          main breaker never trips.
         </li>
         <li>
-          <strong>Embedded web dashboard for local electricians:</strong> In the
-          past, commissioning edge energy hardware required sending specialized
-          software engineers to customer sites to manually edit configuration
-          files. We built an embedded Next.js dashboard served right from the
-          gateway over local Wi-Fi, streaming live telemetry over WebSockets. Any
-          local electrician can open the UI on a tablet, verify meter and
-          charger readings, and finish commissioning without software support.
+          <strong>Embedded web dashboard for electricians:</strong> In the past,
+          setting up edge gateways meant sending a software engineer to customer
+          sites to edit config files by hand. I built an embedded Next.js
+          dashboard hosted directly on the gateway over local Wi-Fi, streaming
+          live telemetry over WebSockets. Electricians can open the interface on
+          a tablet, verify meter and charger readings, and complete commissioning
+          without an engineer on site.
         </li>
         <li>
-          <strong>Pluggable hardware abstraction layer:</strong> Different
+          <strong>Modular hardware abstraction layer:</strong> Different
           commercial tenders specify different brands of power meters and
-          chargers. We built a clean device abstraction layer so integrating a
-          new meter or charger brand takes days instead of weeks, keeping sales
-          bids fast and competitive.
+          chargers. We built a device abstraction layer so adding support for a
+          new meter or charger model takes a couple of days instead of weeks.
         </li>
         <li>
-          <strong>Telemetry summarisation and alerting:</strong> Streaming raw
-          telemetry every second from hundreds of chargers over cellular links
-          would have created huge mobile data bills. We built an edge data
-          pipeline that summarizes normal operating telemetry to keep bandwidth
-          minimal, while instantly dispatching critical fault events (like
-          breaker trips) to Azure Monitor and our on-call rotation.
+          <strong>Telemetry batching and alerting:</strong> Streaming raw
+          telemetry every second from dozens of chargers over cellular links
+          would have resulted in high mobile data bills. The gateway summarises
+          normal operational telemetry before uploading, while immediately
+          dispatching critical fault events like breaker trips to Azure Monitor.
         </li>
         <li>
-          <strong>Delivery and packaging:</strong> Gateway runtimes and packages
-          are built, tested, and released via automated Azure DevOps pipelines,
-          ensuring reproducible deployments across diverse customer hardware.
+          <strong>Packaging and deployments:</strong> Gateway runtimes are
+          built, tested, and released through automated Azure DevOps pipelines,
+          ensuring consistent deployments across customer hardware.
         </li>
       </ul>
 
-      <h4>End to End System Architecture</h4>
+      <h4>System Architecture</h4>
       <figure className="my-6">
         <img
           src={`${import.meta.env.BASE_URL}edge-load-management-architecture.svg`}
@@ -109,24 +103,24 @@ export const EdgeLoadManagementPage = () => {
         />
       </figure>
 
-      <h4>Commercial Impact & Business Outcomes</h4>
+      <h4>Results</h4>
       <ul>
         <li>
-          Powered up to 5x more chargers on the same supply (such as charging 30
-          vans on a 150 kW supply that previously could only support 6 unmanaged
-          22 kW chargers).
+          Enabled sites to run up to 5x more chargers on their existing power
+          supply (such as charging 30 vans on a 150 kW supply that previously
+          could only support 6 unmanaged 22 kW chargers).
         </li>
         <li>
           Saved clients an estimated $1.6M - $5.0M in avoided substation upgrades
-          across ~20 depot installations ($80k - $250k per site).
+          across roughly 20 depot installations ($80,000 - $250,000 per site).
         </li>
         <li>
-          Guaranteed 100% charging continuity through network dropouts,
-          protecting commercial fleets from expensive SLA downtime penalties.
+          Guaranteed charging continuity during network dropouts, avoiding
+          missed delivery windows and contract downtime penalties.
         </li>
         <li>
-          Enabled electricians to commission sites in minutes via the embedded
-          dashboard, removing the need for on-site software engineers.
+          Allowed electricians to commission sites in minutes using the embedded
+          dashboard, removing the need for software engineers on site.
         </li>
       </ul>
     </Article>

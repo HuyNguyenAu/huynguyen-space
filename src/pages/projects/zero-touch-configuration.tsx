@@ -15,83 +15,79 @@ export const ZeroTouchConfigurationPage = () => {
 
       <blockquote>
         <p>
-          <strong>Problem:</strong> Every site installation required a
-          specialist on site for 6+ hours to configure equipment by hand.
-          <br />
-          <strong>Solution:</strong> A visual web tool that validates
-          electrical configurations before hardware leaves the warehouse,
-          paired with an automatic sync service devices pull from on boot.
-          <br />
-          <strong>Result:</strong> Cut on-site setup from 6h to 2 - 3.5h (or
-          zero with warehouse pre-pairing), dropped device handshake from
-          &gt;30s to &lt;3s, and reduced service Azure costs by 5% - 10%.
+          Deploying commercial charging infrastructure across hundreds of depots
+          required sending specialist technicians on site for 6 or more hours to
+          configure equipment by hand, creating an expensive rollout bottleneck.
+          <br /><br />
+          I built a visual web tool that validates electrical rules before
+          hardware leaves the warehouse, paired with an automatic sync service
+          that edge devices pull down on startup.
+          <br /><br />
+          This cut on site setup time from 6 hours down to 2 - 3.5 hours (or zero
+          when pre paired in the warehouse), dropped device connection handshakes
+          from over 30 seconds to under 3 seconds, and reduced cloud storage costs
+          by 5% - 10%.
         </p>
       </blockquote>
 
-      <h4>The Problem: The Field Labour Bottleneck</h4>
+      <h4>The Problem</h4>
       <p>
         When enterprise clients like Woolworths and Team Global Express signed
-        commercial fleet electrification contracts, we had to install charging
-        equipment across hundreds of depots nationwide on tight rollout schedules.
+        contracts to electrify their commercial fleets, we needed to install
+        charging equipment across hundreds of depots nationwide on tight rollout
+        schedules.
       </p>
       <p>
-        The biggest operational bottleneck was on-site labour. Every single site
-        required sending a specialist technician at ~$130/hr for 6+ hours just
-        to configure network settings, pair equipment, and troubleshoot
-        connections. Travel costs were high, projects fell behind schedule, and
-        a single typo in a configuration file meant an expensive repeat visit.
-        Operations needed to scale depot rollouts without having to hire a massive
-        team of travelling specialists.
+        The main operational bottleneck was manual on site labour. Every site
+        required sending a specialist technician at around $130 an hour for 6 or
+        more hours just to configure network settings, pair equipment, and test
+        connections. Travel expenses added up quickly, and a small typo in a
+        configuration file meant an expensive return trip. Operations needed a
+        way to scale depot rollouts without hiring a large team of travelling
+        technicians.
       </p>
 
-      <h4>How It Works: Key Engineering Decisions</h4>
-      <p>
-        We needed hardware that could arrive on site pre-configured and ready to
-        run, so any local electrician could simply mount it, wire it up, and
-        walk away:
-      </p>
+      <h4>How It Works</h4>
       <ul>
         <li>
-          <strong>Pre-configuring with strict validation:</strong> The most
-          expensive bug is one found by an electrician in the field. We built a
-          visual equipment map where project managers configure site layouts
-          before hardware ever leaves the warehouse. The UI enforces electrical
-          rules in real time checking breaker limits and phase allocation and
-          blocks invalid configurations from ever being saved or shipped.
+          <strong>Visual pre configuration with validation:</strong> Finding a
+          configuration bug after hardware is mounted on a wall is painful. We
+          built a visual equipment map where project managers set up site
+          layouts before hardware leaves the warehouse. The interface validates
+          electrical rules in real time, checking breaker limits and phase
+          allocations so invalid configurations cannot be saved or shipped.
         </li>
         <li>
           <strong>Decoupled configuration contracts:</strong> Web and firmware
-          teams move at different speeds. The textbook approach would have locked
-          everyone into lockstep, coordinated releases. Instead, we decoupled
-          the configuration contract between the web portal and edge devices,
-          allowing teams to ship updates independently without blocking each
-          other.
+          teams operated on different release schedules. Rather than locking
+          both teams into coordinated releases, we decoupled the configuration
+          contract between the web portal and edge devices. This allowed both
+          teams to ship updates independently.
         </li>
         <li>
-          <strong>Automatic sync over flaky depot internet:</strong> Commercial
-          depot basements often have terrible mobile reception. We built an
-          automatic sync system so that when hardware boots up, it compares its
-          local configuration against the cloud order and pulls down updates
-          automatically. Contractors never had to sit on hold with customer
-          support to confirm device activation.
+          <strong>Automatic device sync:</strong> Depot basements often have poor
+          mobile reception. We built an automatic sync service so that when
+          hardware powers on, it checks its local settings against the cloud
+          order and downloads updates automatically. Contractors do not have to
+          sit on hold with support to confirm device activation.
         </li>
         <li>
-          <strong>Pointer-table caching to cut cloud bills and boot times:</strong>{" "}
-          As thousands of devices came online, querying Azure Blob Storage on
-          every device handshake made boots slow (&gt;30s) and drove up our
-          cloud bill. We introduced a pointer-table cache layer in front of Blob
-          Storage, slashing median connection times to under 3 seconds and
-          reducing our service Azure costs by 5% - 10% (measured).
+          <strong>Pointer table caching:</strong> As thousands of devices came
+          online, querying Azure Blob Storage on every device handshake caused
+          slow boots of over 30 seconds and drove up cloud storage costs. We added
+          an indexed pointer table cache in front of Blob Storage, bringing median
+          connection times down to under 3 seconds and lowering monthly Azure
+          storage costs by 5% - 10%.
         </li>
         <li>
-          <strong>Delivery and observability:</strong> Automated CI/CD pipelines
-          in Azure DevOps deploy builds to dedicated per-environment Azure
-          subscriptions, while device handshakes, boot syncs, and latency are
-          monitored with Application Insights and Azure Monitor alerts.
+          <strong>Pipelines and monitoring:</strong> We built automated CI/CD
+          pipelines in Azure DevOps deploying to dedicated per environment Azure
+          subscriptions, while Application Insights and Azure Monitor alerts
+          track device handshakes, boot syncs, and latency.
         </li>
       </ul>
 
-      <h4>End to End System Architecture</h4>
+      <h4>System Architecture</h4>
       <figure className="my-6">
         <img
           src={`${import.meta.env.BASE_URL}zero-touch-configuration-architecture.svg`}
@@ -101,24 +97,24 @@ export const ZeroTouchConfigurationPage = () => {
         />
       </figure>
 
-      <h4>Commercial Impact & Business Outcomes</h4>
+      <h4>Results</h4>
       <ul>
         <li>
-          Cut on-site setup from 6 hours down to 2 - 3.5 hours (and down to zero
-          when pre-paired in the warehouse), saving an estimated $325 - $520 per
-          site in specialist field labour (2.5 - 4 hours * $130/hr).
+          Cut on site setup from 6 hours down to 2 - 3.5 hours (and down to zero
+          when pre paired in the warehouse), saving an estimated $325 - $520 per
+          site in field labour (2.5 - 4 hours at $130/hr).
         </li>
         <li>
-          Slashed median device handshake from &gt;30s to &lt;3s and cut
-          service Azure infrastructure costs by 5% - 10% (measured).
+          Reduced median device handshake latency from over 30 seconds to under 3
+          seconds and cut cloud storage costs by 5% - 10%.
         </li>
         <li>
           Delivered hundreds of commercial depot installs on schedule without
-          hiring additional travelling engineers.
+          hiring additional travelling technicians.
         </li>
         <li>
-          Eliminated configuration typos and repeat site visits through automated
-          pre-shipping validation rules.
+          Prevented configuration errors and return site visits through automated
+          pre shipping validation rules.
         </li>
       </ul>
     </Article>

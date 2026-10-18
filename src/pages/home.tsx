@@ -9,183 +9,25 @@ export const HomePage = () => {
         Full Stack Software Engineer · C# / .NET · React / TypeScript · Azure
       </figcaption>
       <p>
-        I'm a full stack software engineer building cloud-native services, edge
-        systems, and web apps, owning them from design through to production. 6+
+        I am a full stack software engineer building cloud native services, edge
+        systems, and web applications, from design through to production. 6+
         years of experience, including platforms behind national fleet rollouts
         for <strong>Woolworths, RACV, SG Fleet, and Team Global Express</strong>.
       </p>
 
-      <h3>Engineering & Delivery Standards</h3>
-      <table>
-        <thead>
-          <tr>
-            <th>Practice</th>
-            <th>In Practice</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>
-              <strong>Cloud Native and Serverless</strong>
-            </td>
-            <td>
-              Event-driven services on Azure Functions, Container Apps, and
-              Service Bus.
-            </td>
-          </tr>
-          <tr>
-            <td>
-              <strong>CI/CD and Environments</strong>
-            </td>
-            <td>
-              Azure DevOps pipelines deploying to per-environment Azure
-              subscriptions; infrastructure in Bicep.
-            </td>
-          </tr>
-          <tr>
-            <td>
-              <strong>Testing and Static Analysis</strong>
-            </td>
-            <td>
-              Unit and integration tests, with SonarQube and Roslyn analyzers
-              gating every pull request.
-            </td>
-          </tr>
-          <tr>
-            <td>
-              <strong>Code Review and Mentoring</strong>
-            </td>
-            <td>
-              1:1 reviews on every change, pair programming, onboarding juniors,
-              and design sessions with 3 - 5 engineers.
-            </td>
-          </tr>
-          <tr>
-            <td>
-              <strong>Monitoring and Production Support</strong>
-            </td>
-            <td>
-              Application Insights, Azure Monitor alerts, fast KQL triage, and
-              participating in on-call rotations.
-            </td>
-          </tr>
-          <tr>
-            <td>
-              <strong>Security and Data Protection</strong>
-            </td>
-            <td>
-              Centralised multi-tenant authorisation in the data layer; KYC
-              verification and payment data handling.
-            </td>
-          </tr>
-          <tr>
-            <td>
-              <strong>Agile Delivery</strong>
-            </td>
-            <td>
-              Active Scrum sprints; validating acceptance criteria and releases
-              with POs and QA.
-            </td>
-          </tr>
-          <tr>
-            <td>
-              <strong>AI Assisted Engineering</strong>
-            </td>
-            <td>
-              AI coding agents in daily workflows; building my own (
-              <Link href="https://github.com/HuyNguyenAu/Wayfare">Wayfare</Link>
-              ).
-            </td>
-          </tr>
-        </tbody>
-      </table>
-
-      <h3>Core Technical Stack & Architecture</h3>
-      <table>
-        <thead>
-          <tr>
-            <th>Domain</th>
-            <th>Technologies</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>
-              <strong>Backend</strong>
-            </td>
-            <td>
-              C#, .NET / .NET Core, ASP.NET Core Web API, Entity Framework,
-              REST APIs, Python.
-            </td>
-          </tr>
-          <tr>
-            <td>
-              <strong>Cloud</strong>
-            </td>
-            <td>
-              Azure Functions, App Service, Container Apps, Service Bus, Event
-              Grid, Bicep.
-            </td>
-          </tr>
-          <tr>
-            <td>
-              <strong>Data</strong>
-            </td>
-            <td>
-              SQL Server / Azure SQL, PostgreSQL, Cosmos DB, Table and Blob
-              Storage.
-            </td>
-          </tr>
-          <tr>
-            <td>
-              <strong>Frontend</strong>
-            </td>
-            <td>
-              React, Next.js, TypeScript, Zustand, React Context, Vite, ShadCN UI.
-            </td>
-          </tr>
-          <tr>
-            <td>
-              <strong>DevOps and Quality</strong>
-            </td>
-            <td>
-              Azure DevOps Pipelines, xUnit, NUnit, MSTest, Jest, Vitest,
-              SonarQube / SonarCloud, Roslyn analyzers.
-            </td>
-          </tr>
-          <tr>
-            <td>
-              <strong>Observability</strong>
-            </td>
-            <td>
-              Application Insights, Azure Monitor, Log Analytics (KQL).
-            </td>
-          </tr>
-          <tr>
-            <td>
-              <strong>Integrations and Protocols</strong>
-            </td>
-            <td>
-              Stripe, WebSockets, third party KYC APIs, Modbus RTU / TCP, OCPP
-              1.6J / 2.0.1.
-            </td>
-          </tr>
-        </tbody>
-      </table>
-
-      <h3>Commercial Systems & Delivery</h3>
+      <h3>Commercial Projects</h3>
       <h4>
         <Link href="/projects/billing-for-apartments" internal={true}>
-          Multi-Tenant Billing and Payments
+          Multi Tenant Billing and Payments
         </Link>
       </h4>
       <small>
         C# / .NET · Azure · Stripe Connect · SQL Server · Entity Framework
       </small>
       <p>
-        Per-session metering, time-of-use pricing, and Stripe split payouts.
-        Generates $100k - $300k a year in recurring revenue and eliminated
-        manual billing disputes.
+        Per session metering, time of use electricity pricing, and Stripe split
+        payouts. Generates $100k - $300k a year in recurring software revenue
+        and eliminated billing disputes for building managers.
       </p>
       <h4>
         <Link href="/projects/zero-touch-configuration" internal={true}>
@@ -194,8 +36,9 @@ export const HomePage = () => {
       </h4>
       <small>React · .NET · Azure · Blob Storage · Device Sync</small>
       <p>
-        Validated remote device configuration with automatic sync. Cut on-site
-        setup from 6h to 2 - 3.5h and dropped device handshakes under 3 seconds.
+        Remote device configuration with automatic boot sync. Cut on site setup
+        from 6 hours to 2 - 3.5 hours and dropped device handshakes under 3
+        seconds.
       </p>
       <h4>
         <Link href="/projects/edge-load-management" internal={true}>
@@ -204,8 +47,9 @@ export const HomePage = () => {
       </h4>
       <small>C# / .NET daemon · Linux · Modbus · OCPP · Next.js · WebSockets</small>
       <p>
-        Offline-first load balancing on site gateways. Powers up to 5x more
-        chargers on existing supplies and avoids costly substation upgrades.
+        Offline first load balancing on site gateways. Runs up to 5x more
+        chargers on existing electrical supplies without needing costly substation
+        upgrades.
       </p>
 
       <h3>Professional Experience</h3>
@@ -276,8 +120,8 @@ export const HomePage = () => {
       </h4>
       <small>TypeScript · Finite State Machines · Deterministic Execution Flow</small>
       <p>
-        A coding agent bounded by a finite state machine to make agentic
-        workflows reproducible, predictable, and easy to debug.
+        A coding agent bounded by a finite state machine to make agent workflows
+        predictable, reproducible, and easy to debug.
       </p>
       <h4>
         <Link href="https://github.com/HuyNguyenAu/llm_native_virtual_machine">
@@ -288,8 +132,9 @@ export const HomePage = () => {
         Rust · RISC Inspired Assembly · Context Stack Registers · GGUF Models
       </small>
       <p>
-        An assembly-like virtual machine that breaks prompts into small,
-        predictable atomic steps to improve accuracy for small local models.
+        An assembly like virtual machine that breaks prompts into small atomic
+        instructions executed sequentially, helping smaller local models stay
+        accurate without getting lost.
       </p>
       <h4>
         <Link href="https://github.com/HuyNguyenAu/gpt-decoder">GPT Decoder</Link>
@@ -298,8 +143,8 @@ export const HomePage = () => {
         Python · PyTorch · Transformer Architecture · KeyValue Caching
       </small>
       <p>
-        A minimal transformer inference engine built from scratch in Python and
-        PyTorch to explore KV caching and local model execution.
+        A minimal transformer inference engine written from scratch in Python
+        and PyTorch to experiment with KV caching and local model execution.
       </p>
       <h4>
         <Link href="https://github.com/HuyNguyenAu/lox-lang-ai">Lox Lang AI</Link>
@@ -308,8 +153,8 @@ export const HomePage = () => {
         C# · Bytecode Interpreter · AST Evaluation · Compiler Construction
       </small>
       <p>
-        A bytecode interpreter and AST evaluator used to explore AI-generated
-        and AI-optimised execution routines.
+        A bytecode interpreter and tree walk evaluator in C# to explore
+        compiler construction and AI assisted code execution.
       </p>
       <h4>
         <Link href="https://github.com/HuyNguyenAu/wobbly-ml">Wobbly ML</Link>
@@ -318,8 +163,9 @@ export const HomePage = () => {
         C# · Matrix Operations · Numerical Gradients · Backpropagation
       </small>
       <p>
-        A lightweight machine learning library built from first principles in C#
-        to explore backpropagation and numerical gradients.
+        A small machine learning library built from first principles in C# to
+        understand backpropagation and gradient descent without external
+        dependencies.
       </p>
 
       <h3>Contact</h3>

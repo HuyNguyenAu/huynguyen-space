@@ -17,56 +17,55 @@ export const EnergyLocalsITSpecialistPage = () => {
       <p>
         I built customer onboarding systems, wholesale settlement reconciliation
         tools, and internal data pipelines for an Australian energy retailer,
-        operating in a strictly regulated market handling customer identity and
-        financial records.
+        operating in a regulated market handling customer identity and financial
+        records.
       </p>
 
-      <h4>1. Multi-Tenant Customer Onboarding</h4>
+      <h4>1. Multi Tenant Customer Onboarding</h4>
       <ul>
         <li>
-          Built the company's first white-label onboarding platform (Laravel,
-          Bootstrap) featuring automated multi-tenant database provisioning,
-          allowing us to spin up new retail energy partners without custom code.
+          Built a white label customer onboarding platform in Laravel and
+          Bootstrap with automated multi tenant database setup, making it easy to
+          launch new retail energy partners without custom engineering work.
         </li>
         <li>
-          Replaced manual account creation (~20 minutes per signup) with an
-          automated signup pipeline that processed 10,000+ customers.
+          Automated customer signups, replacing manual account creation (around
+          20 minutes each) and processing over 10,000 customers.
         </li>
         <li>
-          Integrated automated identity and credit verification using Westpac
-          and Equifax KYC APIs, slashing verification times from 2 - 3 business
-          days to under 60 seconds while meeting retail energy compliance rules.
+          Integrated Westpac and Equifax KYC APIs for automated identity and
+          credit checks, cutting verification times from 2 - 3 business days to
+          under 60 seconds while meeting retail compliance requirements.
         </li>
       </ul>
 
       <h4>2. Wholesale Settlement Reconciliation</h4>
       <ul>
         <li>
-          Built automated daily reconciliation in Python and SQL between AEMO
-          wholesale electricity settlements and customer meter data, catching
-          discrepancies before they became billing or compliance headaches.
+          Built daily reconciliation scripts in Python and SQL between AEMO
+          wholesale electricity market settlements and customer meter data,
+          catching calculation discrepancies early.
         </li>
         <li>
-          Engineered billing calculation pipelines supporting complex
-          time-of-use tariffs and wholesale pass-through pricing models.
+          Built billing calculation pipelines to handle complex time of use
+          tariffs and wholesale pass through pricing models.
         </li>
       </ul>
 
       <h4>3. Data Pipelines and Infrastructure Automation</h4>
       <ul>
         <li>
-          Consolidated business reporting into automated C# and SQL ETL
-          pipelines, saving business analysts 10 - 15 hours every week and
-          eliminating spreadsheet errors.
+          Automated internal business reporting using C# and SQL ETL jobs, saving
+          analysts 10 - 15 hours a week of manual spreadsheet tasks.
         </li>
         <li>
-          Automated developer workstations and server provisioning with
-          repeatable Bash and PowerShell scripts, cutting new engineer setup time
-          from 2 days to under 2 hours.
+          Wrote Bash and PowerShell scripts to automate developer workstations and
+          server setup, cutting new engineer onboarding time from 2 days to under
+          2 hours.
         </li>
         <li>
-          Managed core database servers on Linux, writing automated backup
-          routines, monitoring, and disaster recovery procedures.
+          Managed Linux database servers, including automated backup routines,
+          system monitoring, and disaster recovery procedures.
         </li>
       </ul>
     </Article>
