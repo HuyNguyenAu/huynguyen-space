@@ -2,7 +2,7 @@ import { Outlet, ScrollRestoration } from "react-router";
 
 export const RootPage = () => {
   return (
-    <main className="min-h-screen bg-background text-primary px-4 py-12 sm:px-6 lg:px-8">
+    <main className="min-h-screen px-4 py-12 sm:px-6 lg:px-8">
       <ScrollRestoration />
       <Outlet />
     </main>
