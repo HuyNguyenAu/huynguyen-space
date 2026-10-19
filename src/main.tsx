@@ -15,7 +15,7 @@ import { EnergyLocalsGraduateITSpecialistPage } from "@/pages/experience/energy-
 import { ZeroTouchConfigurationPage } from "@/pages/projects/zero-touch-configuration";
 import { EdgeLoadManagementPage } from "@/pages/projects/edge-load-management";
 import { RootPage } from "@/pages/root";
-import { BillingForApartments } from "@/pages/projects/billing-for-apartments";
+import { BillingForApartmentsPage } from "@/pages/projects/billing-for-apartments";
 
 const router = createHashRouter(
   createRoutesFromElements(
@@ -32,7 +32,7 @@ const router = createHashRouter(
         />
         <Route
           path="billing-for-apartments"
-          element={<BillingForApartments />}
+          element={<BillingForApartmentsPage />}
         />
       </Route>
       <Route path="experience">

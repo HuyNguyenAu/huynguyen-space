@@ -1,31 +1,19 @@
 @import "tailwindcss";
-@plugin "@tailwindcss/typography";
 
-:root {
-  --background-color: #f5f2eb;
-  --primary-color: #1c1917;
-  --secondary-color: #57534e;
-  --tertiary-color: #d6cebe;
-}
-
+/* E-ink palette: grey paper, near black ink, no colour. */
 @theme {
-  --color-background: var(--background-color);
-  --color-primary: var(--primary-color);
-  --color-secondary: var(--secondary-color);
-  --color-tertiary: var(--tertiary-color);
+  --color-background: #e8e8e3;
+  --color-primary: #111111;
+  --color-secondary: #3d3d3d;
+  --font-serif: "Literata", Georgia, serif;
+  --font-display: "Playfair Display", Georgia, serif;
 }
 
-@utility prose {
-  & > * {
-    --tw-prose-bullets: var(--color-secondary);
-  }
-  table {
-    display: block;
-    overflow-x: auto;
-    white-space: normal;
-  }
+@utility display {
+  @apply font-display leading-[1.05] tracking-[-0.01em];
 }
 
-body {
-  background-color: var(--color-background);
+@utility kicker {
+  @apply text-secondary tracking-[0.08em];
+  font-variant-caps: all-small-caps;
 }
