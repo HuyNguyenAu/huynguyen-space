@@ -116,6 +116,13 @@ export const HomePage = () => {
 
       <h3>Systems Research & Open Source</h3>
       <h4>
+        <Link href="https://github.com/HuyNguyenAu/amber-8">Amber 8</Link>
+      </h4>
+      <small>Rust · Assembly · Decision Models</small>
+      <p>
+        An assembly virtual machine that brings the messy real world into the deterministic domain of software.
+      </p>
+      <h4>
         <Link href="https://github.com/HuyNguyenAu/Wayfare">Wayfare</Link>
       </h4>
       <small>TypeScript · Finite State Machines · Deterministic Execution Flow</small>
