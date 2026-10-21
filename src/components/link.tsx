@@ -23,4 +23,4 @@ export const Link = ({
 
 // E-ink does not animate: links invert instantly instead of fading.
 const className =
-  "text-inherit font-[inherit] underline decoration-1 underline-offset-[0.18em] hover:bg-primary hover:text-background hover:no-underline focus-visible:bg-primary focus-visible:text-background focus-visible:no-underline focus-visible:outline-none";
+  "text-inherit font-[inherit] underline decoration-1 underline-offset-[0.18em] hover:bg-primary hover:text-background hover:no-underline focus-visible:bg-primary focus-visible:text-background focus-visible:no-underline focus-visible:outline-none w-fit";
